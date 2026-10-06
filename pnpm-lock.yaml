@@ -13,8 +13,8 @@ importers:
   .:
     dependencies:
       '@fiduswriter/document':
-        specifier: ^0.3.19
-        version: 0.3.19(@pdfme/pdf-lib@6.2.2)
+        specifier: ^0.3.28
+        version: 0.3.28(@pdfme/pdf-lib@6.2.2)
       bibliojson:
         specifier: ^4.1.0
         version: 4.1.0
@@ -319,8 +319,8 @@ packages:
     resolution: {integrity: sha512-IkO+/KEUvwbVpiURZg+P7zF74z5Jxe0UgJxVni+RtoHQ6IZieXaO02kmadomap/q+l6bc/jdPGGqTjhuZnuz1Q==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
 
-  '@fiduswriter/document@0.3.19':
-    resolution: {integrity: sha512-Yte18A8Yr4NmVJC6XzAwZ/IookgEw0ZLXCP5ubkUMlSml67ek1+d73upIniZLGCd4PtQn1d95Vhg/lGrbCPXlA==}
+  '@fiduswriter/document@0.3.28':
+    resolution: {integrity: sha512-0qezBBuUN5KgSElDZp2JFyPRqHNQOPjRzWKsRHHYF320j3gt2CaQ8UzGbKnObg/+36i0T96iKK7YiTaspqCNyg==}
 
   '@humanfs/core@0.19.2':
     resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
@@ -1133,6 +1133,9 @@ packages:
     resolution: {integrity: sha512-3nED0ENvAP4yroghehwK6AmlOaTTn7EvIPSpFee5Lrfkmge/ZDP891yJGZpSIqAzp8G0o5ccgHcgHZjEzHYxUA==}
     engines: {node: '>=22'}
 
+  boolbase@1.0.0:
+    resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
+
   brace-expansion@5.0.12:
     resolution: {integrity: sha512-YovQ3rzhaLMIrDjNDMkNS01tea93qhEhG5xy8f6+R0l+dw3Ki+5sCoIoI942iuLZTHWogWktgwVDhU09iNEimQ==}
     engines: {node: 20 || >=22}
@@ -1260,9 +1263,16 @@ packages:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
 
+  css-select@5.2.2:
+    resolution: {integrity: sha512-TizTzUddG/xYLA3NXodFM0fSbNizXjOKhqiQQwvhlspadZokn1KDy0NZFS0wuEubIYAV5/c1/lAr0TaaFXEXzw==}
+
   css-tree@1.1.3:
     resolution: {integrity: sha512-tRpdppF7TRazZrjJ6v3stzv93qxRcSsFmW6cX0Zm2NVKpxE1WV1HblnghVv9TreireHkqI/VDEsfolRF1p6y7Q==}
     engines: {node: '>=8.0.0'}
+
+  css-what@6.2.2:
+    resolution: {integrity: sha512-u/O3vwbptzhMs3L1fQE82ZSLHQQfto5gyZzwteVIEyeaY5Fc7R4dapF/BvRoSYFeqfBk4m0V1Vafq5Pjv25wvA==}
+    engines: {node: '>= 6'}
 
   d@1.0.2:
     resolution: {integrity: sha512-MOqHvMWF9/9MX6nza0KgvFH4HpMU0EF5uUDXqX/BtxtU8NfB0QzRtJ8Oe/6SuS4kbhyzVJwjd97EA4PKrzJ8bw==}
@@ -1312,6 +1322,19 @@ packages:
   diff-dom@5.2.1:
     resolution: {integrity: sha512-G6WquwIa/XOxiYDYRMxfJj+c+a6LXMv7zgXoAQ3eRjTYkc8Lc4Aq97krTu/B15r243FR7dyeSxDenzKtO6sbfA==}
 
+  dom-serializer@2.0.0:
+    resolution: {integrity: sha512-wIkAryiqt/nV5EQKqQpo3SToSOV9J0DnbJqwK7Wv/Trc92zIAYZ4FlMu+JPFW1DfGFt81ZTCGgDEabffXeLyJg==}
+
+  domelementtype@2.3.0:
+    resolution: {integrity: sha512-OLETBj6w0OsagBwdXnPdN0cnMfF9opN69co+7ZrbfPGrdpPVNBUj02spi6B1N7wChLQiPn4CSH/zJvXw56gmHw==}
+
+  domhandler@5.0.3:
+    resolution: {integrity: sha512-cgwlv/1iFQiFnU96XXgROh8xTeetsnJiDsTc7TYCLFd9+/WNkIqPTxiM/8pSd8VIrhXGTf1Ny1q1hquVqDJB5w==}
+    engines: {node: '>= 4'}
+
+  domutils@3.2.2:
+    resolution: {integrity: sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==}
+
   downloadjs@1.4.7:
     resolution: {integrity: sha512-LN1gO7+u9xjU5oEScGFKvXhYf7Y/empUIIEAGBs1LzUq/rg5duiDrkuH5A2lQGd5jfMOb9X9usDa2oVXwJ0U/Q==}
 
@@ -1332,6 +1355,14 @@ packages:
 
   encoding@0.1.13:
     resolution: {integrity: sha512-ETBauow1T35Y/WZMkio9jiM0Z5xjHHmJ4XmjZOq1l/dXz3lr2sRn87nJy20RupqSh1F2m3HHPSp8ShIPQJrJ3A==}
+
+  entities@4.5.0:
+    resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
+    engines: {node: '>=0.12'}
+
+  entities@8.1.0:
+    resolution: {integrity: sha512-kxL7msIffSuh9aaFAMD7rxAIuTRMAHMeBtgHW2yUdWw732ZNh4MehkF2gdjvtdmikkaIP9bFDDJOPlsvm7avrA==}
+    engines: {node: '>=20.19.0'}
 
   error-ex@1.3.4:
     resolution: {integrity: sha512-sqQamAnR14VgCr1A618A3sGrygcpK+HEbenA/HiEAkkUwcZIIB/tgWqHFxWgOyDh4nB4JCRimh79dR5Ywc9MDQ==}
@@ -1891,6 +1922,9 @@ packages:
   node-html-better-parser@1.5.9:
     resolution: {integrity: sha512-z1I5UINMezJXYL9cH3h0a9KBth2G978gSLlfkpQ+CQzzVHVQy9gpARgm9eDsz1O4gn1HtgUqjdAIYxKFZm6uHQ==}
 
+  node-html-parser@9.0.4:
+    resolution: {integrity: sha512-reUSrZkF1rO7hEYe5mJwtbVcQ6mB5QrViCZH6Wv+iz3er/PA9Q50gol15dMLQRDfdli4VzqPMPR24HNRFgVKFw==}
+
   node-int64@0.4.0:
     resolution: {integrity: sha512-O5lz91xSOeoXP6DulyHfllpq+Eg00MWitZIbtPfoSEvqIHdl5gfcY6hYzDWnj0qD5tz52PI08u9qUvSVeUBeHw==}
 
@@ -1910,6 +1944,9 @@ packages:
   npm-run-path@4.0.1:
     resolution: {integrity: sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==}
     engines: {node: '>=8'}
+
+  nth-check@2.1.1:
+    resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
 
   onetime@5.1.2:
     resolution: {integrity: sha512-kbpaSSGJTWdAY5KPVeMOKXSrPtr8C8C7wodJbcsd51jRnmD+GZu8Y0VoU6Dm5Z4vWr0Ig/1NKuWRKf7j5aaYSg==}
@@ -1948,8 +1985,8 @@ packages:
   pages-to-pdf@0.4.1:
     resolution: {integrity: sha512-Y91uRab9lJNzw9M89QPzX6pd/ITG9MGSMx7RCA9cY7l3SM3oh5Tj9i8XTrIBxUyffiHFWVcsz+W6MotuwMwqBA==}
 
-  paginate-for-print@1.1.0:
-    resolution: {integrity: sha512-XZNKzznRo+ntB3LHA4Cyki7zkjDC6nha4YwXTpKeAy2/2PlEWE3av7Vl1+GR3tR0Exuryhybzazs0A+YvFl0tA==}
+  paginate-for-print@1.1.2:
+    resolution: {integrity: sha512-8lgEyfIsuaN7E3aFBjbQIp0LxHoG/MNvDSZZIvausrMwFXEUvOYRTJUf5wKn/RREHrLnnw5SxjMK0Tm2NiVOYA==}
 
   pako@0.2.9:
     resolution: {integrity: sha512-NUcwaKxUxWrZLpDG+z/xZaCgQITkA/Dv4V/T6bw7VON6l1Xz/VnrBqrYjZQ12TamKHzITTfOEIYUj48y2KXImA==}
@@ -2613,7 +2650,7 @@ snapshots:
       '@eslint/core': 1.2.1
       levn: 0.4.1
 
-  '@fiduswriter/document@0.3.19(@pdfme/pdf-lib@6.2.2)':
+  '@fiduswriter/document@0.3.28(@pdfme/pdf-lib@6.2.2)':
     dependencies:
       '@mathjax/mathjax-newcm-font': 4.1.3
       '@mathjax/src': 4.1.3
@@ -2628,9 +2665,10 @@ snapshots:
       mathlive: 0.110.0
       mathml-to-latex: 1.8.0
       mathml2omml: 0.5.0
+      node-html-parser: 9.0.4
       orderedmap: 2.1.1
       pages-to-pdf: 0.4.1
-      paginate-for-print: 1.1.0(@pdfme/pdf-lib@6.2.2)
+      paginate-for-print: 1.1.2(@pdfme/pdf-lib@6.2.2)
       prettier: 3.9.9
       prosemirror-commands: 1.7.2
       prosemirror-gapcursor: 1.4.1
@@ -3451,6 +3489,8 @@ snapshots:
     dependencies:
       xregexp: 5.1.3
 
+  boolbase@1.0.0: {}
+
   brace-expansion@5.0.12:
     dependencies:
       balanced-match: 4.0.4
@@ -3566,10 +3606,20 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
+  css-select@5.2.2:
+    dependencies:
+      boolbase: 1.0.0
+      css-what: 6.2.2
+      domhandler: 5.0.3
+      domutils: 3.2.2
+      nth-check: 2.1.1
+
   css-tree@1.1.3:
     dependencies:
       mdn-data: 2.0.14
       source-map: 0.6.1
+
+  css-what@6.2.2: {}
 
   d@1.0.2:
     dependencies:
@@ -3600,6 +3650,24 @@ snapshots:
 
   diff-dom@5.2.1: {}
 
+  dom-serializer@2.0.0:
+    dependencies:
+      domelementtype: 2.3.0
+      domhandler: 5.0.3
+      entities: 4.5.0
+
+  domelementtype@2.3.0: {}
+
+  domhandler@5.0.3:
+    dependencies:
+      domelementtype: 2.3.0
+
+  domutils@3.2.2:
+    dependencies:
+      dom-serializer: 2.0.0
+      domelementtype: 2.3.0
+      domhandler: 5.0.3
+
   downloadjs@1.4.7: {}
 
   editorconfig@3.0.2:
@@ -3618,6 +3686,10 @@ snapshots:
   encoding@0.1.13:
     dependencies:
       iconv-lite: 0.6.3
+
+  entities@4.5.0: {}
+
+  entities@8.1.0: {}
 
   error-ex@1.3.4:
     dependencies:
@@ -4379,6 +4451,11 @@ snapshots:
     dependencies:
       html-entities: 2.6.0
 
+  node-html-parser@9.0.4:
+    dependencies:
+      css-select: 5.2.2
+      entities: 8.1.0
+
   node-int64@0.4.0: {}
 
   node-releases@2.0.57: {}
@@ -4392,6 +4469,10 @@ snapshots:
   npm-run-path@4.0.1:
     dependencies:
       path-key: 3.1.1
+
+  nth-check@2.1.1:
+    dependencies:
+      boolbase: 1.0.0
 
   onetime@5.1.2:
     dependencies:
@@ -4436,7 +4517,7 @@ snapshots:
       fontkit: 2.0.4
       svg4pdf-lib: 0.1.2(@pdfme/pdf-lib@6.2.2)
 
-  paginate-for-print@1.1.0(@pdfme/pdf-lib@6.2.2):
+  paginate-for-print@1.1.2(@pdfme/pdf-lib@6.2.2):
     dependencies:
       '@babel/runtime': 7.29.7
       '@chenglou/pretext': 0.0.8

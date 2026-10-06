@@ -113,7 +113,7 @@
         "extract-i18n": "node scripts/extract-i18n.js"
     },
     "dependencies": {
-        "@fiduswriter/document": "^0.3.19",
+        "@fiduswriter/document": "^0.3.28",
         "bibliojson": "^4.1.0",
         "downloadjs": "^1.4.7",
         "fast-deep-equal": "^3.1.3",
