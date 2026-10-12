@@ -24,6 +24,15 @@ export interface Chapter {
     part?: string
     /** Archive storage index (used by the native importer). */
     chapter_index?: number
+    /**
+     * Location of the chapter's source `.fidus` file.
+     *
+     * File-based hosts (desktop app, WebDAV) reference chapters as standalone
+     * files rather than database documents; the embedded chapter data inside a
+     * `.fidusbook` container is then a snapshot of that file. Hosts without a
+     * filesystem (the Django server) leave this unset.
+     */
+    path?: string
 }
 
 /** Book metadata block. */
@@ -99,6 +108,17 @@ export interface DocumentListEntry extends ExportDoc {
     e2ee_iterations?: number
     images?: ImageDB["db"]
     bibliography?: BibDB["db"]
+    /**
+     * The document lives outside the book as a standalone file; `path` holds
+     * its location. The book's chapter then carries the same `path`.
+     */
+    external?: boolean
+    /**
+     * The document's source could not be read (a referenced file is missing
+     * and no snapshot is embedded). Such entries render as inaccessible and
+     * are skipped by exporters.
+     */
+    missing?: boolean
 }
 
 /** Options shared by book exporters. */

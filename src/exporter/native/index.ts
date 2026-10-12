@@ -55,13 +55,9 @@ export class NativeBookExporter {
         if (progressCallback) {
             this.progressCallback = progressCallback
         }
-        if (this.book.chapters.length === 0) {
-            this.progressCallback?.(
-                gettext("Book cannot be exported due to lack of chapters."),
-                100
-            )
-            return Promise.resolve(new Blob([]))
-        }
+        // A chapter-less book is a valid container: book.json with an empty
+        // chapter list and no chapter data. File-based hosts start books
+        // empty and add chapters as standalone files afterwards.
 
         this.progressCallback?.(
             `${this.book.title}: ${gettext("Fidusbook export has been initiated.")}`,
@@ -109,7 +105,11 @@ export class NativeBookExporter {
                 text: chapter.text,
                 number: chapter.number,
                 part: chapter.part || "",
-                chapter_index: index
+                chapter_index: index,
+                // File-based hosts reference chapters as standalone `.fidus`
+                // files; the path must be persisted so the host can re-resolve
+                // the live file on the next load.
+                ...(chapter.path ? {path: chapter.path} : {})
             }))
         }
 
@@ -132,7 +132,11 @@ export class NativeBookExporter {
             }
             const chapter = sortedChapters[index]
             const doc = this.documentList.find(d => d.id === chapter.text)
-            if (!doc) {
+            if (!doc || doc.missing) {
+                // A chapter without a document entry cannot be rendered; one
+                // marked `missing` has no readable source (the file is gone
+                // and no snapshot is embedded). Both are left out rather than
+                // exported as empty chapters.
                 return processChapter(index + 1)
             }
 

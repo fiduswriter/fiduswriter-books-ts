@@ -214,7 +214,7 @@ export class EpubBookExporter {
                         epubBookCoverTemplate({
                             book: this.book,
                             coverImage: coverImage as BookCoverImage & {image: string},
-                            shortLang: this.book.settings.language.split("-")[0]
+                            shortLang: (this.book.settings.language || "en-US").split("-")[0]
                         })
                     )
                 })
@@ -226,7 +226,7 @@ export class EpubBookExporter {
             contents: pretty(
                 epubBookTitlepageTemplate({
                     book: this.book,
-                    shortLang: this.book.settings.language.split("-")[0]
+                    shortLang: (this.book.settings.language || "en-US").split("-")[0]
                 })
             )
         })
@@ -314,7 +314,7 @@ export class EpubBookExporter {
                     book: this.book,
                     creator: this.user.name || "",
                     language: this.book.settings.language,
-                    shortLang: this.book.settings.language.split("-")[0]
+                    shortLang: (this.book.settings.language || "en-US").split("-")[0]
                 })
             )
         })
@@ -379,7 +379,7 @@ export class EpubBookExporter {
                 filename: "document.ncx",
                 contents: pretty(
                     ncxTemplate({
-                        shortLang: this.book.settings.language.split("-")[0],
+                        shortLang: (this.book.settings.language || "en-US").split("-")[0],
                         title: this.book.title,
                         idType: "fidus",
                         id: this.book.id,
@@ -395,7 +395,7 @@ export class EpubBookExporter {
                 filename: "document-nav.xhtml",
                 contents: pretty(
                     navTemplate({
-                        shortLang: this.book.settings.language.split("-")[0],
+                        shortLang: (this.book.settings.language || "en-US").split("-")[0],
                         toc: toc as Array<{
                             link: string
                             title: string

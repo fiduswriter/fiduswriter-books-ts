@@ -71,6 +71,7 @@ export type {
 export type {
     BookDataContext,
     BookDialogBackend,
+    BookDialogButton,
     BookDialogCoverImage,
     BookDialogImageDB,
     BookDialogInfo,

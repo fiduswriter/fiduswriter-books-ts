@@ -11,7 +11,7 @@
  * part of this component and stays with the host.
  */
 
-import type {Book, BookMetadata, Chapter} from "../../types.js"
+import type {Book, BookMetadata, Chapter, DocumentListEntry} from "../../types.js"
 import {
     ContentMenu,
     Dialog,
@@ -41,6 +41,7 @@ import {
     bookSanityCheckTemplate
 } from "./templates.js"
 import type {
+    BookDialogButton,
     BookDialogImageDB,
     BookDialogInfo,
     BookDialogOptions,
@@ -90,6 +91,8 @@ export class BookDialog {
     /** Cover images that are not part of the host's image database. */
     bookImageDB: BookDialogImageDB
     dialog: Dialog | null
+    /** The chapters tab's file selector, once the dialog is open. */
+    fileSelector: FileSelector | null
 
     constructor(options: BookDialogOptions) {
         this.options = options
@@ -97,6 +100,7 @@ export class BookDialog {
         this.exportMenu = bookExportMenuModel()
         this.onSave = options.onSave ? [...options.onSave] : []
         this.dialog = null
+        this.fileSelector = null
         this.isNew = !options.book
         this.book = this.isNew
             ? this.createEmptyBook()
@@ -185,9 +189,12 @@ export class BookDialog {
         return {
             book: this.book,
             documentList: this.documentList,
-            citationStyles: this.options.citationStyles ?? [],
+            citationStyles: this.options.citationStyles ?? {},
             bookStyleList: this.options.exportContext?.bookStyles ?? [],
-            imageDB: this.imageDB()
+            imageDB: this.imageDB(),
+            canPickChapters: Boolean(this.options.backend.pickChapters),
+            canOpenChapters: Boolean(this.options.backend.openChapter),
+            chapterCatalog: this.options.chapterCatalog !== false
         }
     }
 
@@ -228,6 +235,87 @@ export class BookDialog {
         })
     }
 
+    /**
+     * The dialog's buttons, from the host's `buttons` option or the classic
+     * default row (Export dropdown, Save, Cancel -- or Close for a read-only
+     * book).
+     */
+    buildButtons(): DialogButtonSpec[] {
+        const specs = this.options.buttons ?? this.defaultButtons()
+        return specs.map(spec => {
+            if (spec.type) {
+                return {type: spec.type}
+            }
+            return {
+                text: spec.text,
+                classes: spec.classes ?? "fw-dark",
+                icon: spec.icon,
+                dropdown: spec.dropdown,
+                click: (event?: Event) => this.runButton(spec, event)
+            }
+        })
+    }
+
+    /** The classic button row, used when the host supplies none. */
+    defaultButtons(): BookDialogButton[] {
+        if (this.readOnly()) {
+            return [{type: "close"}]
+        }
+        const specs: BookDialogButton[] = []
+        if (this.options.exportContext) {
+            specs.push({
+                text: gettext("Export"),
+                dropdown: true,
+                keepOpen: true,
+                click: (dialog, event) => dialog.openExportMenu(event)
+            })
+        }
+        specs.push({text: gettext("Save"), click: dialog => dialog.saveBook()})
+        specs.push({type: "cancel"})
+        return specs
+    }
+
+    /** Run a button's action, closing the dialog unless it wants to stay. */
+    runButton(spec: BookDialogButton, event?: Event): unknown {
+        const result = spec.click?.(this, event)
+        const close = () => {
+            if (!spec.keepOpen) {
+                this.dialog?.close()
+            }
+        }
+        if (result instanceof Promise) {
+            return result.then(close)
+        }
+        close()
+        return result
+    }
+
+    /**
+     * Open the export dropdown menu at the position of the triggering event.
+     *
+     * Exposed for hosts that build their own button row: the Export button
+     * is just a dropdown-styled button whose click calls this. Does nothing
+     * when no export context was given.
+     */
+    openExportMenu(event?: Event): unknown {
+        if (!this.options.exportContext) {
+            return undefined
+        }
+        const mouseEvent = event as MouseEvent
+        const contentMenu = new ContentMenu({
+            page: {
+                saveBook: () => this.saveBook(),
+                book: this.book,
+                documentList: this.documentList,
+                context: this.options.exportContext
+            },
+            menu: this.exportMenu,
+            menuPos: {X: mouseEvent.pageX, Y: mouseEvent.pageY},
+            width: 250
+        })
+        return contentMenu.open()
+    }
+
     /** Render and open the dialog. */
     open(): void {
         const title = this.isNew ? gettext("Create Book") : gettext("Edit Book")
@@ -237,48 +325,16 @@ export class BookDialog {
             bookInfo: this.bookInfo()
         })
 
-        const buttons: DialogButtonSpec[] = []
-        if (this.options.exportContext) {
-            buttons.push({
-                text: gettext("Export"),
-                dropdown: true,
-                classes: "fw-dark",
-                click: (event?: Event) => {
-                    const mouseEvent = event as MouseEvent
-                    const contentMenu = new ContentMenu({
-                        page: {
-                            saveBook: () => this.saveBook(),
-                            book: this.book,
-                            documentList: this.documentList,
-                            context: this.options.exportContext
-                        },
-                        menu: this.exportMenu,
-                        menuPos: {X: mouseEvent.pageX, Y: mouseEvent.pageY},
-                        width: 250
-                    })
-                    return contentMenu.open()
-                }
-            })
-        }
-        if (!this.readOnly()) {
-            buttons.push({
-                text: gettext("Submit"),
-                classes: "fw-dark",
-                click: () => {
-                    return this.saveBook().then(() => dialog.close())
-                }
-            })
-            buttons.push({type: "cancel"})
-        } else {
-            buttons.push({type: "close"})
-        }
-
         const dialog = new Dialog({
             width: 840,
             height: 520,
             title,
             body,
-            buttons
+            buttons: this.buildButtons(),
+            fullScreen: this.options.fullScreen,
+            canClose: this.options.canClose,
+            canEscape: this.options.canEscape,
+            ...(this.options.onClose ? {onClose: this.options.onClose} : {})
         })
         dialog.open()
         this.dialog = dialog
@@ -291,18 +347,8 @@ export class BookDialog {
                 }
             })
 
-        let fileSelector: FileSelector | undefined
         if (!this.readOnly()) {
-            fileSelector = new FileSelector({
-                dom: dialog.dialogEl.querySelector<HTMLElement>(
-                    "#book-document-list"
-                )!,
-                files: this.documentList as unknown as FileSelectorFiles,
-                multiSelect: true,
-                selectFolders: false
-            })
-            fileSelector.init()
-
+            this.refreshFileSelector()
             this.bindTemplateInput(
                 dialog,
                 "input-docx-template",
@@ -359,7 +405,7 @@ export class BookDialog {
             })
 
         dialog.dialogEl.addEventListener("click", event =>
-            this.handleDialogClick(event, fileSelector)
+            this.handleDialogClick(event)
         )
 
         const citationStyleSelect = dialog.dialogEl.querySelector<HTMLSelectElement>(
@@ -446,6 +492,43 @@ export class BookDialog {
         if (row) {
             row.innerHTML = html
         }
+    }
+
+    /**
+     * (Re-)build the chapters tab's file selector from the document list.
+     *
+     * Hosts can extend the list after the dialog opened -- the desktop adds
+     * the files the user picked through its native file dialog -- so the
+     * selector is rebuilt rather than created only in `open()`.
+     */
+    refreshFileSelector(): void {
+        if (this.readOnly() || !this.dialog) {
+            return
+        }
+        const dom = this.dialog.dialogEl.querySelector<HTMLElement>(
+            "#book-document-list"
+        )
+        if (!dom) {
+            return
+        }
+        this.fileSelector = new FileSelector({
+            dom,
+            files: this.documentList as unknown as FileSelectorFiles,
+            multiSelect: true,
+            selectFolders: false
+        })
+        this.fileSelector.init()
+    }
+
+    /**
+     * Replace the document list the dialog's catalog and chapter rows read
+     * from, and refresh the affected parts of the dialog.
+     */
+    setDocumentList(documentList: BookDialogOptions["documentList"]): void {
+        this.documentList = documentList
+        this.refreshFileSelector()
+        this.refreshChapterList()
+        this.updateChapterNotice()
     }
 
     /** Re-render the chapter list. */
@@ -551,15 +634,20 @@ export class BookDialog {
     }
 
     /**
-     * Persist the edited book through the host and notify the save callbacks.
+     * Read the form fields into the book record without persisting.
      *
-     * Reads the metadata form fields back into the book, so it must only be
-     * called while the dialog is open.
+     * Chapter and part edits live in `this.book` directly, but the metadata
+     * and settings fields are only read back on save. Hosts that write the
+     * book from outside the dialog -- a window-close flush, a Save-as in the
+     * host UI -- call this first so the edited state is complete. A no-op
+     * when the dialog is closed or the book is read-only.
+     *
+     * @returns The dialog's book record with the form fields applied.
      */
-    saveBook(): Promise<unknown> {
+    syncEdits(): Book {
         const book = this.book
-        if (this.readOnly()) {
-            return Promise.resolve()
+        if (this.readOnly() || !this.dialog) {
+            return book
         }
         const root = this.root()
         book.title = fieldValue(root, "book-title")
@@ -582,11 +670,33 @@ export class BookDialog {
         )
         book.settings.language = fieldValue(root, "book-settings-language")
         book.path = (this.isNew ? "" : (book.path ?? "")) || this.options.path || ""
+        return book
+    }
+
+    /**
+     * Persist the edited book through the host and notify the save callbacks.
+     *
+     * Must only be called while the dialog is open.
+     */
+    saveBook(): Promise<unknown> {
+        const book = this.book
+        if (this.readOnly()) {
+            return Promise.resolve()
+        }
+        this.syncEdits()
 
         return this.options.backend
             .saveBook(book)
             .catch((error: unknown) => {
-                addAlert("error", gettext("The book could not be saved"))
+                // Include the cause: a bare "could not be saved" leaves hosts
+                // (and users) with no way to tell a cancelled picker from a
+                // failed write.
+                addAlert(
+                    "error",
+                    `${gettext("The book could not be saved")}: ${
+                        error instanceof Error ? error.message : String(error)
+                    }`
+                )
                 throw error
             })
             .then(saved => {
@@ -641,19 +751,34 @@ export class BookDialog {
         this.updateChapterNotice()
     }
 
+    /**
+     * Add a document as the book's next chapter.
+     *
+     * External documents (standalone files the host picked) carry their file
+     * location onto the chapter, so file-based hosts can re-resolve the live
+     * document on the next load.
+     */
+    addChapter(doc: DocumentListEntry): void {
+        if (this.book.chapters.some(chapter => chapter.text === doc.id)) {
+            return
+        }
+        const chapNums = this.book.chapters.map(chapter => chapter.number)
+        const number = chapNums.length ? Math.max(...chapNums) + 1 : 1
+        this.book.chapters.push({
+            text: doc.id as number,
+            number,
+            part: "",
+            ...(doc.external && doc.path ? {path: doc.path} : {})
+        })
+    }
+
     /** Append the documents selected in the file selector as new chapters. */
     addChapters(fileSelector: FileSelector): void {
         fileSelector.selected.forEach(entry => {
-            const chapNums = this.book.chapters.map(chapter => chapter.number),
-                number = chapNums.length ? Math.max(...chapNums) + 1 : 1
             if (entry.type !== "file") {
                 return
             }
-            this.book.chapters.push({
-                text: entry.file.id as number,
-                number,
-                part: ""
-            })
+            this.addChapter(entry.file as unknown as DocumentListEntry)
         })
         fileSelector.deselectAll()
 
@@ -661,8 +786,37 @@ export class BookDialog {
         this.updateChapterNotice()
     }
 
+    /**
+     * Let the user pick standalone documents through the host and add them as
+     * chapters.
+     *
+     * The host returns stub entries for the picked files; the dialog merges
+     * them into the catalog so they show up in the file selector, and adds
+     * each as a chapter. The chapter content itself is resolved by the host
+     * when the book is saved or exported.
+     */
+    addPickedChapters(): Promise<void> {
+        if (!this.options.backend.pickChapters) {
+            return Promise.resolve()
+        }
+        return this.options.backend.pickChapters().then(picked => {
+            if (!picked.length) {
+                return
+            }
+            picked.forEach(doc => {
+                if (!this.documentList.some(existing => existing.id === doc.id)) {
+                    this.documentList.push(doc)
+                }
+                this.addChapter(doc)
+            })
+            this.refreshFileSelector()
+            this.refreshChapterList()
+            this.updateChapterNotice()
+        })
+    }
+
     /** Handle a click anywhere inside the dialog. */
-    handleDialogClick(event: Event, fileSelector?: FileSelector): void {
+    handleDialogClick(event: Event): void {
         const el: {target?: HTMLElement} = {}
         // `findTarget` fills `el.target` with the matching ancestor; all the
         // chapter/template rows carry their document id in a data attribute.
@@ -680,8 +834,22 @@ export class BookDialog {
                 this.removeChapter(clickedId())
                 break
             case findTarget(event, "#add-chapter", el):
-                this.addChapters(fileSelector!)
+                if (this.fileSelector) {
+                    this.addChapters(this.fileSelector)
+                }
                 break
+            case findTarget(event, "#add-chapter-file", el):
+                void this.addPickedChapters()
+                break
+            case findTarget(event, ".open-chapter", el): {
+                const chapter = this.book.chapters.find(
+                    candidate => candidate.text === clickedId()
+                )
+                if (chapter) {
+                    this.options.backend.openChapter?.(chapter)
+                }
+                break
+            }
             case findTarget(event, ".edit-chapter", el):
                 this.editChapterDialog(
                     this.book.chapters.find(

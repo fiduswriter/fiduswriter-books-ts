@@ -1,4 +1,5 @@
 export {FIDUSBOOK_VERSION} from "./schema/index.js"
+export {chapterIdFromPath} from "./ids.js"
 export type {
     Book,
     BookBaseMetadata,

@@ -335,9 +335,12 @@ export class HTMLBookExporter {
 
         contentItems = orderLinks(contentItems)
 
-        const language = LANGUAGES.find(
-            lang => lang[0] === this.book.settings.language
-        )?.[1]
+        const language =
+            LANGUAGES.find(
+                lang => lang[0] === this.book.settings.language
+            )?.[1] ??
+            this.book.settings.language ??
+            "en-US"
 
         this.textFiles.push({
             filename: "index.html",

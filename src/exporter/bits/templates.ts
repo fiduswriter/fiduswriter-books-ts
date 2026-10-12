@@ -24,7 +24,7 @@ export const bitsTemplate = (
                 ? `<content-version>${escapeText(book.metadata.version)}</content-version>`
                 : ""
         }
-        <content-language>${book.settings.language.split("-")[0]}</content-language>
+        <content-language>${(book.settings.language || "en-US").split("-")[0]}</content-language>
         ${
             book.metadata.description?.length
                 ? `<abstract>

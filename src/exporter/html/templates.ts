@@ -25,7 +25,7 @@ export const htmlBookExportTemplate = ({
     settings
 }: HtmlBookExportParams) =>
     `<!DOCTYPE html>
-<html lang="${settings.language.split("-")[0]}">
+<html lang="${(settings.language || "en-US").split("-")[0]}">
     <head>
         <meta charset="UTF-8">
         <title>${title}</title>
@@ -202,7 +202,7 @@ export const htmlBookIndexTemplate = ({
     multiDoc
 }: HtmlBookIndexParams) =>
     `<!DOCTYPE html>
-<html lang="${book.settings.language.split("-")[0]}">
+<html lang="${(book.settings.language || "en-US").split("-")[0]}">
     <head>
         <meta charset="utf-8"></meta>
         ${
@@ -243,7 +243,7 @@ export const singleFileHTMLBookTemplate = ({
     styleSheets,
     settings
 }: Record<string, unknown>) => `<!DOCTYPE html>
-<html lang="${(settings as Record<string, string>).language.split("-")[0]}">
+<html lang="${((settings as Record<string, string>).language || "en-US").split("-")[0]}">
     <head>
         <meta charset="UTF-8">
         <title>${title}</title>

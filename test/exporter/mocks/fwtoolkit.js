@@ -19,6 +19,106 @@ const readFixture = name => {
 
 export const addAlert = (_type, _message) => {}
 
+/** Progress handle; the dialog only ever closes its tasks in tests. */
+export const addProgress = () => ({
+    update: () => {},
+    close: () => {}
+})
+
+/** Ancestor matching, close to the real helper's contract. */
+export const findTarget = (event, selector, el) => {
+    const target = event.target
+    if (!(target instanceof Element)) {
+        return false
+    }
+    const match = target.closest(selector)
+    if (match) {
+        el.target = match
+        return true
+    }
+    return false
+}
+
+/**
+ * Minimal stand-in for fwtoolkit's Dialog: renders the title, body and a
+ * button pane with real <button> elements, so dialog tests can drive the
+ * actual button click wiring (findTarget → button.click handler).
+ */
+export class Dialog {
+    constructor(options) {
+        this.options = options
+        this.dialogEl = null
+        this.opened = false
+    }
+
+    open() {
+        this.opened = true
+        const wrapper = document.createElement("div")
+        wrapper.className = "fw-dialog-wrapper"
+        const pane = document.createElement("div")
+        pane.className = "fw-dialog-buttonpane"
+        const set = document.createElement("div")
+        set.className = "fw-dialog-buttonset"
+        for (const button of this.options.buttons ?? []) {
+            const el = document.createElement("button")
+            el.type = "button"
+            el.className = button.classes ?? "fw-light"
+            el.textContent = button.text ?? button.type ?? ""
+            if (button.dropdown) {
+                const caret = document.createElement("i")
+                caret.className = "fa fa-caret-down"
+                el.appendChild(caret)
+            }
+            set.appendChild(el)
+        }
+        pane.appendChild(set)
+        const content = document.createElement("div")
+        content.className = "fw-dialog-content"
+        content.innerHTML = this.options.body ?? ""
+        wrapper.append(content, pane)
+        document.body.appendChild(wrapper)
+        this.dialogEl = wrapper
+
+        // Wire the button clicks the way the real Dialog does: a click on
+        // any button in the pane invokes the matching spec's handler.
+        pane.addEventListener("click", event => {
+            const target = event.target.closest("button")
+            if (!target) {
+                return
+            }
+            const buttons = this.options.buttons ?? []
+            const index = Array.from(set.children).indexOf(target)
+            const button = buttons[index]
+            if (button?.click) {
+                button.click(event)
+            }
+        })
+    }
+
+    close() {
+        this.dialogEl?.remove()
+        this.dialogEl = null
+        this.opened = false
+    }
+}
+
+export class ContentMenu {}
+
+/** Enough of the file selector for dialog tests to open. */
+export class FileSelector {
+    constructor({dom, files}) {
+        this.dom = dom
+        this.files = files
+        this.selected = []
+    }
+
+    init() {}
+
+    deselectAll() {
+        this.selected = []
+    }
+}
+
 export const get = url => {
     let buffer = Buffer.from([])
     if (typeof url === "string") {

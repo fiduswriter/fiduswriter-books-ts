@@ -179,3 +179,169 @@ describe("Native book exporter chapter identity", () => {
         ])
     })
 })
+
+describe("External chapter references", () => {
+    /** A stub document-list entry for a chapter that lives in a file. */
+    function externalEntry(id: number, path: string): Record<string, unknown> {
+        return {
+            id,
+            title: "",
+            path,
+            external: true,
+            missing: true,
+            content: {type: "doc", content: []},
+            settings: {},
+            comments: {},
+            images: {},
+            bibliography: {}
+        }
+    }
+
+    it("persists each chapter's file path in book.json", async () => {
+        const book = makeBook()
+        book.chapters[0].path = "/docs/chapter-one.fidus"
+        const documentList = makeDocumentList()
+        ;(
+            documentList[0] as unknown as Record<string, unknown>
+        ).external = true
+
+        const blob = await new NativeBookExporter(
+            schema,
+            book,
+            user,
+            documentList,
+            new Date()
+        ).init()
+
+        const zip = await JSZip.loadAsync(await blob.arrayBuffer())
+        const bookJson = JSON.parse(
+            (await zip.file("book.json")?.async("string")) as string
+        )
+        expect(bookJson.chapters[0].path).toBe("/docs/chapter-one.fidus")
+        expect(bookJson.chapters[1].path).toBeUndefined()
+    })
+
+    it("leaves chapters without a readable source out of the container", async () => {
+        const book = makeBook()
+        book.chapters[1].path = "/docs/gone.fidus"
+        const documentList = [
+            makeDocumentList()[0],
+            externalEntry(2, "/docs/gone.fidus")
+        ] as never
+
+        const blob = await new NativeBookExporter(
+            schema,
+            book,
+            user,
+            documentList,
+            new Date()
+        ).init()
+        // Chapter 1 was exported; without the skip the empty stub document
+        // would have been exported instead of leaving the chapter out.
+        expect(blob.size).toBeGreaterThan(0)
+
+        const zip = await JSZip.loadAsync(await blob.arrayBuffer())
+        expect(zip.files["chapters/0/document.json"]).toBeDefined()
+        expect(zip.files["chapters/1/document.json"]).toBeUndefined()
+
+        // The chapter reference survives in book.json so the host can re-link.
+        const bookJson = JSON.parse(
+            (await zip.file("book.json")?.async("string")) as string
+        )
+        expect(bookJson.chapters).toHaveLength(2)
+        expect(bookJson.chapters[1].path).toBe("/docs/gone.fidus")
+    })
+
+    it("reads chapters with a path but no embedded data as missing stubs", async () => {
+        // A container whose second chapter is a file reference only.
+        const book = makeBook()
+        book.chapters[1].path = "/docs/chapter-two.fidus"
+        const documentList = [
+            makeDocumentList()[0],
+            externalEntry(2, "/docs/chapter-two.fidus")
+        ] as never
+        const exporter = new NativeBookExporter(
+            schema,
+            book,
+            user,
+            documentList,
+            new Date()
+        )
+        const full = await exporter.init()
+
+        // Strip the embedded data of the path-referencing chapter, as a
+        // container looks when the host saved references without snapshots.
+        const JSZipMod = await import("jszip")
+        const zip = await JSZipMod.default.loadAsync(await full.arrayBuffer())
+        zip.remove("chapters/1/document.json")
+        zip.remove("chapters/1/images.json")
+        zip.remove("chapters/1/bibliography.json")
+        const stripped = await zip.generateAsync({type: "arraybuffer"})
+
+        const {book: readBook, documentList: readList} =
+            await new FidusBookReader().read(stripped)
+
+        expect(readList).toHaveLength(2)
+        const stub = readList[1] as unknown as Record<string, unknown>
+        expect(stub.external).toBe(true)
+        expect(stub.missing).toBe(true)
+        expect(stub.path).toBe("/docs/chapter-two.fidus")
+        expect(stub.id).toBe(2)
+        // book.json is passed through unchanged, so the host can re-resolve.
+        expect(
+            (readBook.chapters as Array<{path?: string}>)[1].path
+        ).toBe("/docs/chapter-two.fidus")
+    })
+
+    it("still rejects containers whose plain chapters lack embedded data", async () => {
+        const book = makeBook()
+        const documentList = makeDocumentList()
+        const blob = await new NativeBookExporter(
+            schema,
+            book,
+            user,
+            documentList,
+            new Date()
+        ).init()
+
+        const JSZipMod = await import("jszip")
+        const zip = await JSZipMod.default.loadAsync(await blob.arrayBuffer())
+        zip.remove("chapters/1/document.json")
+        zip.remove("chapters/1/images.json")
+        zip.remove("chapters/1/bibliography.json")
+        const stripped = await zip.generateAsync({type: "arraybuffer"})
+
+        await expect(new FidusBookReader().read(stripped)).rejects.toThrow(
+            "Missing chapter data"
+        )
+    })
+})
+
+describe("Chapter-less books", () => {
+    it("serializes an empty book as a valid container", async () => {
+        const book = makeBook()
+        book.chapters = []
+
+        const blob = await new NativeBookExporter(
+            schema,
+            book,
+            user,
+            [],
+            new Date()
+        ).init()
+        expect(blob.size).toBeGreaterThan(0)
+
+        const zip = await JSZip.loadAsync(await blob.arrayBuffer())
+        expect(zip.files["book.json"]).toBeDefined()
+        const bookJson = JSON.parse(
+            (await zip.file("book.json")?.async("string")) as string
+        )
+        expect(bookJson.chapters).toEqual([])
+
+        const {book: readBook, documentList} =
+            await new FidusBookReader().read(await blob.arrayBuffer())
+        expect(readBook.title).toBe("Sample Book")
+        expect(readBook.chapters).toEqual([])
+        expect(documentList).toEqual([])
+    })
+})

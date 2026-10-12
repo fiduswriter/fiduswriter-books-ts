@@ -104,9 +104,13 @@ export async function readFidusBookFile(
         textFiles.find(f => f.filename === "book.json")?.content as string
     ) as Record<string, unknown>
 
-    const sortedChapters = [...(bookData.chapters as Array<{chapter_index: number}>)].sort(
-        (a, b) => a.chapter_index - b.chapter_index
-    )
+    const sortedChapters = [
+        ...(bookData.chapters as Array<{
+            chapter_index: number
+            text?: number
+            path?: string
+        }>)
+    ].sort((a, b) => a.chapter_index - b.chapter_index)
 
     const documentList: DocumentListEntry[] = []
 
@@ -124,6 +128,24 @@ export async function readFidusBookFile(
         )
 
         if (!docFile || !imagesFile || !bibFile) {
+            if (chapter.path) {
+                // The chapter is a reference to a standalone `.fidus` file and
+                // carries no snapshot in this container. The host resolves the
+                // live file; the entry is a placeholder until then.
+                documentList.push({
+                    id: chapter.text ?? 0,
+                    title: "",
+                    path: chapter.path,
+                    external: true,
+                    missing: true,
+                    content: {type: "doc", content: []},
+                    settings: {},
+                    comments: {},
+                    images: {},
+                    bibliography: {}
+                } as DocumentListEntry)
+                continue
+            }
             throw new Error(`Missing chapter data for index ${ci}`)
         }
 

@@ -199,7 +199,8 @@ export const bookBibliographyDataTemplate = ({
     citationStyles
 }: {
     book: Book
-    citationStyles: Array<{id: string; title?: string}>
+    /** Citation style catalog: style id → human-readable title. */
+    citationStyles: Record<string, string>
 }) =>
     `<table class="fw-dialog-table">
         <tbody>
@@ -550,10 +551,16 @@ export const bookDialogTemplate = ({
 /** A template for the chapter pane of the book dialog. */
 export const bookDialogChaptersTemplate = ({
     book,
-    documentList
+    documentList,
+    canPickChapters,
+    canOpenChapters,
+    chapterCatalog
 }: {
     book: Book
     documentList: DocumentListEntry[]
+    canPickChapters?: boolean
+    canOpenChapters?: boolean
+    chapterCatalog?: boolean
 }) => {
     const hasEncryptedChapters = book.chapters.some(
         chapter => documentList.find(doc => doc.id === chapter.text)?.e2ee
@@ -561,13 +568,27 @@ export const bookDialogChaptersTemplate = ({
     return `${
         isReadOnly(book)
             ? ""
-            : `<div class="fw-ar-container">
+            : chapterCatalog
+              ? `<div class="fw-ar-container">
             <h3 class="fw-green-title">${gettext("My documents")}</h3>
             <div id="book-document-list"></div>
         </div>
         <span id="add-chapter" class="fw-button fw-large fw-square fw-light fw-ar-button">
             <i class="fas fa-caret-right"></i>
+        </span>${
+            canPickChapters
+                ? `<span id="add-chapter-file" class="fw-button fw-large fw-square fw-light fw-ar-button" title="${gettext("Pick document files and add them as chapters")}">
+            <i class="fas fa-file-circle-plus"></i>
         </span>`
+                : ""
+        }`
+              : canPickChapters
+                ? `<div class="fw-ar-container">
+            <span id="add-chapter-file" class="fw-button fw-light">
+                <i class="fas fa-plus"></i>&nbsp;${gettext("Add chapters from files")}
+            </span>
+        </div>`
+                : ""
     }
     <div class="fw-ar-container">
         <h3 class="fw-green-title">${gettext("Book chapters")}</h3>
@@ -582,7 +603,8 @@ export const bookDialogChaptersTemplate = ({
             <tbody class="fw-data-table-body fw-small" id="book-chapter-list">
                 ${bookChapterListTemplate({
                     book,
-                    documentList
+                    documentList,
+                    canOpenChapters
                 })}
             </tbody>
         </table>
@@ -600,10 +622,12 @@ export const bookDialogChaptersTemplate = ({
 /** A template for the chapter list on the chapter pane the book dialog. */
 export const bookChapterListTemplate = ({
     book,
-    documentList
+    documentList,
+    canOpenChapters
 }: {
     book: Book
     documentList: DocumentListEntry[]
+    canOpenChapters?: boolean
 }) => {
     let partCounter = 1
     return book.chapters
@@ -626,6 +650,7 @@ export const bookChapterListTemplate = ({
                 }>
                 <span class="fw-inline">
                     ${doc ? "" : '<i class="fas fa-minus-circle"></i>'}
+                    ${doc && doc.missing ? `<i class="fas fa-triangle-exclamation missing-chapter-icon" title="${gettext("The chapter's source file could not be found")}"></i>` : ""}
                     ${doc && doc.e2ee ? `<i class="fas fa-lock e2ee-chapter-icon" title="${gettext("Encrypted document")}"></i>` : ""}
                     ${
                         (chapter.part ?? "").length
@@ -639,9 +664,15 @@ export const bookChapterListTemplate = ({
                     ${chapter.number}
                     ${
                         doc
-                            ? doc.title
-                                ? doc.title
-                                : gettext("Untitled")
+                            ? `<span${
+                                  canOpenChapters && !doc.missing
+                                      ? ` class="open-chapter fw-link-text" data-id="${chapter.text}" title="${gettext("Open document")}"`
+                                      : ""
+                              }>${
+                                  doc.title
+                                      ? escapeText(doc.title)
+                                      : gettext("Untitled")
+                              }</span>`
                             : gettext("No access")
                     }
                 </span>
