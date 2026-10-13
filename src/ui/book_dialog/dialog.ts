@@ -304,7 +304,7 @@ export class BookDialog {
         const mouseEvent = event as MouseEvent
         const contentMenu = new ContentMenu({
             page: {
-                saveBook: () => this.saveBook(),
+                saveBook: (exportId?: string) => this.saveBook(exportId),
                 book: this.book,
                 documentList: this.documentList,
                 context: this.options.exportContext
@@ -678,7 +678,7 @@ export class BookDialog {
      *
      * Must only be called while the dialog is open.
      */
-    saveBook(): Promise<unknown> {
+    saveBook(exportId?: string): Promise<unknown> {
         const book = this.book
         if (this.readOnly()) {
             return Promise.resolve()
@@ -686,7 +686,7 @@ export class BookDialog {
         this.syncEdits()
 
         return this.options.backend
-            .saveBook(book)
+            .saveBook(book, exportId)
             .catch((error: unknown) => {
                 // Include the cause: a bare "could not be saved" leaves hosts
                 // (and users) with no way to tell a cancelled picker from a
@@ -699,13 +699,20 @@ export class BookDialog {
                 )
                 throw error
             })
-            .then(saved => {
+            .then(async saved => {
+                if (!saved) {
+                    // The host handed the session to a new window (an
+                    // untitled book promoted to its real path) and resumes
+                    // the triggering export there; nothing to update here.
+                    return false
+                }
                 this.book = Object.assign(book, {
                     id: saved.id ?? book.id,
                     added: saved.added ?? book.added,
                     updated: saved.updated ?? book.updated
                 })
-                return Promise.all(this.onSave.map(method => method(this.book)))
+                await Promise.all(this.onSave.map(method => method(this.book)))
+                return true
             })
     }
 

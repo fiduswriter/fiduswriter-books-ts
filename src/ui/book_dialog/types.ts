@@ -101,10 +101,20 @@ export interface BookDialogBackend {
      * @param book - The book as edited in the dialog. The dialog hands over
      *   its working copy, so hosts must not rely on the object staying
      *   unmodified afterwards.
+     * @param exportId - Set when the save precedes a book export (the export
+     *   menu passes the id of the export that triggered it). Hosts whose
+     *   first save hands the session over to a new window (an untitled book
+     *   being promoted to a real path) use it to resume that export in the
+     *   new window instead of dropping it; hosts without such a flow ignore
+     *   it.
      * @returns A promise resolving to the stored book record. Its `id`,
      *   `added` and `updated` fields are copied back onto the dialog's book.
+     *   Resolve to `false` when the save handed the session over to a new
+     *   window (an untitled book promoted to its real path) and the export
+     *   that triggered it is resumed there — the caller must then not run
+     *   the export in this window.
      */
-    saveBook(book: Book): Promise<Book>
+    saveBook(book: Book, exportId?: string): Promise<Book | false>
 
     /**
      * Open the host's image picker so the user can choose a book cover.

@@ -39,4 +39,59 @@ describe("BITS book exporter", () => {
         expect(manuscript).toContain("Chapter One")
         expect(manuscript).toContain("Chapter Two")
     })
+
+    it("names data-URL images stably and dates entries sanely", async () => {
+        const book = makeBook()
+        const documentList = makeDocumentList()
+        // A figure referencing an image stored as a data URL, as the desktop
+        // holds it after parseFidusBlob. The base64 payload contains "/";
+        // the old `split("/").pop()` naming used the tail ("wAAAA...") as
+        // the file name.
+        const doc = documentList[0]
+        const figure = {
+            type: "figure",
+            attrs: {category: "figure", caption: false, id: false},
+            content: [{type: "image", attrs: {image: 7}}]
+        }
+        ;(doc.content as {content: unknown[]}).content.push(figure)
+        doc.images = {
+            7: {
+                id: 7,
+                title: "Pixel",
+                image: "data:image/png;base64,iVBOR/wAAAUAAAAABJRU5ErkJggg==",
+                file_type: "image/png",
+                width: 1,
+                height: 1
+            }
+        }
+
+        const updated = Math.floor(Date.now() / 1000)
+        const exporter = new BITSBookExporter(
+            schema,
+            fakeCSL,
+            book,
+            user,
+            documentList,
+            updated
+        )
+        const blob = (await exporter.init()) as Blob
+        const zip = await JSZip.loadAsync(await blob.arrayBuffer())
+
+        const names = Object.keys(zip.files)
+        console.log("ZIP NAMES:", names)
+        expect(names).toContain("image-7.png")
+        for (const name of names) {
+            expect(name).not.toContain("=")
+        }
+
+        // Zip entries carry the book's `updated` date: a 0/garbage value
+        // produced 1970 (misread by unzip tools as 2098).
+        const manuscriptDate = zip.files["manuscript.xml"].date
+        const year = manuscriptDate.getUTCFullYear()
+        expect(year).toBeGreaterThan(2020)
+        expect(year).toBeLessThan(2100)
+        expect(
+            Math.abs(manuscriptDate.getTime() / 1000 - updated)
+        ).toBeLessThan(120)
+    })
 })

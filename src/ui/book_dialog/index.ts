@@ -61,9 +61,11 @@ export {
     exportODT,
     exportPrint,
     exportSingleHTML,
-    runBookExport
+    runBookExport,
+    runBookExportAction
 } from "./export.js"
 export type {
+    BookExportId,
     BookExportMenu,
     BookExportMenuArgs,
     BookExporterLike

@@ -7,7 +7,11 @@ import pretty from "../pretty.js"
 import {JATSExporterConverter} from "@fiduswriter/document/exporter/jats/convert"
 import {darManifest} from "@fiduswriter/document/exporter/jats/templates"
 import type {ProgressCallback} from "@fiduswriter/document/exporter/tools/progress"
-import {createSlug} from "@fiduswriter/document/exporter/tools/file"
+import {
+    createSlug,
+    getImageDBEntryFilename
+} from "@fiduswriter/document/exporter/tools/file"
+import type {ImageDBEntry} from "@fiduswriter/document"
 import {ZipFileCreator} from "fwtoolkit/file/zip"
 import {gettext} from "fwtoolkit"
 
@@ -79,7 +83,7 @@ export class BITSBookExporter {
         this.progressCallback?.(gettext("Preparing BITS book..."), 10)
         this.book.chapters.sort((a, b) => (a.number > b.number ? 1 : -1))
 
-        const imageDict: Record<string, {image: string; title?: string}> = {}
+        const imageDict: Record<string, ImageDBEntry> = {}
         return Promise.all(
             this.book.chapters.map(chapter => {
                 const doc = this.docList.find(d => d.id === chapter.text)
@@ -96,10 +100,9 @@ export class BITSBookExporter {
                 return converter.init().then(({front, body, back, imageIds}) => {
                     imageIds.forEach(
                         (imageId: string | number) =>
-                            (imageDict[imageId] = doc.images?.[imageId] as {
-                                image: string
-                                title?: string
-                            })
+                            (imageDict[imageId] = doc.images?.[
+                                imageId
+                            ] as ImageDBEntry)
                     )
                     return {front, body, back}
                 })
@@ -109,14 +112,21 @@ export class BITSBookExporter {
 
     createFiles(
         chapters: Array<{front: string; body: string; back: string}>,
-        imageDict: Record<string, {image: string; title?: string}>
+        imageDict: Record<string, ImageDBEntry>
     ): Promise<Blob> {
         this.progressCallback?.(gettext("Assembling BITS book..."), 80)
-        const images = Object.values(imageDict).map(image => ({
-            filename: image.image.split("/").pop()?.split("?")[0] || "",
-            url: image.image.split("?")[0],
-            title: image.title || ""
-        }))
+        const images = Object.entries(imageDict)
+            .filter((entry): entry is [string, ImageDBEntry] =>
+                Boolean(entry[1]?.image)
+            )
+            .map(([id, image]) => ({
+                // Data URL images (the desktop stores them that way) have no
+                // usable last path segment: the base64 payload can contain
+                // "/" and a random tail became the file name.
+                filename: getImageDBEntryFilename(image, id),
+                url: (image.image as string).split("?")[0],
+                title: image.title || ""
+            }))
 
         this.zipFileName = `${createSlug(this.book.title)}.bits.zip`
 

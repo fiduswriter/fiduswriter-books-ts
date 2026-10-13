@@ -1,3 +1,4 @@
+import type {ImageDBEntry} from "@fiduswriter/document"
 /**
  * LaTeX book exporter.
  */
@@ -8,7 +9,10 @@ import type {ProgressCallback} from "@fiduswriter/document/exporter/tools/progre
 import {BibLatexExporter} from "bibliojson"
 import {LatexExporterConvert} from "@fiduswriter/document/exporter/latex/convert"
 import {removeHidden} from "@fiduswriter/document/exporter/tools/doc_content"
-import {createSlug} from "@fiduswriter/document/exporter/tools/file"
+import {
+    createSlug,
+    getImageDBEntryFilename
+} from "@fiduswriter/document/exporter/tools/file"
 import {ZipFileCreator} from "fwtoolkit/file/zip"
 import {gettext} from "fwtoolkit"
 
@@ -125,7 +129,13 @@ export class LatexBookExporter {
             const image = combinedImages[id]
             if (image?.image) {
                 this.httpFiles.push({
-                    filename: image.image.split("/").pop() || id,
+                    // Data URLs have no usable last path segment (the base64
+                    // payload may contain "/"); the helper derives a stable
+                    // name.
+                    filename: getImageDBEntryFilename(
+                        image as ImageDBEntry,
+                        id
+                    ),
                     url: image.image
                 })
             }

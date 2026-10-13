@@ -1,10 +1,14 @@
+import type {ImageDBEntry} from "@fiduswriter/document"
 /**
  * Native `.fidusbook` exporter.
  */
 
 import type {Schema} from "prosemirror-model"
 import {ShrinkFidus} from "@fiduswriter/document/exporter/native/shrink"
-import {createSlug} from "@fiduswriter/document/exporter/tools/file"
+import {
+    createSlug,
+    getImageDBEntryFilename
+} from "@fiduswriter/document/exporter/tools/file"
 import {ZipFileCreator} from "fwtoolkit/file/zip"
 import {gettext} from "fwtoolkit"
 
@@ -116,7 +120,10 @@ export class NativeBookExporter {
         if (this.book.cover_image_data) {
             const coverImage = this.book.cover_image_data
             const imageUrl = (coverImage.image || "").split("?")[0]
-            const filename = imageUrl.split("/").pop() || "cover"
+            const filename = getImageDBEntryFilename(
+                coverImage as ImageDBEntry,
+                "cover"
+            )
             bookData.cover_image = {
                 title: coverImage.title || "",
                 checksum: coverImage.checksum || "",

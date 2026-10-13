@@ -1,3 +1,4 @@
+import type {ImageDBEntry} from "@fiduswriter/document"
 /**
  * EPUB book exporter.
  */
@@ -8,7 +9,10 @@ import type {HTMLExportMetadata} from "@fiduswriter/document/exporter/html/conve
 import {htmlExportTemplate} from "@fiduswriter/document/exporter/html/templates"
 import type {ProgressCallback} from "@fiduswriter/document/exporter/tools/progress"
 import {removeHidden} from "@fiduswriter/document/exporter/tools/doc_content"
-import {createSlug} from "@fiduswriter/document/exporter/tools/file"
+import {
+    createSlug,
+    getImageDBEntryFilename
+} from "@fiduswriter/document/exporter/tools/file"
 import {ZipFileCreator} from "fwtoolkit/file/zip"
 import {gettext, get, staticUrl} from "fwtoolkit"
 import pretty from "../pretty.js"
@@ -204,7 +208,10 @@ export class EpubBookExporter {
             if (coverImage?.image) {
                 this.images.push({
                     url: coverImage.image.split("?")[0],
-                    filename: coverImage.image.split("/").pop()?.split("?")[0] || "cover",
+                    filename: getImageDBEntryFilename(
+                        coverImage as ImageDBEntry,
+                        "cover"
+                    ),
                     coverImage: true
                 })
 
@@ -273,7 +280,10 @@ export class EpubBookExporter {
                             const image = doc.images?.[id]
                             if (image?.image && typeof image.image === "string") {
                                 this.images.push({
-                                    filename: `images/${image.image.split("/").pop()}`,
+                                    // Data URLs have no usable last path
+                                    // segment; the helper derives a stable
+                                    // name.
+                                    filename: `images/${getImageDBEntryFilename(image, id)}`,
                                     url: image.image
                                 })
                             }

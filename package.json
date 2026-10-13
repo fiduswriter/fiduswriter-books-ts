@@ -1,6 +1,6 @@
 {
     "name": "@fiduswriter/books-document",
-    "version": "0.1.30",
+    "version": "0.1.34",
     "description": "Fidus Writer book importers and exporters",
     "keywords": [
         "fiduswriter",
@@ -113,7 +113,7 @@
         "extract-i18n": "node scripts/extract-i18n.js"
     },
     "dependencies": {
-        "@fiduswriter/document": "^0.3.34",
+        "@fiduswriter/document": "^0.3.37",
         "bibliojson": "^4.1.0",
         "downloadjs": "^1.4.7",
         "fast-deep-equal": "^3.1.3",

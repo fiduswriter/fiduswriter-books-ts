@@ -88,6 +88,42 @@ export async function getMissingChapterData(
     await loader.loadChapters(docIds, documentList, schema, rawContent)
     await decryptE2EEChapters(book, documentList, schema, rawContent, e2ee)
 
+    // Chapter files read straight from disk (WebDAV/desktop hosts) or
+    // produced by importers may carry nodes without every schema attr filled
+    // in. Round-trip every chapter through the schema so exporters see
+    // exactly what the editor would have saved. Best-effort: a chapter whose
+    // content does not parse is left untouched, matching what exporters did
+    // with it before.
+    book.chapters.forEach(chapter => {
+        const doc = documentList.find(
+            doc => Number(doc.id) === Number(chapter.text)
+        )
+        if (
+            !doc ||
+            doc.missing ||
+            typeof doc.content !== "object" ||
+            !doc.content
+        ) {
+            return
+        }
+        try {
+            doc.content = schema.nodeFromJSON(
+                doc.content as Parameters<Schema["nodeFromJSON"]>[0]
+            ).toJSON()
+            if (doc.rawContent && typeof doc.rawContent === "object") {
+                doc.rawContent = schema.nodeFromJSON(
+                    doc.rawContent as Parameters<Schema["nodeFromJSON"]>[0]
+                ).toJSON()
+            }
+            doc.settings = {
+                ...doc.settings,
+                ...getSettings(doc.content as unknown as FidusDoc)
+            }
+        } catch {
+            // Leave the chapter as stored and let the exporter handle it.
+        }
+    })
+
     progressCallback?.(gettext("Chapter data loaded."), 50)
 }
 

@@ -1,3 +1,5 @@
+import type {ImageDBEntry} from "@fiduswriter/document"
+import {getImageDBEntryFilename} from "@fiduswriter/document/exporter/tools/file"
 import {LANGUAGES} from "@fiduswriter/document/schema/const"
 import {escapeText, localizeDate} from "fwtoolkit"
 import {mathliveOpfIncludes} from "@fiduswriter/document/mathlive/opf_includes"
@@ -33,7 +35,7 @@ export const epubBookCoverTemplate = ({
     </head>
     <body class="epub cover">
         <div id="cover">
-            <img src="${coverImage.image.split("/").pop()?.split("?")[0]}"
+            <img src="${getImageDBEntryFilename(coverImage as ImageDBEntry, "cover")}"
                 alt="${bookTerm("Cover image", book.settings.language)}"
                 title="${bookTerm("Cover image", book.settings.language)}"/>
         </div>

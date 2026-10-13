@@ -59,4 +59,73 @@ describe("FidusBookReader", () => {
         const notABook = new Uint8Array([1, 2, 3, 4]).buffer
         await expect(readFidusBookFile(notABook)).rejects.toThrow()
     })
+
+    it("migrates chapter snapshots written by older file format versions", async () => {
+        const JSZip = (await import("jszip")).default
+
+        const makeBook = async (
+            version: string,
+            chapterDoc: Record<string, unknown>
+        ) => {
+            const zip = new JSZip()
+            zip.file("mimetype", "application/fidusbook+zip")
+            zip.file("filetype-version", version)
+            zip.file(
+                "book.json",
+                JSON.stringify({
+                    title: "Legacy Book",
+                    chapters: [{chapter_index: 0, text: 7}]
+                })
+            )
+            zip.file(
+                "chapters/0/document.json",
+                JSON.stringify(chapterDoc)
+            )
+            zip.file("chapters/0/images.json", JSON.stringify({}))
+            zip.file("chapters/0/bibliography.json", JSON.stringify({}))
+            return zip.generateAsync({type: "arraybuffer"})
+        }
+
+        // A 3.4-era bare-node chapter: the top node is still "article"
+        // (renamed to "doc" at 3.4).
+        const bareChapter = {
+            type: "article",
+            attrs: {languages: ["en-US"]},
+            content: [{type: "title", attrs: {id: "title"}}]
+        }
+        const bareResult = await readFidusBookFile(
+            await makeBook("3.4", bareChapter)
+        )
+        expect(bareResult.documentList).toHaveLength(1)
+        const bareContent = bareResult.documentList[0]
+            .content as unknown as {type: string}
+        expect(bareContent.type).toBe("doc")
+
+        // A 3.5-era wrapped chapter with the pre-3.6 citation style name
+        // (renamed at 3.6).
+        const wrappedChapter = {
+            id: 7,
+            content: {
+                type: "doc",
+                attrs: {
+                    citationstyle: "chicago-note-bibliography",
+                    languages: ["en-US"]
+                },
+                content: [{type: "title", attrs: {id: "title"}}]
+            }
+        }
+        const wrappedResult = await readFidusBookFile(
+            await makeBook("3.5", wrappedChapter)
+        )
+        const wrappedContent = wrappedResult.documentList[0]
+            .content as unknown as {
+            type: string
+            attrs: {citationstyle: string}
+        }
+        expect(wrappedResult.documentList[0].id).toBe(7)
+        expect(wrappedContent.type).toBe("doc")
+        expect(wrappedContent.attrs.citationstyle).toBe(
+            "chicago-notes-bibliography"
+        )
+    })
 })

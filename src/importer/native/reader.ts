@@ -6,9 +6,13 @@
  * exporters.  No server interaction.
  */
 
+import type {BibDBEntry, FidusDoc, ImageDBEntries} from "@fiduswriter/document"
 import type {DocumentListEntry} from "../../types.js"
 import {FW_DOCUMENT_VERSION} from "@fiduswriter/document/schema"
-import {MAX_FW_DOCUMENT_VERSION} from "@fiduswriter/document/importer/native"
+import {
+    MAX_FW_DOCUMENT_VERSION,
+    updateFile
+} from "@fiduswriter/document/importer/native"
 
 export const FIDUSBOOK_MIMETYPES = [
     "application/fidusbook+zip",
@@ -153,6 +157,49 @@ export async function readFidusBookFile(
         const imagesJson = JSON.parse(imagesFile.content as string) as Record<string, {image: string; file?: Blob}>
         const bibJson = JSON.parse(bibFile.content as string) as Record<string, unknown>
 
+        // Chapter snapshots written by older Fidus Writer versions carry
+        // content in the schema of that version (e.g. an "article" top node,
+        // a "contents" key, renamed citation styles). Migrate the snapshot
+        // through the same updateFile chain the standalone .fidus importer
+        // uses so exporters always see the current schema. Best-effort: a
+        // snapshot that does not migrate is passed through unchanged.
+        let migratedDoc = docJson
+        if (filetypeVersion < MAX_FIDUSBOOK_VERSION) {
+            try {
+                const nodeLike =
+                    typeof docJson?.type === "string" &&
+                    Array.isArray(
+                        (docJson as {content?: unknown}).content
+                    )
+                let candidate: Record<string, unknown> | null = docJson
+                if (!nodeLike && docJson.content == null) {
+                    const contents = (docJson as {contents?: unknown})
+                        .contents
+                    candidate =
+                        contents != null
+                            ? {...docJson, content: contents}
+                            : null
+                }
+                if (candidate) {
+                    const updated = updateFile(
+                        candidate as unknown as FidusDoc,
+                        filetypeVersion,
+                        bibJson as Record<string, BibDBEntry>,
+                        imagesJson as unknown as ImageDBEntries
+                    )
+                    const updatedDoc = updated.doc as unknown as Record<
+                        string,
+                        unknown
+                    >
+                    migratedDoc = nodeLike
+                        ? {content: updatedDoc}
+                        : updatedDoc
+                }
+            } catch {
+                migratedDoc = docJson
+            }
+        }
+
         const chapterPrefix = `chapters/${ci}/images/`
         const chapterImages: Record<string, Blob> = {}
         binaryFiles
@@ -170,21 +217,23 @@ export async function readFidusBookFile(
         })
 
         documentList.push({
-            id: (docJson.id as number) || 0,
-            title: (docJson.title as string) || "",
-            path: (docJson.path as string) || "",
-            content: (docJson.content || {
+            id: (migratedDoc.id as number) || 0,
+            title: (migratedDoc.title as string) || "",
+            path: (migratedDoc.path as string) || "",
+            content: (migratedDoc.content || {
                 type: "doc",
                 content: []
             }) as DocumentListEntry["content"],
-            settings: (docJson.settings || {}) as DocumentListEntry["settings"],
-            comments: (docJson.comments || {}) as DocumentListEntry["comments"],
+            settings: (migratedDoc.settings || {}) as DocumentListEntry["settings"],
+            comments: ((migratedDoc.comments ||
+                migratedDoc.comment ||
+                {}) as DocumentListEntry["comments"]),
             images: imagesJson as DocumentListEntry["images"],
             bibliography: bibJson as DocumentListEntry["bibliography"],
-            rawContent: docJson.rawContent as DocumentListEntry["rawContent"],
-            e2ee: docJson.e2ee as boolean | undefined,
-            e2ee_salt: docJson.e2ee_salt as string | undefined,
-            e2ee_iterations: docJson.e2ee_iterations as number | undefined
+            rawContent: migratedDoc.rawContent as DocumentListEntry["rawContent"],
+            e2ee: migratedDoc.e2ee as boolean | undefined,
+            e2ee_salt: migratedDoc.e2ee_salt as string | undefined,
+            e2ee_iterations: migratedDoc.e2ee_iterations as number | undefined
         } as DocumentListEntry)
     }
 
