@@ -1,5 +1,5 @@
 /**
- * Core types for the @fiduswriter/books-document package.
+ * Core types for the @fiduswriter/books package.
  */
 
 import type {Schema} from "prosemirror-model"

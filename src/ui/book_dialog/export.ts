@@ -29,7 +29,7 @@ import type {BookExportContext} from "./types.js"
 
 /**
  * The subset of a book exporter this module needs. Every exporter of
- * `@fiduswriter/books-document` exposes these members; the declared return
+ * `@fiduswriter/books` exposes these members; the declared return
  * type of `init()` differs slightly between them (some return `false`, some
  * `void`, instead of a Blob), so it is kept loose here. `mimeType` likewise
  * only exists on the DOCX/ODT exporters, which read it off the instance.

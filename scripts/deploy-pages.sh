@@ -3,7 +3,7 @@ set -e
 ROOT=$(cd "$(dirname "$0")/.." && pwd)
 cd "$ROOT"
 
-echo "Building @fiduswriter/books-document..."
+echo "Building @fiduswriter/books..."
 npm run build
 
 echo "Preparing pages build..."
@@ -19,7 +19,7 @@ cd "$BUILD_DIR"
 git init
 git checkout -b pages
 git add .
-git commit -m "Deploy @fiduswriter/books-document to Forgejo Pages"
+git commit -m "Deploy @fiduswriter/books to Forgejo Pages"
 
 REMOTE=$(cd "$ROOT" && git remote get-url origin)
 echo "Pushing to $REMOTE pages branch..."

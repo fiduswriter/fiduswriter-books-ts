@@ -1,12 +1,17 @@
 <p align="center">
-  <img src="https://git.fiduswriter.org/fiduswriter/fiduswriter-books-ts/raw/branch/main/logo.svg" alt="@fiduswriter/books-document" width="100" height="100">
+  <img src="https://git.fiduswriter.org/fiduswriter/fiduswriter-books-ts/raw/branch/main/logo.svg" alt="@fiduswriter/books" width="100" height="100">
 </p>
 
-<h1 align="center">@fiduswriter/books-document</h1>
+<h1 align="center">@fiduswriter/books</h1>
 
 <p align="center">Book-level importers and exporters for Fidus Writer</p>
 
 ---
+
+> **Note:** This package was renamed in 0.2.0. It was previously published in
+> the same `@fiduswriter` scope under the longer name
+> `@fiduswriter/…-document` (up to 0.1.34); that older package is now deprecated
+> on npm, so install `@fiduswriter/books` instead.
 
 ## What it does
 
@@ -56,15 +61,15 @@ Main entry exports:
 ## Installation
 
 ```bash
-npm install @fiduswriter/books-document
+npm install @fiduswriter/books
 ```
 
 ## Usage
 
 ```ts
-import {FIDUSBOOK_VERSION} from "@fiduswriter/books-document"
-import {NativeBookExporter} from "@fiduswriter/books-document/exporter/native"
-import {DocxBookExporter} from "@fiduswriter/books-document/exporter/docx"
+import {FIDUSBOOK_VERSION} from "@fiduswriter/books"
+import {NativeBookExporter} from "@fiduswriter/books/exporter/native"
+import {DocxBookExporter} from "@fiduswriter/books/exporter/docx"
 ```
 
 ## Development

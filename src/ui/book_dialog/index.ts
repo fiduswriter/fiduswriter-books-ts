@@ -3,19 +3,19 @@
  *
  * A reusable, backend-agnostic tabbed dialog for editing a book's metadata,
  * settings, cover image and chapter list, running a sanity check and starting
- * an export. Import it from the `@fiduswriter/books-document/ui/book_dialog`
+ * an export. Import it from the `@fiduswriter/books/ui/book_dialog`
  * subpath so that the main entry stays free of DOM code and remains usable
  * from Node (as `@fiduswriter/cli` needs).
  *
  * ```js
- * import {BookDialog} from "@fiduswriter/books-document/ui/book_dialog"
+ * import {BookDialog} from "@fiduswriter/books/ui/book_dialog"
  *
  * new BookDialog({
  *     book, // omit to create a new book
  *     documentList,
  *     schema,
- *     chapterLoader, // @fiduswriter/books-document
- *     e2ee, // @fiduswriter/books-document
+ *     chapterLoader, // @fiduswriter/books
+ *     e2ee, // @fiduswriter/books
  *     backend: {
  *         saveBook: book => postJson("/api/book/save/", {book}),
  *         selectCoverImage: id => showImagePicker(id),
