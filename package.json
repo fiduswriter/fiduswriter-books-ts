@@ -1,6 +1,6 @@
 {
     "name": "@fiduswriter/books",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "Fidus Writer book importers and exporters",
     "keywords": [
         "fiduswriter",
