@@ -233,3 +233,22 @@ export class ZipFileCreator {
         return new Blob([])
     }
 }
+
+export const isSafeLinkHref = href => {
+    if (typeof href !== "string") {
+        return false
+    }
+    const trimmed = href.trim()
+    if (!trimmed) {
+        return false
+    }
+    if (trimmed.startsWith("#")) {
+        return true
+    }
+    try {
+        const url = new URL(trimmed, "http://localhost")
+        return ["http:", "https:"].includes(url.protocol)
+    } catch {
+        return false
+    }
+}
