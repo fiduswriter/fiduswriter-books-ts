@@ -17,6 +17,21 @@ msgstr ""
 "глави. Моля, настройте или отключете вашата лична парола в настройките на "
 "вашия профил."
 
+msgid "A4"
+msgstr "A4"
+
+msgid "A5"
+msgstr "A5"
+
+msgid "Add chapters from files"
+msgstr "Добавете глави от файлове"
+
+msgid "All cross references have working targets."
+msgstr "Всички кръстосани препратки имат работещи цели."
+
+msgid "All internal links have working targets."
+msgstr "Всички вътрешни връзки имат работещи цели."
+
 msgid "Assembling BITS book..."
 msgstr "Сглобява се BITS книга..."
 
@@ -26,22 +41,70 @@ msgstr "Сглобява се Epub книга..."
 msgid "Assembling HTML book..."
 msgstr "Сглобява се HTML книга..."
 
+msgid "Author"
+msgstr "Автор"
+
+msgid "Basic book information"
+msgstr "Основна информация за книгата"
+
+msgid "Basic info"
+msgstr "Основна информация"
+
+msgid "Bibliography"
+msgstr "Библиография"
+
+msgid "Bibliography related settings"
+msgstr "Настройки, свързани с библиографията"
+
 msgid "BITS book export complete."
 msgstr "Експортирането на BITS книга е завършено."
 
 msgid "BITS book export has been initiated."
 msgstr "Експортирането на книга от BITS е стартирано."
 
+msgid "Book"
+msgstr "книга"
+
 msgid "Book cannot be exported due to lack of chapters."
 msgstr "Книгата не може да бъде експортирана поради липса на глави."
+
+msgid "Book chapters"
+msgstr "Глави на книгата"
+
+msgid "Book export failed."
+msgstr "Неуспешно експортиране на книгата."
+
+msgid "Book part"
+msgstr "Част от Книгата"
+
+msgid "Book part title"
+msgstr "Заглавие на част от книгата"
+
+msgid "Book style"
+msgstr "Книжен стил"
 
 msgid "Cannot produce book as you lack access rights to its chapters."
 msgstr ""
 "Не можете да създадете книга, тъй като нямате права за достъп до нейните "
 "глави."
 
+msgid "Chapter"
+msgstr "Глава"
+
 msgid "Chapter data loaded."
 msgstr "Данните за глава са заредени."
+
+msgid "Chapters"
+msgstr "Глави"
+
+msgid "Citation style"
+msgstr "Стил на цитатите"
+
+msgid "Comma separated keywords"
+msgstr "Ключови думи разделени със запетаи"
+
+msgid "Copyright notice"
+msgstr "Бележка за Авторските Права"
 
 msgid "Could not decrypt chapter:"
 msgstr "Главата не можа да се дешифрира:"
@@ -49,17 +112,132 @@ msgstr "Главата не можа да се дешифрира:"
 msgid "Could not import chapter "
 msgstr "Не можа да се импортира глава "
 
+msgid "Could not load"
+msgstr "Не може да се зареди"
+
+msgid "Cover image"
+msgstr "Изображение за корица"
+
+msgid "Create Book"
+msgstr "Създайте книга"
+
+msgid "Cross references without targets"
+msgstr "Кръстосани референции без цели"
+
+msgid "Description"
+msgstr "Описание"
+
+msgid "Documents assigned as chapters"
+msgstr "Документи, определени като глави"
+
+msgid "DOCX"
+msgstr "DOCX"
+
 msgid "DOCX book export complete."
 msgstr "Експортирането на DOCX книга е завършено."
 
 msgid "DOCX book export has been initiated."
 msgstr "Експортирането на DOCX книга е започнато."
 
+msgid "DOCX related settings"
+msgstr "Настройки, свързани с DOCX"
+
+msgid "DOCX Template"
+msgstr "DOCX шаблон"
+
+msgid "E.g.: 2024"
+msgstr "Например: 2024 г"
+
+msgid "E.g.: 2024 or January 2024"
+msgstr "Например: 2024 г. или януари 2024 г"
+
+msgid "Each chapter has a title."
+msgstr "Всяка глава има заглавие."
+
+msgid "Edit Book"
+msgstr "Редактиране на книга"
+
+msgid "Edit Chapter"
+msgstr "Редактирай глава"
+
+msgid "Encrypted document"
+msgstr "Криптиран документ"
+
+msgid "Epub"
+msgstr "Epub"
+
 msgid "Epub book export complete."
 msgstr "Експортирането на Epub книга е завършено."
 
 msgid "Epub book export has been initiated."
 msgstr "Експортирането на Epub книга е стартирано."
+
+msgid "Epub related settings"
+msgstr "Настройки, свързани с Epub"
+
+msgid "Export"
+msgstr "Износ"
+
+msgid "Export as BITS"
+msgstr "Експортиране като BITS"
+
+msgid "Export as DOCX"
+msgstr "Експортиране като DOCX"
+
+msgid "Export as Epub"
+msgstr "Експортиране като Epub"
+
+msgid "Export as Fidusbook"
+msgstr "Експортиране като Fidusbook"
+
+msgid "Export as HTML"
+msgstr "Експортиране като HTML"
+
+msgid "Export as LaTeX"
+msgstr "Експортирайте като LaTeX"
+
+msgid "Export as ODT"
+msgstr "Експортиране като ODT"
+
+msgid "Export as Unified HTML"
+msgstr "Експортиране като Unified HTML"
+
+msgid "Export book as a .fidusbook file (for moving to another server)."
+msgstr ""
+"Експортиране на книга като .fidusbook файл (за преместване на друг сървър)."
+
+msgid "Export book as Book Interchange Tag Set."
+msgstr "Експортиране на книга като Book Interchange Tag Set."
+
+msgid "Export book as DOCX."
+msgstr "Експортиране на книга като DOCX."
+
+msgid "Export book as Epub."
+msgstr "Експортиране на книга като Epub."
+
+msgid "Export book as HTML."
+msgstr "Експортиране на книга като HTML."
+
+msgid "Export book as LaTeX."
+msgstr "Експортирайте книга като LaTeX."
+
+msgid "Export book as ODT."
+msgstr "Експортиране на книга като ODT."
+
+msgid "Export book as Single-file HTML."
+msgstr "Експортирайте книгата като еднофайлов HTML."
+
+msgid "Export book to the print dialog."
+msgstr "Експортирайте книга в диалоговия прозорец за печат."
+
+msgid "Export complete."
+msgstr "Експортирането е завършено."
+
+msgid "Export to Print/PDF"
+msgstr "Експортиране в печат / PDF"
+
+msgid "Exporting"
+msgstr "Експортиране"
 
 msgid "Exporting book chapters..."
 msgstr "Експортиране на глави от книги..."
@@ -97,11 +275,32 @@ msgstr "Завършване на книгата за LaTeX..."
 msgid "Finalizing ODT book..."
 msgstr "Книгата ODT се финализира..."
 
+msgid "Folio (15 x 12 inch)"
+msgstr "Folio (15 x 12 inch)"
+
 msgid "HTML book export complete."
 msgstr "Експортирането на HTML книга е завършено."
 
 msgid "HTML book export has been initiated."
 msgstr "Започна експортирането на HTML книга."
+
+msgid ""
+"If this chapter starts a part of the book, specify the title of that part "
+"here"
+msgstr ""
+"Ако тази глава започва част от книга, въведете заглавието на тази част тук"
+
+msgid "Internal links without target"
+msgstr "Вътрешни връзки без цел"
+
+msgid "ISBN"
+msgstr "ISBN"
+
+msgid "Keywords"
+msgstr "Ключови думи"
+
+msgid "Language"
+msgstr "Език"
 
 msgid "LaTeX book export complete."
 msgstr "Експортирането на LaTeX книга е завършено."
@@ -112,14 +311,60 @@ msgstr "Започна експортирането на книги в LaTeX."
 msgid "Loading chapter data..."
 msgstr "Данните за глава се зареждат..."
 
+msgid "My documents"
+msgstr "Моите документи"
+
+msgid "No access"
+msgstr "Няма достъп"
+
+msgid "No chapter title"
+msgstr "Няма заглавие на глава"
+
 msgid "No encryption key found for chapter:"
 msgstr "Не е намерен ключ за шифроване за глава:"
+
+msgid "No issues were found:"
+msgstr "Не бяха открити проблеми:"
+
+msgid "Octavo (9 x 6 inch)"
+msgstr "Octavo (9 x 6 inch)"
+
+msgid "ODT"
+msgstr "ODT"
 
 msgid "ODT book export complete."
 msgstr "Експортирането на ODT книга е завършено."
 
 msgid "ODT book export has been initiated."
 msgstr "Експортирането на ODT книга е стартирано."
+
+msgid "ODT related settings"
+msgstr "Настройки, свързани с ODT"
+
+msgid "ODT Template"
+msgstr "ODT шаблон"
+
+msgid ""
+"One or more encrypted chapters could not be decrypted. See the error "
+"notifications for details."
+msgstr ""
+"Една или повече криптирани глави не могат да бъдат декриптирани. Вижте "
+"известията за грешки за подробности."
+
+msgid "Open document"
+msgstr "Отворете документа"
+
+msgid "Paper size"
+msgstr "Размер на листите"
+
+msgid "Perform sanity check"
+msgstr "Извършете проверка на здравословното състояние"
+
+msgid "Perform sanity check on book"
+msgstr "Извършете проверка на здравословното състояние на книгата"
+
+msgid "Pick document files and add them as chapters"
+msgstr "Изберете файлове с документи и ги добавете като глави"
 
 msgid "Preparing BITS book..."
 msgstr "Подготвя се книгата BITS..."
@@ -136,8 +381,95 @@ msgstr "Подготвя се LaTeX книга..."
 msgid "Preparing ODT book..."
 msgstr "Подготвя се ODT книга..."
 
+msgid "Print related settings"
+msgstr "Настройки за печат"
+
+msgid "Print/PDF"
+msgstr "Печат/PDF"
+
+msgid "Publication date"
+msgstr "Дата на публикуване"
+
+msgid "Publisher"
+msgstr "Издател"
+
+msgid "Quarto (12 × 9 inch)"
+msgstr "Quarto (12 × 9 inch)"
+
+msgid "Remove cover image"
+msgstr "Премахване на изображението на корицата"
+
+msgid "Remove DOCX template file"
+msgstr "Премахнете DOCX шаблонния файл"
+
+msgid "Remove Image"
+msgstr "Изтрий изображение:"
+
+msgid "Remove ODT template file"
+msgstr "Премахнете ODT шаблонния файл"
+
+msgid "Sanity check"
+msgstr "Проверка на здравия разум"
+
+msgid "Save"
+msgstr "Запази\""
+
+msgid "Select a cover image"
+msgstr "Изберете изображение на корицата"
+
+msgid "Select an DOCX template file"
+msgstr "Изберете DOCX шаблонен файл"
+
+msgid "Select an ODT template file"
+msgstr "Изберете ODT шаблонен файл"
+
+msgid "Select citation style for the book"
+msgstr "Изберете стил на цитиране за книгата"
+
+msgid "Select DOCX template file"
+msgstr "Изберете DOCX шаблонен файл"
+
+msgid "Select Image"
+msgstr "Избор на изображение"
+
+msgid "Select language"
+msgstr "Изберете език"
+
+msgid "Select ODT template file"
+msgstr "Изберете ODT шаблонен файл"
+
+msgid "Select paper size for the book"
+msgstr "Изберете размер на хартията за книгата"
+
+msgid "Select stylesheet for the book"
+msgstr "Изберете таблицата със стилове за книгата"
+
+msgid "Series position"
+msgstr "Серийна позиция"
+
+msgid "Series title"
+msgstr "Заглавие на сериала"
+
+msgid "Sort"
+msgstr "Сортиране"
+
+msgid "Submit"
+msgstr "Изпрати"
+
+msgid "Subtitle"
+msgstr "Подзаглавие"
+
 msgid "successfully imported."
 msgstr "успешно импортиран."
+
+msgid "The book contains chapters."
+msgstr "Книгата съдържа глави."
+
+msgid "The book contains no chapters."
+msgstr "Книгата не съдържа глави."
+
+msgid "The book could not be saved"
+msgstr "Книгата не можа да бъде запазена"
 
 msgid "The document may have been re-encrypted with a different password."
 msgstr "Документът може да е бил повторно шифрован с различна парола."
@@ -151,5 +483,39 @@ msgstr "Ключът може да не е споделен с вас."
 msgid "The uploaded file does not appear to be a Fidusbook file."
 msgstr "Изглежда, че каченият файл не е файл на Fidusbook."
 
+msgid "There are no unresolved comments."
+msgstr "Няма нерешени коментари."
+
+msgid "There are no unresolved tracked changes."
+msgstr "Няма неразрешени проследени промени."
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"export or run a sanity check on this book."
+msgstr ""
+"Тази книга съдържа криптирани глави. Необходима е лична парола за "
+"експортиране или извършване на проверка на книгата."
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"perform a sanity check. Please set up or unlock your personal passphrase in "
+"your profile settings."
+msgstr ""
+"Тази книга съдържа криптирани глави. Необходима е лична парола за извършване"
+" на проверка за разумност. Моля, настройте или отключете вашата лична парола"
+" в настройките на вашия профил."
+
+msgid "Title"
+msgstr "Заглавие"
+
+msgid "Unresolved comments"
+msgstr "Нерешени коментари"
+
+msgid "Unresolved tracked changes"
+msgstr "Нерешени проследени промени"
+
 msgid "Untitled"
 msgstr "Неозаглавен"
+
+msgid "Version"
+msgstr "Версия"

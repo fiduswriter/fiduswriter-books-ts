@@ -17,6 +17,21 @@ msgstr ""
 "персональная парольная фраза. Пожалуйста, установите или разблокируйте свою "
 "личную парольную фразу в настройках вашего профиля."
 
+msgid "A4"
+msgstr "A4"
+
+msgid "A5"
+msgstr "A5"
+
+msgid "Add chapters from files"
+msgstr "Добавляйте главы из файлов"
+
+msgid "All cross references have working targets."
+msgstr "Все перекрёстные ссылки имеют рабочие цели."
+
+msgid "All internal links have working targets."
+msgstr "Все внутренние ссылки имеют рабочие цели."
+
 msgid "Assembling BITS book..."
 msgstr "Сборка книги BITS..."
 
@@ -26,20 +41,68 @@ msgstr "Сборка книги в формате Epub..."
 msgid "Assembling HTML book..."
 msgstr "Сборка HTML-книги..."
 
+msgid "Author"
+msgstr "Автор"
+
+msgid "Basic book information"
+msgstr "Основная информация о книге"
+
+msgid "Basic info"
+msgstr "Основная информация"
+
+msgid "Bibliography"
+msgstr "Библиография"
+
+msgid "Bibliography related settings"
+msgstr "Настройки библиографии"
+
 msgid "BITS book export complete."
 msgstr "Экспорт книги BITS завершен."
 
 msgid "BITS book export has been initiated."
 msgstr "Начат экспорт книги BITS."
 
+msgid "Book"
+msgstr "Книга"
+
 msgid "Book cannot be exported due to lack of chapters."
 msgstr "Книгу невозможно экспортировать из-за отсутствия глав."
+
+msgid "Book chapters"
+msgstr "Главы книги"
+
+msgid "Book export failed."
+msgstr "Не удалось экспортировать книгу."
+
+msgid "Book part"
+msgstr "Часть книги"
+
+msgid "Book part title"
+msgstr "Название части книги"
+
+msgid "Book style"
+msgstr "Стиль книги"
 
 msgid "Cannot produce book as you lack access rights to its chapters."
 msgstr "Невозможно создать книгу, так как у вас нет прав доступа к ее главам."
 
+msgid "Chapter"
+msgstr "Глава"
+
 msgid "Chapter data loaded."
 msgstr "Данные главы загружены."
+
+msgid "Chapters"
+msgstr "Главы"
+
+msgid "Citation style"
+msgstr "Стиль цитирования"
+
+msgid "Comma separated keywords"
+msgstr "Ключевые слова через запятую"
+
+msgid "Copyright notice"
+msgstr "Уведомление об авторских правах"
 
 msgid "Could not decrypt chapter:"
 msgstr "Не удалось расшифровать главу:"
@@ -47,17 +110,132 @@ msgstr "Не удалось расшифровать главу:"
 msgid "Could not import chapter "
 msgstr "Не удалось импортировать главу "
 
+msgid "Could not load"
+msgstr "Не удалось загрузить"
+
+msgid "Cover image"
+msgstr "Изображение обложки"
+
+msgid "Create Book"
+msgstr "Создать книгу"
+
+msgid "Cross references without targets"
+msgstr "Перекрёстные ссылки без целей"
+
+msgid "Description"
+msgstr "Описание"
+
+msgid "Documents assigned as chapters"
+msgstr "Документы, назначенные как главы"
+
+msgid "DOCX"
+msgstr "DOCX"
+
 msgid "DOCX book export complete."
 msgstr "Экспорт книги в формате DOCX завершен."
 
 msgid "DOCX book export has been initiated."
 msgstr "Начат экспорт книг в формате DOCX."
 
+msgid "DOCX related settings"
+msgstr "Настройки DOCX"
+
+msgid "DOCX Template"
+msgstr "Шаблон DOCX"
+
+msgid "E.g.: 2024"
+msgstr "Например: 2024 год."
+
+msgid "E.g.: 2024 or January 2024"
+msgstr "Например: 2024 г. или январь 2024 г."
+
+msgid "Each chapter has a title."
+msgstr "Каждая глава имеет название."
+
+msgid "Edit Book"
+msgstr "Редактировать книгу"
+
+msgid "Edit Chapter"
+msgstr "Редактировать главу"
+
+msgid "Encrypted document"
+msgstr "Зашифрованный документ"
+
+msgid "Epub"
+msgstr "Epub"
+
 msgid "Epub book export complete."
 msgstr "Экспорт книги в Epub завершен."
 
 msgid "Epub book export has been initiated."
 msgstr "Начат экспорт книг в формате Epub."
+
+msgid "Epub related settings"
+msgstr "Настройки Epub"
+
+msgid "Export"
+msgstr "Экспорт"
+
+msgid "Export as BITS"
+msgstr "Экспортировать как BITS"
+
+msgid "Export as DOCX"
+msgstr "Экспортировать как DOCX"
+
+msgid "Export as Epub"
+msgstr "Экспортировать как Epub"
+
+msgid "Export as Fidusbook"
+msgstr "Экспортировать как Fidusbook"
+
+msgid "Export as HTML"
+msgstr "Экспортировать как HTML"
+
+msgid "Export as LaTeX"
+msgstr "Экспортировать как LaTeX"
+
+msgid "Export as ODT"
+msgstr "Экспортировать как ODT"
+
+msgid "Export as Unified HTML"
+msgstr "Экспортировать как единый HTML"
+
+msgid "Export book as a .fidusbook file (for moving to another server)."
+msgstr ""
+"Экспортировать книгу как файл .fidusbook (для переноса на другой сервер)."
+
+msgid "Export book as Book Interchange Tag Set."
+msgstr "Экспортировать книгу как набор тегов обмена книгами (BITS)."
+
+msgid "Export book as DOCX."
+msgstr "Экспортировать книгу как DOCX."
+
+msgid "Export book as Epub."
+msgstr "Экспортировать книгу как Epub."
+
+msgid "Export book as HTML."
+msgstr "Экспортировать книгу как HTML."
+
+msgid "Export book as LaTeX."
+msgstr "Экспортировать книгу как LaTeX."
+
+msgid "Export book as ODT."
+msgstr "Экспортировать книгу как ODT."
+
+msgid "Export book as Single-file HTML."
+msgstr "Экспортировать книгу как однофайловый HTML."
+
+msgid "Export book to the print dialog."
+msgstr "Экспортировать книгу в диалог печати."
+
+msgid "Export complete."
+msgstr "Экспорт завершен."
+
+msgid "Export to Print/PDF"
+msgstr "Экспорт в печать/PDF"
+
+msgid "Exporting"
+msgstr "Экспорт"
 
 msgid "Exporting book chapters..."
 msgstr "Экспорт глав книги..."
@@ -95,11 +273,32 @@ msgstr "Завершаем работу над книгой по LaTeX..."
 msgid "Finalizing ODT book..."
 msgstr "Завершение книги ODT..."
 
+msgid "Folio (15 x 12 inch)"
+msgstr "Фолио (15 × 12 дюймов)"
+
 msgid "HTML book export complete."
 msgstr "Экспорт книги в HTML завершен."
 
 msgid "HTML book export has been initiated."
 msgstr "Начат экспорт книги в формате HTML."
+
+msgid ""
+"If this chapter starts a part of the book, specify the title of that part "
+"here"
+msgstr ""
+"Если эта глава начинает часть книги, укажите название этой части здесь"
+
+msgid "Internal links without target"
+msgstr "Внутренние ссылки без цели"
+
+msgid "ISBN"
+msgstr "ISBN"
+
+msgid "Keywords"
+msgstr "Ключевые слова"
+
+msgid "Language"
+msgstr "Язык"
 
 msgid "LaTeX book export complete."
 msgstr "Экспорт книги LaTeX завершен."
@@ -110,14 +309,60 @@ msgstr "Начат экспорт книг в формате LaTeX."
 msgid "Loading chapter data..."
 msgstr "Загрузка данных главы..."
 
+msgid "My documents"
+msgstr "Мои документы"
+
+msgid "No access"
+msgstr "Нет доступа"
+
+msgid "No chapter title"
+msgstr "Нет названия главы"
+
 msgid "No encryption key found for chapter:"
 msgstr "Для главы не найден ключ шифрования:"
+
+msgid "No issues were found:"
+msgstr "Проблем не найдено:"
+
+msgid "Octavo (9 x 6 inch)"
+msgstr "Октаво (9 × 6 дюймов)"
+
+msgid "ODT"
+msgstr "ODT"
 
 msgid "ODT book export complete."
 msgstr "Экспорт книги ODT завершен."
 
 msgid "ODT book export has been initiated."
 msgstr "Начат экспорт книг ODT."
+
+msgid "ODT related settings"
+msgstr "Настройки ODT"
+
+msgid "ODT Template"
+msgstr "Шаблон ODT"
+
+msgid ""
+"One or more encrypted chapters could not be decrypted. See the error "
+"notifications for details."
+msgstr ""
+"Одну или несколько зашифрованных глав не удалось расшифровать. Подробности "
+"смотрите в уведомлениях об ошибках."
+
+msgid "Open document"
+msgstr "Открыть документ"
+
+msgid "Paper size"
+msgstr "Размер бумаги"
+
+msgid "Perform sanity check"
+msgstr "Выполнить проверку"
+
+msgid "Perform sanity check on book"
+msgstr "Выполнить проверку книги"
+
+msgid "Pick document files and add them as chapters"
+msgstr "Выберите файлы документов и добавьте их в качестве глав."
 
 msgid "Preparing BITS book..."
 msgstr "Готовлю книгу BITS..."
@@ -134,8 +379,95 @@ msgstr "Подготовка книги LaTeX..."
 msgid "Preparing ODT book..."
 msgstr "Подготовка книги ODT..."
 
+msgid "Print related settings"
+msgstr "Настройки печати"
+
+msgid "Print/PDF"
+msgstr "Печать/PDF"
+
+msgid "Publication date"
+msgstr "Дата публикации"
+
+msgid "Publisher"
+msgstr "Издатель"
+
+msgid "Quarto (12 × 9 inch)"
+msgstr "Кварто (12 × 9 дюймов)"
+
+msgid "Remove cover image"
+msgstr "Удалить изображение обложки"
+
+msgid "Remove DOCX template file"
+msgstr "Удалить файл шаблона DOCX"
+
+msgid "Remove Image"
+msgstr "Удалить изображение"
+
+msgid "Remove ODT template file"
+msgstr "Удалить файл шаблона ODT"
+
+msgid "Sanity check"
+msgstr "Проверка"
+
+msgid "Save"
+msgstr "Сохранить\""
+
+msgid "Select a cover image"
+msgstr "Выберите изображение обложки"
+
+msgid "Select an DOCX template file"
+msgstr "Выберите файл шаблона DOCX"
+
+msgid "Select an ODT template file"
+msgstr "Выберите файл шаблона ODT"
+
+msgid "Select citation style for the book"
+msgstr "Выберите стиль цитирования для книги"
+
+msgid "Select DOCX template file"
+msgstr "Выберите файл шаблона DOCX"
+
+msgid "Select Image"
+msgstr "Выбрать изображение"
+
+msgid "Select language"
+msgstr "Выберите язык"
+
+msgid "Select ODT template file"
+msgstr "Выберите файл шаблона ODT"
+
+msgid "Select paper size for the book"
+msgstr "Выберите размер бумаги для книги"
+
+msgid "Select stylesheet for the book"
+msgstr "Выберите таблицу стилей для книги"
+
+msgid "Series position"
+msgstr "Позиция в серии"
+
+msgid "Series title"
+msgstr "Название серии"
+
+msgid "Sort"
+msgstr "Сортировать"
+
+msgid "Submit"
+msgstr "Отправить"
+
+msgid "Subtitle"
+msgstr "Подзаголовок"
+
 msgid "successfully imported."
 msgstr "успешно импортирован."
+
+msgid "The book contains chapters."
+msgstr "Книга содержит главы."
+
+msgid "The book contains no chapters."
+msgstr "Книга не содержит глав."
+
+msgid "The book could not be saved"
+msgstr "Не удалось сохранить книгу"
 
 msgid "The document may have been re-encrypted with a different password."
 msgstr ""
@@ -150,5 +482,39 @@ msgstr "Возможно, вам не предоставили ключ."
 msgid "The uploaded file does not appear to be a Fidusbook file."
 msgstr "Загруженный файл не является файлом Fidusbook."
 
+msgid "There are no unresolved comments."
+msgstr "Нет неразрешённых комментариев."
+
+msgid "There are no unresolved tracked changes."
+msgstr "Нет неразрешённых отслеживаемых изменений."
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"export or run a sanity check on this book."
+msgstr ""
+"Эта книга содержит зашифрованные главы. Для экспорта или проверки книги "
+"требуется личная парольная фраза."
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"perform a sanity check. Please set up or unlock your personal passphrase in "
+"your profile settings."
+msgstr ""
+"Эта книга содержит зашифрованные главы. Для проверки работоспособности "
+"требуется персональная парольная фраза. Пожалуйста, установите или "
+"разблокируйте свою личную парольную фразу в настройках вашего профиля."
+
+msgid "Title"
+msgstr "Название"
+
+msgid "Unresolved comments"
+msgstr "Неразрешённые комментарии"
+
+msgid "Unresolved tracked changes"
+msgstr "Неразрешённые отслеживаемые изменения"
+
 msgid "Untitled"
 msgstr "Без названия"
+
+msgid "Version"
+msgstr "Версия"

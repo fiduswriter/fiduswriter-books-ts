@@ -14,6 +14,21 @@ msgid ""
 "settings."
 msgstr "암호화된 장이 포함된 책을 작업하려면 개인 암호가 필요합니다. 프로필 설정에서 개인 암호를 설정하거나 잠금 해제하세요."
 
+msgid "A4"
+msgstr "A4"
+
+msgid "A5"
+msgstr "A5"
+
+msgid "Add chapters from files"
+msgstr "파일에서 장 추가"
+
+msgid "All cross references have working targets."
+msgstr "모든 상호 참조에 유효한 대상이 있습니다."
+
+msgid "All internal links have working targets."
+msgstr "모든 내부 링크에 유효한 대상이 있습니다."
+
 msgid "Assembling BITS book..."
 msgstr "BITS 책을 조립하는 중..."
 
@@ -23,20 +38,68 @@ msgstr "이펍북 조립 중..."
 msgid "Assembling HTML book..."
 msgstr "HTML 책을 조립하는 중..."
 
+msgid "Author"
+msgstr "저자"
+
+msgid "Basic book information"
+msgstr "기본 책 정보"
+
+msgid "Basic info"
+msgstr "기본 정보"
+
+msgid "Bibliography"
+msgstr "참고문헌"
+
+msgid "Bibliography related settings"
+msgstr "참고문헌 관련 설정"
+
 msgid "BITS book export complete."
 msgstr "BITS 도서 내보내기가 완료되었습니다."
 
 msgid "BITS book export has been initiated."
 msgstr "BITS 도서 내보내기가 시작되었습니다."
 
+msgid "Book"
+msgstr "책"
+
 msgid "Book cannot be exported due to lack of chapters."
 msgstr "장이 부족하여 책을 내보낼 수 없습니다."
+
+msgid "Book chapters"
+msgstr "책 장"
+
+msgid "Book export failed."
+msgstr "도서 내보내기에 실패했습니다."
+
+msgid "Book part"
+msgstr "책 부문"
+
+msgid "Book part title"
+msgstr "부문 제목"
+
+msgid "Book style"
+msgstr "책 스타일"
 
 msgid "Cannot produce book as you lack access rights to its chapters."
 msgstr "해당 장에 대한 액세스 권한이 없기 때문에 책을 제작할 수 없습니다."
 
+msgid "Chapter"
+msgstr "장"
+
 msgid "Chapter data loaded."
 msgstr "챕터 데이터가 로드되었습니다."
+
+msgid "Chapters"
+msgstr "장"
+
+msgid "Citation style"
+msgstr "인용 스타일"
+
+msgid "Comma separated keywords"
+msgstr "쉼표로 구분된 키워드"
+
+msgid "Copyright notice"
+msgstr "저작권 표시"
 
 msgid "Could not decrypt chapter:"
 msgstr "챕터를 해독할 수 없습니다."
@@ -44,17 +107,131 @@ msgstr "챕터를 해독할 수 없습니다."
 msgid "Could not import chapter "
 msgstr "챕터를 가져올 수 없습니다. "
 
+msgid "Could not load"
+msgstr "로드할 수 없습니다."
+
+msgid "Cover image"
+msgstr "표지 이미지"
+
+msgid "Create Book"
+msgstr "책 만들기"
+
+msgid "Cross references without targets"
+msgstr "대상이 없는 상호 참조"
+
+msgid "Description"
+msgstr "설명"
+
+msgid "Documents assigned as chapters"
+msgstr "장으로 할당된 문서"
+
+msgid "DOCX"
+msgstr "DOCX"
+
 msgid "DOCX book export complete."
 msgstr "DOCX 도서 내보내기가 완료되었습니다."
 
 msgid "DOCX book export has been initiated."
 msgstr "DOCX 도서 내보내기가 시작되었습니다."
 
+msgid "DOCX related settings"
+msgstr "DOCX 관련 설정"
+
+msgid "DOCX Template"
+msgstr "DOCX 템플릿"
+
+msgid "E.g.: 2024"
+msgstr "예: 2024"
+
+msgid "E.g.: 2024 or January 2024"
+msgstr "예: 2024년 또는 2024년 1월"
+
+msgid "Each chapter has a title."
+msgstr "각 장에 제목이 있습니다."
+
+msgid "Edit Book"
+msgstr "책 편집"
+
+msgid "Edit Chapter"
+msgstr "장 편집"
+
+msgid "Encrypted document"
+msgstr "암호화된 문서"
+
+msgid "Epub"
+msgstr "Epub"
+
 msgid "Epub book export complete."
 msgstr "이펍북 내보내기가 완료되었습니다."
 
 msgid "Epub book export has been initiated."
 msgstr "Epub 도서 내보내기가 시작되었습니다."
+
+msgid "Epub related settings"
+msgstr "Epub 관련 설정"
+
+msgid "Export"
+msgstr "내보내기"
+
+msgid "Export as BITS"
+msgstr "BITS로 내보내기"
+
+msgid "Export as DOCX"
+msgstr "DOCX로 내보내기"
+
+msgid "Export as Epub"
+msgstr "Epub으로 내보내기"
+
+msgid "Export as Fidusbook"
+msgstr "Fidusbook으로 내보내기"
+
+msgid "Export as HTML"
+msgstr "HTML로 내보내기"
+
+msgid "Export as LaTeX"
+msgstr "LaTeX으로 내보내기"
+
+msgid "Export as ODT"
+msgstr "ODT로 내보내기"
+
+msgid "Export as Unified HTML"
+msgstr "Unified HTML로 내보내기"
+
+msgid "Export book as a .fidusbook file (for moving to another server)."
+msgstr "책을 .fidusbook 파일로 내보내기 (다른 서버로 이동)."
+
+msgid "Export book as Book Interchange Tag Set."
+msgstr "책을 Book Interchange Tag Set으로 내보냅니다."
+
+msgid "Export book as DOCX."
+msgstr "책을 DOCX로 내보냅니다."
+
+msgid "Export book as Epub."
+msgstr "책을 Epub으로 내보냅니다."
+
+msgid "Export book as HTML."
+msgstr "책을 HTML로 내보냅니다."
+
+msgid "Export book as LaTeX."
+msgstr "책을 LaTeX으로 내보냅니다."
+
+msgid "Export book as ODT."
+msgstr "책을 ODT로 내보냅니다."
+
+msgid "Export book as Single-file HTML."
+msgstr "책을 단일 파일 HTML로 내보냅니다."
+
+msgid "Export book to the print dialog."
+msgstr "책을 인쇄 대화상자로 내보냅니다."
+
+msgid "Export complete."
+msgstr "내보내기가 완료되었습니다."
+
+msgid "Export to Print/PDF"
+msgstr "인쇄/PDF로 내보내기"
+
+msgid "Exporting"
+msgstr "내보내기"
 
 msgid "Exporting book chapters..."
 msgstr "책 장을 내보내는 중..."
@@ -92,11 +269,31 @@ msgstr "LaTeX 책을 마무리하는 중..."
 msgid "Finalizing ODT book..."
 msgstr "ODT 책을 마무리하는 중..."
 
+msgid "Folio (15 x 12 inch)"
+msgstr "Folio (15 × 12인치)"
+
 msgid "HTML book export complete."
 msgstr "HTML 책 내보내기가 완료되었습니다."
 
 msgid "HTML book export has been initiated."
 msgstr "HTML 도서 내보내기가 시작되었습니다."
+
+msgid ""
+"If this chapter starts a part of the book, specify the title of that part "
+"here"
+msgstr "이 장이 책의 한 부문을 시작하는 경우, 해당 부문의 제목을 여기에 지정하세요"
+
+msgid "Internal links without target"
+msgstr "대상이 없는 내부 링크"
+
+msgid "ISBN"
+msgstr "ISBN"
+
+msgid "Keywords"
+msgstr "키워드"
+
+msgid "Language"
+msgstr "언어"
 
 msgid "LaTeX book export complete."
 msgstr "LaTeX 책 내보내기가 완료되었습니다."
@@ -107,14 +304,58 @@ msgstr "LaTeX 책 내보내기가 시작되었습니다."
 msgid "Loading chapter data..."
 msgstr "챕터 데이터 로드 중..."
 
+msgid "My documents"
+msgstr "내 문서"
+
+msgid "No access"
+msgstr "접근 불가"
+
+msgid "No chapter title"
+msgstr "장 제목 없음"
+
 msgid "No encryption key found for chapter:"
 msgstr "다음 장에 대한 암호화 키를 찾을 수 없습니다."
+
+msgid "No issues were found:"
+msgstr "문제가 발견되지 않았습니다:"
+
+msgid "Octavo (9 x 6 inch)"
+msgstr "Octavo (9 × 6인치)"
+
+msgid "ODT"
+msgstr "ODT"
 
 msgid "ODT book export complete."
 msgstr "ODT 도서 내보내기가 완료되었습니다."
 
 msgid "ODT book export has been initiated."
 msgstr "ODT 도서 내보내기가 시작되었습니다."
+
+msgid "ODT related settings"
+msgstr "ODT 관련 설정"
+
+msgid "ODT Template"
+msgstr "ODT 템플릿"
+
+msgid ""
+"One or more encrypted chapters could not be decrypted. See the error "
+"notifications for details."
+msgstr "하나 이상의 암호화된 챕터를 해독할 수 없습니다. 자세한 내용은 오류 알림을 참조하세요."
+
+msgid "Open document"
+msgstr "문서 열기"
+
+msgid "Paper size"
+msgstr "용지 크기"
+
+msgid "Perform sanity check"
+msgstr "무결성 검사 수행"
+
+msgid "Perform sanity check on book"
+msgstr "책 무결성 검사 수행"
+
+msgid "Pick document files and add them as chapters"
+msgstr "문서 파일을 선택하고 챕터로 추가하세요."
 
 msgid "Preparing BITS book..."
 msgstr "BITS 도서 준비 중..."
@@ -131,8 +372,95 @@ msgstr "LaTeX 책 준비 중..."
 msgid "Preparing ODT book..."
 msgstr "ODT 도서 준비 중..."
 
+msgid "Print related settings"
+msgstr "인쇄 관련 설정"
+
+msgid "Print/PDF"
+msgstr "인쇄/PDF"
+
+msgid "Publication date"
+msgstr "출판일"
+
+msgid "Publisher"
+msgstr "출판사"
+
+msgid "Quarto (12 × 9 inch)"
+msgstr "Quarto (12 × 9인치)"
+
+msgid "Remove cover image"
+msgstr "표지 이미지 제거"
+
+msgid "Remove DOCX template file"
+msgstr "DOCX 템플릿 파일 제거"
+
+msgid "Remove Image"
+msgstr "이미지 제거"
+
+msgid "Remove ODT template file"
+msgstr "ODT 템플릿 파일 제거"
+
+msgid "Sanity check"
+msgstr "무결성 검사"
+
+msgid "Save"
+msgstr "저장\""
+
+msgid "Select a cover image"
+msgstr "표지 이미지 선택"
+
+msgid "Select an DOCX template file"
+msgstr "DOCX 템플릿 파일을 선택하세요"
+
+msgid "Select an ODT template file"
+msgstr "ODT 템플릿 파일 선택"
+
+msgid "Select citation style for the book"
+msgstr "책의 인용 스타일 선택"
+
+msgid "Select DOCX template file"
+msgstr "DOCX 템플릿 파일 선택"
+
+msgid "Select Image"
+msgstr "이미지 선택"
+
+msgid "Select language"
+msgstr "언어 선택"
+
+msgid "Select ODT template file"
+msgstr "ODT 템플릿 파일 선택"
+
+msgid "Select paper size for the book"
+msgstr "책의 용지 크기 선택"
+
+msgid "Select stylesheet for the book"
+msgstr "책의 스타일시트 선택"
+
+msgid "Series position"
+msgstr "시리즈 위치"
+
+msgid "Series title"
+msgstr "시리즈 제목"
+
+msgid "Sort"
+msgstr "정렬"
+
+msgid "Submit"
+msgstr "제출"
+
+msgid "Subtitle"
+msgstr "부제목"
+
 msgid "successfully imported."
 msgstr "성공적으로 가져왔습니다."
+
+msgid "The book contains chapters."
+msgstr "책에 장이 포함되어 있습니다."
+
+msgid "The book contains no chapters."
+msgstr "책에 장이 포함되어 있지 않습니다."
+
+msgid "The book could not be saved"
+msgstr "책을 저장할 수 없습니다"
 
 msgid "The document may have been re-encrypted with a different password."
 msgstr "문서가 다른 비밀번호로 다시 암호화되었을 수 있습니다."
@@ -146,5 +474,36 @@ msgstr "키가 귀하와 공유되지 않았을 수 있습니다."
 msgid "The uploaded file does not appear to be a Fidusbook file."
 msgstr "업로드한 파일이 Fidusbook 파일이 아닌 것 같습니다."
 
+msgid "There are no unresolved comments."
+msgstr "해결되지 않은 댓글이 없습니다."
+
+msgid "There are no unresolved tracked changes."
+msgstr "해결되지 않은 변경 추적이 없습니다."
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"export or run a sanity check on this book."
+msgstr "이 책에는 암호화된 장이 포함되어 있습니다. 이 책을 내보내거나 무결성 검사를 실행하려면 개인 암호가 필요합니다."
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"perform a sanity check. Please set up or unlock your personal passphrase in "
+"your profile settings."
+msgstr ""
+"이 책에는 암호화된 장이 포함되어 있습니다. 상태 확인을 수행하려면 개인 암호가 필요합니다. 프로필 설정에서 개인 암호를 설정하거나 잠금"
+" 해제하세요."
+
+msgid "Title"
+msgstr "제목"
+
+msgid "Unresolved comments"
+msgstr "해결되지 않은 댓글"
+
+msgid "Unresolved tracked changes"
+msgstr "해결되지 않은 변경 추적"
+
 msgid "Untitled"
 msgstr "제목 없음"
+
+msgid "Version"
+msgstr "버전"
