@@ -15,6 +15,21 @@ msgid ""
 msgstr ""
 "暗号化された章を含む書籍を操作するには、個人用パスフレーズが必要です。プロファイル設定で個人パスフレーズを設定またはロック解除してください。"
 
+msgid "A4"
+msgstr "A4"
+
+msgid "A5"
+msgstr "A5"
+
+msgid "Add chapters from files"
+msgstr "ファイルからチャプターを追加する"
+
+msgid "All cross references have working targets."
+msgstr "すべての相互参照に有効なターゲットがあります。"
+
+msgid "All internal links have working targets."
+msgstr "すべての内部リンクに有効なターゲットがあります。"
+
 msgid "Assembling BITS book..."
 msgstr "BITS ブックを組み立てています..."
 
@@ -24,20 +39,68 @@ msgstr "Epub ブックを組み立てています..."
 msgid "Assembling HTML book..."
 msgstr "HTML ブックを組み立てています..."
 
+msgid "Author"
+msgstr "著者"
+
+msgid "Basic book information"
+msgstr "基本の本の情報"
+
+msgid "Basic info"
+msgstr "基本情報"
+
+msgid "Bibliography"
+msgstr "参考文献"
+
+msgid "Bibliography related settings"
+msgstr "参考文献関連の設定"
+
 msgid "BITS book export complete."
 msgstr "BITS ブックのエクスポートが完了しました。"
 
 msgid "BITS book export has been initiated."
 msgstr "BITS ブックのエクスポートが開始されました。"
 
+msgid "Book"
+msgstr "本"
+
 msgid "Book cannot be exported due to lack of chapters."
 msgstr "章がないため、ブックをエクスポートできません。"
+
+msgid "Book chapters"
+msgstr "本の章"
+
+msgid "Book export failed."
+msgstr "書籍のエクスポートに失敗しました。"
+
+msgid "Book part"
+msgstr "本の部"
+
+msgid "Book part title"
+msgstr "部のタイトル"
+
+msgid "Book style"
+msgstr "本のスタイル"
 
 msgid "Cannot produce book as you lack access rights to its chapters."
 msgstr "章へのアクセス権がないため、書籍を作成できません。"
 
+msgid "Chapter"
+msgstr "章"
+
 msgid "Chapter data loaded."
 msgstr "チャプターデータがロードされました。"
+
+msgid "Chapters"
+msgstr "章"
+
+msgid "Citation style"
+msgstr "引用スタイル"
+
+msgid "Comma separated keywords"
+msgstr "カンマ区切りのキーワード"
+
+msgid "Copyright notice"
+msgstr "著作権表示"
 
 msgid "Could not decrypt chapter:"
 msgstr "章を復号化できませんでした:"
@@ -45,17 +108,131 @@ msgstr "章を復号化できませんでした:"
 msgid "Could not import chapter "
 msgstr "章をインポートできませんでした "
 
+msgid "Could not load"
+msgstr "ロードできませんでした"
+
+msgid "Cover image"
+msgstr "表紙画像"
+
+msgid "Create Book"
+msgstr "本を作成"
+
+msgid "Cross references without targets"
+msgstr "ターゲットのない相互参照"
+
+msgid "Description"
+msgstr "説明"
+
+msgid "Documents assigned as chapters"
+msgstr "章として割り当てられたドキュメント"
+
+msgid "DOCX"
+msgstr "DOCX"
+
 msgid "DOCX book export complete."
 msgstr "DOCX ブックのエクスポートが完了しました。"
 
 msgid "DOCX book export has been initiated."
 msgstr "DOCX ブックのエクスポートが開始されました。"
 
+msgid "DOCX related settings"
+msgstr "DOCX関連の設定"
+
+msgid "DOCX Template"
+msgstr "DOCX テンプレート"
+
+msgid "E.g.: 2024"
+msgstr "例: 2024"
+
+msgid "E.g.: 2024 or January 2024"
+msgstr "例: 2024 年または 2024 年 1 月"
+
+msgid "Each chapter has a title."
+msgstr "各章にタイトルがあります。"
+
+msgid "Edit Book"
+msgstr "本を編集"
+
+msgid "Edit Chapter"
+msgstr "章を編集"
+
+msgid "Encrypted document"
+msgstr "暗号化された文書"
+
+msgid "Epub"
+msgstr "Epub"
+
 msgid "Epub book export complete."
 msgstr "Epub 書籍のエクスポートが完了しました。"
 
 msgid "Epub book export has been initiated."
 msgstr "Epub 書籍のエクスポートが開始されました。"
+
+msgid "Epub related settings"
+msgstr "Epub関連の設定"
+
+msgid "Export"
+msgstr "エクスポート"
+
+msgid "Export as BITS"
+msgstr "BITSとしてエクスポート"
+
+msgid "Export as DOCX"
+msgstr "DOCXとしてエクスポート"
+
+msgid "Export as Epub"
+msgstr "Epubとしてエクスポート"
+
+msgid "Export as Fidusbook"
+msgstr "Fidusbookとしてエクスポート"
+
+msgid "Export as HTML"
+msgstr "HTMLとしてエクスポート"
+
+msgid "Export as LaTeX"
+msgstr "LaTeXとしてエクスポート"
+
+msgid "Export as ODT"
+msgstr "ODTとしてエクスポート"
+
+msgid "Export as Unified HTML"
+msgstr "Unified HTMLとしてエクスポート"
+
+msgid "Export book as a .fidusbook file (for moving to another server)."
+msgstr "本を.fidusbookファイルとしてエクスポート（別のサーバーに移動するため）。"
+
+msgid "Export book as Book Interchange Tag Set."
+msgstr "本をBook Interchange Tag Setとしてエクスポートします。"
+
+msgid "Export book as DOCX."
+msgstr "本をDOCXとしてエクスポートします。"
+
+msgid "Export book as Epub."
+msgstr "本をEpubとしてエクスポートします。"
+
+msgid "Export book as HTML."
+msgstr "本をHTMLとしてエクスポートします。"
+
+msgid "Export book as LaTeX."
+msgstr "本をLaTeXとしてエクスポートします。"
+
+msgid "Export book as ODT."
+msgstr "本をODTとしてエクスポートします。"
+
+msgid "Export book as Single-file HTML."
+msgstr "本を単一ファイルHTMLとしてエクスポートします。"
+
+msgid "Export book to the print dialog."
+msgstr "本を印刷ダイアログにエクスポートします。"
+
+msgid "Export complete."
+msgstr "エクスポートが完了しました。"
+
+msgid "Export to Print/PDF"
+msgstr "印刷/PDFにエクスポート"
+
+msgid "Exporting"
+msgstr "輸出中"
 
 msgid "Exporting book chapters..."
 msgstr "本の章をエクスポートしています..."
@@ -93,11 +270,31 @@ msgstr "LaTeX ブックを完成させています..."
 msgid "Finalizing ODT book..."
 msgstr "ODT ブックを完成させています..."
 
+msgid "Folio (15 x 12 inch)"
+msgstr "フォリオ（15×12インチ）"
+
 msgid "HTML book export complete."
 msgstr "HTML ブックのエクスポートが完了しました。"
 
 msgid "HTML book export has been initiated."
 msgstr "HTML ブックのエクスポートが開始されました。"
+
+msgid ""
+"If this chapter starts a part of the book, specify the title of that part "
+"here"
+msgstr "この章が本の一部の始まりの場合は、その部のタイトルをここに指定してください"
+
+msgid "Internal links without target"
+msgstr "ターゲットのない内部リンク"
+
+msgid "ISBN"
+msgstr "ISBN"
+
+msgid "Keywords"
+msgstr "キーワード"
+
+msgid "Language"
+msgstr "言語"
 
 msgid "LaTeX book export complete."
 msgstr "LaTeXブックのエクスポートが完了しました。"
@@ -108,14 +305,58 @@ msgstr "LaTeX ブックのエクスポートが開始されました。"
 msgid "Loading chapter data..."
 msgstr "チャプターデータをロード中..."
 
+msgid "My documents"
+msgstr "自分のドキュメント"
+
+msgid "No access"
+msgstr "アクセス不可"
+
+msgid "No chapter title"
+msgstr "章のタイトルなし"
+
 msgid "No encryption key found for chapter:"
 msgstr "章の暗号化キーが見つかりません:"
+
+msgid "No issues were found:"
+msgstr "問題は見つかりませんでした："
+
+msgid "Octavo (9 x 6 inch)"
+msgstr "オクターボ（9×6インチ）"
+
+msgid "ODT"
+msgstr "ODT"
 
 msgid "ODT book export complete."
 msgstr "ODT ブックのエクスポートが完了しました。"
 
 msgid "ODT book export has been initiated."
 msgstr "ODT ブックのエクスポートが開始されました。"
+
+msgid "ODT related settings"
+msgstr "ODT関連の設定"
+
+msgid "ODT Template"
+msgstr "ODT テンプレート"
+
+msgid ""
+"One or more encrypted chapters could not be decrypted. See the error "
+"notifications for details."
+msgstr "1 つ以上の暗号化されたチャプターを復号化できませんでした。詳細については、エラー通知を参照してください。"
+
+msgid "Open document"
+msgstr "開いた文書"
+
+msgid "Paper size"
+msgstr "用紙サイズ"
+
+msgid "Perform sanity check"
+msgstr "整合性チェックを実行"
+
+msgid "Perform sanity check on book"
+msgstr "本の整合性チェックを実行"
+
+msgid "Pick document files and add them as chapters"
+msgstr "ドキュメント ファイルを選択し、章として追加します"
 
 msgid "Preparing BITS book..."
 msgstr "BITS ブックを準備しています..."
@@ -132,8 +373,95 @@ msgstr "LaTeX ブックを準備しています..."
 msgid "Preparing ODT book..."
 msgstr "ODT ブックを準備しています..."
 
+msgid "Print related settings"
+msgstr "印刷関連の設定"
+
+msgid "Print/PDF"
+msgstr "印刷/PDF"
+
+msgid "Publication date"
+msgstr "発行日"
+
+msgid "Publisher"
+msgstr "出版社"
+
+msgid "Quarto (12 × 9 inch)"
+msgstr "クォート（12×9インチ）"
+
+msgid "Remove cover image"
+msgstr "表紙画像を削除"
+
+msgid "Remove DOCX template file"
+msgstr "DOCXテンプレートファイルを削除します"
+
+msgid "Remove Image"
+msgstr "画像を削除"
+
+msgid "Remove ODT template file"
+msgstr "ODTテンプレートファイルを削除します"
+
+msgid "Sanity check"
+msgstr "整合性チェック"
+
+msgid "Save"
+msgstr "保存\""
+
+msgid "Select a cover image"
+msgstr "表紙画像を選択"
+
+msgid "Select an DOCX template file"
+msgstr "DOCX テンプレート ファイルを選択します"
+
+msgid "Select an ODT template file"
+msgstr "ODT テンプレート ファイルを選択します"
+
+msgid "Select citation style for the book"
+msgstr "本の引用スタイルを選択"
+
+msgid "Select DOCX template file"
+msgstr "DOCXテンプレートファイルを選択します"
+
+msgid "Select Image"
+msgstr "画像を選択"
+
+msgid "Select language"
+msgstr "言語を選択してください"
+
+msgid "Select ODT template file"
+msgstr "ODTテンプレートファイルの選択"
+
+msgid "Select paper size for the book"
+msgstr "本の用紙サイズを選択"
+
+msgid "Select stylesheet for the book"
+msgstr "本のスタイルシートを選択"
+
+msgid "Series position"
+msgstr "シリーズ順位"
+
+msgid "Series title"
+msgstr "シリーズタイトル"
+
+msgid "Sort"
+msgstr "並べ替え"
+
+msgid "Submit"
+msgstr "送信"
+
+msgid "Subtitle"
+msgstr "サブタイトル"
+
 msgid "successfully imported."
 msgstr "正常にインポートされました。"
+
+msgid "The book contains chapters."
+msgstr "本に章が含まれています。"
+
+msgid "The book contains no chapters."
+msgstr "本に章が含まれていません。"
+
+msgid "The book could not be saved"
+msgstr "本を保存できませんでした"
 
 msgid "The document may have been re-encrypted with a different password."
 msgstr "文書は別のパスワードで再暗号化された可能性があります。"
@@ -147,5 +475,35 @@ msgstr "キーがあなたと共有されていない可能性があります。
 msgid "The uploaded file does not appear to be a Fidusbook file."
 msgstr "アップロードされたファイルは Fidusbook ファイルではないようです。"
 
+msgid "There are no unresolved comments."
+msgstr "未解決のコメントはありません。"
+
+msgid "There are no unresolved tracked changes."
+msgstr "未解決の変更履歴はありません。"
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"export or run a sanity check on this book."
+msgstr "この本には暗号化された章が含まれています。この本をエクスポートまたは整合性チェックを実行するには、個人用パスフレーズが必要です。"
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"perform a sanity check. Please set up or unlock your personal passphrase in "
+"your profile settings."
+msgstr ""
+"この本には暗号化された章が含まれています。健全性チェックを実行するには、個人のパスフレーズが必要です。プロファイル設定で個人パスフレーズを設定またはロック解除してください。"
+
+msgid "Title"
+msgstr "タイトル"
+
+msgid "Unresolved comments"
+msgstr "未解決のコメント"
+
+msgid "Unresolved tracked changes"
+msgstr "未解決の変更履歴"
+
 msgid "Untitled"
 msgstr "無題"
+
+msgid "Version"
+msgstr "バージョン"

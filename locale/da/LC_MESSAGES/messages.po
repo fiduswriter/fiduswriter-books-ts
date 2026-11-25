@@ -17,6 +17,21 @@ msgstr ""
 "indeholder krypterede kapitler. Konfigurer eller lås din personlige "
 "adgangssætning op i dine profilindstillinger."
 
+msgid "A4"
+msgstr "A4"
+
+msgid "A5"
+msgstr "A5"
+
+msgid "Add chapters from files"
+msgstr "Tilføj kapitler fra filer"
+
+msgid "All cross references have working targets."
+msgstr "Alle krydsreferencer har arbejdsmål."
+
+msgid "All internal links have working targets."
+msgstr "Alle interne links har arbejdsmål."
+
 msgid "Assembling BITS book..."
 msgstr "Samler BITS-bog..."
 
@@ -26,22 +41,70 @@ msgstr "Samling af Epub-bog..."
 msgid "Assembling HTML book..."
 msgstr "Samler HTML-bog..."
 
+msgid "Author"
+msgstr "Forfatter"
+
+msgid "Basic book information"
+msgstr "Grundlæggende boginformation"
+
+msgid "Basic info"
+msgstr "Grundlæggende oplysninger"
+
+msgid "Bibliography"
+msgstr "Bibliografi"
+
+msgid "Bibliography related settings"
+msgstr "Bibliografirelaterede indstillinger"
+
 msgid "BITS book export complete."
 msgstr "Eksport af BITS bog er fuldført."
 
 msgid "BITS book export has been initiated."
 msgstr "BITS bogeksport er blevet påbegyndt."
 
+msgid "Book"
+msgstr "Bog"
+
 msgid "Book cannot be exported due to lack of chapters."
 msgstr "Bogen kan ikke eksporteres på grund af mangel på kapitler."
+
+msgid "Book chapters"
+msgstr "Bogens kapitler"
+
+msgid "Book export failed."
+msgstr "Bogeksport mislykkedes."
+
+msgid "Book part"
+msgstr "Bogdel"
+
+msgid "Book part title"
+msgstr "Titel på bogdel"
+
+msgid "Book style"
+msgstr "Bogstil"
 
 msgid "Cannot produce book as you lack access rights to its chapters."
 msgstr ""
 "Kan ikke producere bogen, da du mangler adgangsrettigheder til dens "
 "kapitler."
 
+msgid "Chapter"
+msgstr "Kapitel"
+
 msgid "Chapter data loaded."
 msgstr "Kapiteldata indlæst."
+
+msgid "Chapters"
+msgstr "Kapitler"
+
+msgid "Citation style"
+msgstr "Citationsstil"
+
+msgid "Comma separated keywords"
+msgstr "Kommaseparerede nøgleord"
+
+msgid "Copyright notice"
+msgstr "Ophavsretsmeddelelse"
 
 msgid "Could not decrypt chapter:"
 msgstr "Kunne ikke dekryptere kapitel:"
@@ -49,17 +112,132 @@ msgstr "Kunne ikke dekryptere kapitel:"
 msgid "Could not import chapter "
 msgstr "Kapitlet kunne ikke importeres "
 
+msgid "Could not load"
+msgstr "Kunne ikke indlæse"
+
+msgid "Cover image"
+msgstr "Forsidebillede"
+
+msgid "Create Book"
+msgstr "Opret bog"
+
+msgid "Cross references without targets"
+msgstr "Krydshenvisninger uden mål"
+
+msgid "Description"
+msgstr "Beskrivelse"
+
+msgid "Documents assigned as chapters"
+msgstr "Dokumenter tildelt som kapitler"
+
+msgid "DOCX"
+msgstr "DOCX"
+
 msgid "DOCX book export complete."
 msgstr "DOCX bogeksport færdig."
 
 msgid "DOCX book export has been initiated."
 msgstr "DOCX bogeksport er blevet påbegyndt."
 
+msgid "DOCX related settings"
+msgstr "DOCX-relaterede indstillinger"
+
+msgid "DOCX Template"
+msgstr "DOCX skabelon"
+
+msgid "E.g.: 2024"
+msgstr "F.eks.: 2024"
+
+msgid "E.g.: 2024 or January 2024"
+msgstr "F.eks.: 2024 eller januar 2024"
+
+msgid "Each chapter has a title."
+msgstr "Hvert kapitel har en titel."
+
+msgid "Edit Book"
+msgstr "Rediger bog"
+
+msgid "Edit Chapter"
+msgstr "Rediger kapitel"
+
+msgid "Encrypted document"
+msgstr "Krypteret dokument"
+
+msgid "Epub"
+msgstr "Epub"
+
 msgid "Epub book export complete."
 msgstr "Eksport af Epub bog er fuldført."
 
 msgid "Epub book export has been initiated."
 msgstr "Epub-bogeksport er blevet påbegyndt."
+
+msgid "Epub related settings"
+msgstr "Epub-relaterede indstillinger"
+
+msgid "Export"
+msgstr "Eksport"
+
+msgid "Export as BITS"
+msgstr "Eksporter som BITS"
+
+msgid "Export as DOCX"
+msgstr "Eksporter som DOCX"
+
+msgid "Export as Epub"
+msgstr "Eksporter som Epub"
+
+msgid "Export as Fidusbook"
+msgstr "Eksporter som Fidusbook"
+
+msgid "Export as HTML"
+msgstr "Eksporter som HTML"
+
+msgid "Export as LaTeX"
+msgstr "Eksporter som LaTeX"
+
+msgid "Export as ODT"
+msgstr "Eksporter som ODT"
+
+msgid "Export as Unified HTML"
+msgstr "Eksporter som Unified HTML"
+
+msgid "Export book as a .fidusbook file (for moving to another server)."
+msgstr ""
+"Eksporter bog som en .fidusbook-fil (til flytning til en anden server)."
+
+msgid "Export book as Book Interchange Tag Set."
+msgstr "Eksporter bog som Book Interchange Tag Set."
+
+msgid "Export book as DOCX."
+msgstr "Eksportér bog som DOCX."
+
+msgid "Export book as Epub."
+msgstr "Eksporter bog som Epub."
+
+msgid "Export book as HTML."
+msgstr "Eksporter bog som HTML."
+
+msgid "Export book as LaTeX."
+msgstr "Eksporter bog som LaTeX."
+
+msgid "Export book as ODT."
+msgstr "Eksportér bog som ODT."
+
+msgid "Export book as Single-file HTML."
+msgstr "Eksporter bog som enkelt-fil HTML."
+
+msgid "Export book to the print dialog."
+msgstr "Eksporter bog til printdialogen."
+
+msgid "Export complete."
+msgstr "Eksporten er fuldført."
+
+msgid "Export to Print/PDF"
+msgstr "Eksporter til print/PDF"
+
+msgid "Exporting"
+msgstr "Eksporterer"
 
 msgid "Exporting book chapters..."
 msgstr "Eksporterer bogkapitler..."
@@ -97,11 +275,32 @@ msgstr "Færdiggør LaTeX-bog..."
 msgid "Finalizing ODT book..."
 msgstr "Færdiggør ODT-bog..."
 
+msgid "Folio (15 x 12 inch)"
+msgstr "Folio (15 x 12 tommer)"
+
 msgid "HTML book export complete."
 msgstr "HTML-bogeksport færdig."
 
 msgid "HTML book export has been initiated."
 msgstr "HTML-bogeksport er blevet påbegyndt."
+
+msgid ""
+"If this chapter starts a part of the book, specify the title of that part "
+"here"
+msgstr ""
+"Hvis dette kapitel starter en del af bogen, angiv titlen på den del her"
+
+msgid "Internal links without target"
+msgstr "Interne links uden mål"
+
+msgid "ISBN"
+msgstr "ISBN"
+
+msgid "Keywords"
+msgstr "Nøgleord"
+
+msgid "Language"
+msgstr "Sprog"
 
 msgid "LaTeX book export complete."
 msgstr "Eksport af LaTeX-bog er fuldført."
@@ -112,14 +311,60 @@ msgstr "LaTeX bogeksport er blevet påbegyndt."
 msgid "Loading chapter data..."
 msgstr "Indlæser kapiteldata..."
 
+msgid "My documents"
+msgstr "Mine dokumenter"
+
+msgid "No access"
+msgstr "Ingen adgang"
+
+msgid "No chapter title"
+msgstr "Ingen kapiteltitel"
+
 msgid "No encryption key found for chapter:"
 msgstr "Ingen krypteringsnøgle fundet for kapitel:"
+
+msgid "No issues were found:"
+msgstr "Ingen problemer blev fundet:"
+
+msgid "Octavo (9 x 6 inch)"
+msgstr "Octavo (9 x 6 tommer)"
+
+msgid "ODT"
+msgstr "ODT"
 
 msgid "ODT book export complete."
 msgstr "ODT bogeksport færdig."
 
 msgid "ODT book export has been initiated."
 msgstr "ODT bogeksport er blevet påbegyndt."
+
+msgid "ODT related settings"
+msgstr "ODT-relaterede indstillinger"
+
+msgid "ODT Template"
+msgstr "ODT skabelon"
+
+msgid ""
+"One or more encrypted chapters could not be decrypted. See the error "
+"notifications for details."
+msgstr ""
+"Et eller flere krypterede kapitler kunne ikke dekrypteres. Se "
+"fejlmeddelelserne for detaljer."
+
+msgid "Open document"
+msgstr "Åbn dokument"
+
+msgid "Paper size"
+msgstr "Papirstørrelse"
+
+msgid "Perform sanity check"
+msgstr "Udfør fornuftskontrol"
+
+msgid "Perform sanity check on book"
+msgstr "Udfør sundhedstjek af bogen"
+
+msgid "Pick document files and add them as chapters"
+msgstr "Vælg dokumentfiler og tilføj dem som kapitler"
 
 msgid "Preparing BITS book..."
 msgstr "Forbereder BITS-bog..."
@@ -136,8 +381,95 @@ msgstr "Forbereder LaTeX-bog..."
 msgid "Preparing ODT book..."
 msgstr "Forbereder ODT-bog..."
 
+msgid "Print related settings"
+msgstr "Printrelaterede indstillinger"
+
+msgid "Print/PDF"
+msgstr "Print/PDF"
+
+msgid "Publication date"
+msgstr "Udgivelsesdato"
+
+msgid "Publisher"
+msgstr "Udgiver"
+
+msgid "Quarto (12 × 9 inch)"
+msgstr "Quarto (12 × 9 tommer)"
+
+msgid "Remove cover image"
+msgstr "Fjern forsidebillede"
+
+msgid "Remove DOCX template file"
+msgstr "Fjern DOCX skabelonfil"
+
+msgid "Remove Image"
+msgstr "Fjern billede"
+
+msgid "Remove ODT template file"
+msgstr "Fjern ODT skabelonfil"
+
+msgid "Sanity check"
+msgstr "Sundhedstjek"
+
+msgid "Save"
+msgstr "Gem\""
+
+msgid "Select a cover image"
+msgstr "Vælg et forsidebillede"
+
+msgid "Select an DOCX template file"
+msgstr "Vælg en DOCX skabelonfil"
+
+msgid "Select an ODT template file"
+msgstr "Vælg en ODT-skabelonfil"
+
+msgid "Select citation style for the book"
+msgstr "Vælg citationsstil til bogen"
+
+msgid "Select DOCX template file"
+msgstr "Vælg DOCX skabelonfil"
+
+msgid "Select Image"
+msgstr "Vælg billede"
+
+msgid "Select language"
+msgstr "Vælg sprog"
+
+msgid "Select ODT template file"
+msgstr "Vælg ODT-skabelonfil"
+
+msgid "Select paper size for the book"
+msgstr "Vælg papirstørrelse til bogen"
+
+msgid "Select stylesheet for the book"
+msgstr "Vælg stylesheet til bogen"
+
+msgid "Series position"
+msgstr "Serie position"
+
+msgid "Series title"
+msgstr "Seriens titel"
+
+msgid "Sort"
+msgstr "Sortér"
+
+msgid "Submit"
+msgstr "Send"
+
+msgid "Subtitle"
+msgstr "Undertitel"
+
 msgid "successfully imported."
 msgstr "importeret med succes."
+
+msgid "The book contains chapters."
+msgstr "Bogen indeholder kapitler."
+
+msgid "The book contains no chapters."
+msgstr "Bogen indeholder ingen kapitler."
+
+msgid "The book could not be saved"
+msgstr "Bogen kunne ikke gemmes"
 
 msgid "The document may have been re-encrypted with a different password."
 msgstr "Dokumentet kan være blevet genkrypteret med en anden adgangskode."
@@ -151,5 +483,39 @@ msgstr "Nøglen er muligvis ikke blevet delt med dig."
 msgid "The uploaded file does not appear to be a Fidusbook file."
 msgstr "Den uploadede fil ser ikke ud til at være en Fidusbook-fil."
 
+msgid "There are no unresolved comments."
+msgstr "Der er ingen uafklarede kommentarer."
+
+msgid "There are no unresolved tracked changes."
+msgstr "Der er ingen uløste sporede ændringer."
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"export or run a sanity check on this book."
+msgstr ""
+"Denne bog indeholder krypterede kapitler. Der kræves en personlig "
+"adgangssætning for at eksportere eller køre en fornuftskontrol på denne bog."
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"perform a sanity check. Please set up or unlock your personal passphrase in "
+"your profile settings."
+msgstr ""
+"Denne bog indeholder krypterede kapitler. En personlig adgangskode er "
+"påkrævet for at udføre et sundhedstjek. Konfigurer eller lås din personlige "
+"adgangskode op i dine profilindstillinger."
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "Unresolved comments"
+msgstr "Uafklarede kommentarer"
+
+msgid "Unresolved tracked changes"
+msgstr "Uafklarede spores ændringer"
+
 msgid "Untitled"
 msgstr "Uden titel"
+
+msgid "Version"
+msgstr "Version"

@@ -17,6 +17,21 @@ msgstr ""
 "gereklidir. Lütfen profil ayarlarınızda kişisel parolanızı oluşturun veya "
 "kilidini açın."
 
+msgid "A4"
+msgstr "A4"
+
+msgid "A5"
+msgstr "A5"
+
+msgid "Add chapters from files"
+msgstr "Dosyalardan bölümler ekleyin"
+
+msgid "All cross references have working targets."
+msgstr "Tüm çapraz referansların çalışan hedefleri var."
+
+msgid "All internal links have working targets."
+msgstr "Tüm iç bağlantıların çalışan hedefleri var."
+
 msgid "Assembling BITS book..."
 msgstr "BITS kitabı bir araya getiriliyor..."
 
@@ -26,20 +41,68 @@ msgstr "Epub kitabı oluşturuluyor..."
 msgid "Assembling HTML book..."
 msgstr "HTML kitabı bir araya getiriliyor..."
 
+msgid "Author"
+msgstr "Yazar"
+
+msgid "Basic book information"
+msgstr "Temel kitap bilgisi"
+
+msgid "Basic info"
+msgstr "Temel bilgi"
+
+msgid "Bibliography"
+msgstr "Kaynakça"
+
+msgid "Bibliography related settings"
+msgstr "Kaynakça ile ilgili ayarlar"
+
 msgid "BITS book export complete."
 msgstr "BITS kitabının dışa aktarımı tamamlandı."
 
 msgid "BITS book export has been initiated."
 msgstr "BITS kitap aktarımı başlatıldı."
 
+msgid "Book"
+msgstr "Kitap"
+
 msgid "Book cannot be exported due to lack of chapters."
 msgstr "Bölüm eksikliği nedeniyle kitap ihraç edilemiyor."
+
+msgid "Book chapters"
+msgstr "Kitap bölümleri"
+
+msgid "Book export failed."
+msgstr "Kitap dışa aktarımı başarısız oldu."
+
+msgid "Book part"
+msgstr "Kitap kısmı"
+
+msgid "Book part title"
+msgstr "Kitap kısmı başlığı"
+
+msgid "Book style"
+msgstr "Kitap stili"
 
 msgid "Cannot produce book as you lack access rights to its chapters."
 msgstr "Bölümlerine erişim haklarınız olmadığı için kitap üretilemiyor."
 
+msgid "Chapter"
+msgstr "Bölüm"
+
 msgid "Chapter data loaded."
 msgstr "Bölüm verileri yüklendi."
+
+msgid "Chapters"
+msgstr "Bölümler"
+
+msgid "Citation style"
+msgstr "Alıntı stili"
+
+msgid "Comma separated keywords"
+msgstr "Virgülle ayrılmış anahtar kelimeler"
+
+msgid "Copyright notice"
+msgstr "Telif hakkı bildirimi"
 
 msgid "Could not decrypt chapter:"
 msgstr "Bölümün şifresi çözülemedi:"
@@ -47,17 +110,133 @@ msgstr "Bölümün şifresi çözülemedi:"
 msgid "Could not import chapter "
 msgstr "Bölüm içe aktarılamadı "
 
+msgid "Could not load"
+msgstr "yüklenemedi"
+
+msgid "Cover image"
+msgstr "Kapak görseli"
+
+msgid "Create Book"
+msgstr "Kitap Oluştur"
+
+msgid "Cross references without targets"
+msgstr "Hedefi olmayan çapraz referanslar"
+
+msgid "Description"
+msgstr "Tanım"
+
+msgid "Documents assigned as chapters"
+msgstr "Bölüm olarak atanan belgeler"
+
+msgid "DOCX"
+msgstr "DOCX"
+
 msgid "DOCX book export complete."
 msgstr "DOCX kitap aktarımı tamamlandı."
 
 msgid "DOCX book export has been initiated."
 msgstr "DOCX kitap aktarımı başlatıldı."
 
+msgid "DOCX related settings"
+msgstr "DOCX ile ilgili ayarlar"
+
+msgid "DOCX Template"
+msgstr "DOCX Şablonu"
+
+msgid "E.g.: 2024"
+msgstr "Örn: 2024"
+
+msgid "E.g.: 2024 or January 2024"
+msgstr "Örn: 2024 veya Ocak 2024"
+
+msgid "Each chapter has a title."
+msgstr "Her bölümün bir başlığı var."
+
+msgid "Edit Book"
+msgstr "Kitabı Düzenle"
+
+msgid "Edit Chapter"
+msgstr "Bölümü Düzenle"
+
+msgid "Encrypted document"
+msgstr "Şifreli belge"
+
+msgid "Epub"
+msgstr "Epub"
+
 msgid "Epub book export complete."
 msgstr "Epub kitap aktarımı tamamlandı."
 
 msgid "Epub book export has been initiated."
 msgstr "Epub kitap ihracatına başlandı."
+
+msgid "Epub related settings"
+msgstr "Epub ile ilgili ayarlar"
+
+msgid "Export"
+msgstr "Dışa Aktar"
+
+msgid "Export as BITS"
+msgstr "BITS olarak dışa aktar"
+
+msgid "Export as DOCX"
+msgstr "DOCX olarak dışa aktar"
+
+msgid "Export as Epub"
+msgstr "Epub olarak dışa aktar"
+
+msgid "Export as Fidusbook"
+msgstr "Fidusbook olarak dışa aktar"
+
+msgid "Export as HTML"
+msgstr "HTML olarak dışa aktar"
+
+msgid "Export as LaTeX"
+msgstr "LaTeX olarak dışa aktar"
+
+msgid "Export as ODT"
+msgstr "ODT olarak dışa aktar"
+
+msgid "Export as Unified HTML"
+msgstr "Birleşik HTML olarak dışa aktar"
+
+msgid "Export book as a .fidusbook file (for moving to another server)."
+msgstr ""
+"Kitabı .fidusbook dosyası olarak dışa aktar (başka bir sunucuya taşımak "
+"için)."
+
+msgid "Export book as Book Interchange Tag Set."
+msgstr "Kitabı Book Interchange Tag Set (BITS) olarak dışa aktar."
+
+msgid "Export book as DOCX."
+msgstr "Kitabı DOCX olarak dışa aktar."
+
+msgid "Export book as Epub."
+msgstr "Kitabı Epub olarak dışa aktar."
+
+msgid "Export book as HTML."
+msgstr "Kitabı HTML olarak dışa aktar."
+
+msgid "Export book as LaTeX."
+msgstr "Kitabı LaTeX olarak dışa aktar."
+
+msgid "Export book as ODT."
+msgstr "Kitabı ODT olarak dışa aktar."
+
+msgid "Export book as Single-file HTML."
+msgstr "Kitabı tek dosya HTML olarak dışa aktar."
+
+msgid "Export book to the print dialog."
+msgstr "Kitabı yazdırma iletişim kutusuna aktar."
+
+msgid "Export complete."
+msgstr "Dışa aktarma tamamlandı."
+
+msgid "Export to Print/PDF"
+msgstr "Yazdır/PDF olarak dışa aktar"
+
+msgid "Exporting"
+msgstr "Dışa aktarma"
 
 msgid "Exporting book chapters..."
 msgstr "Kitap bölümleri dışa aktarılıyor..."
@@ -95,11 +274,33 @@ msgstr "LaTeX kitabı sonlandırılıyor..."
 msgid "Finalizing ODT book..."
 msgstr "ODT kitabı sonlandırılıyor..."
 
+msgid "Folio (15 x 12 inch)"
+msgstr "Folio (15 × 12 inç)"
+
 msgid "HTML book export complete."
 msgstr "HTML kitabının dışa aktarımı tamamlandı."
 
 msgid "HTML book export has been initiated."
 msgstr "HTML kitap dışa aktarımı başlatıldı."
+
+msgid ""
+"If this chapter starts a part of the book, specify the title of that part "
+"here"
+msgstr ""
+"Bu bölüm kitabın bir kısmını başlatıyorsa, o kısmın başlığını buraya "
+"belirtin"
+
+msgid "Internal links without target"
+msgstr "Hedefi olmayan iç bağlantılar"
+
+msgid "ISBN"
+msgstr "ISBN"
+
+msgid "Keywords"
+msgstr "Anahtar kelimeler"
+
+msgid "Language"
+msgstr "Dil"
 
 msgid "LaTeX book export complete."
 msgstr "LaTeX kitap aktarımı tamamlandı."
@@ -110,14 +311,60 @@ msgstr "LaTeX kitap aktarımı başlatıldı."
 msgid "Loading chapter data..."
 msgstr "Bölüm verileri yükleniyor..."
 
+msgid "My documents"
+msgstr "Belgelerim"
+
+msgid "No access"
+msgstr "Erişim yok"
+
+msgid "No chapter title"
+msgstr "Bölüm başlığı yok"
+
 msgid "No encryption key found for chapter:"
 msgstr "Bölüm için şifreleme anahtarı bulunamadı:"
+
+msgid "No issues were found:"
+msgstr "Herhangi bir sorun bulunamadı:"
+
+msgid "Octavo (9 x 6 inch)"
+msgstr "Octavo (9 × 6 inç)"
+
+msgid "ODT"
+msgstr "ODT"
 
 msgid "ODT book export complete."
 msgstr "ODT kitabının dışa aktarımı tamamlandı."
 
 msgid "ODT book export has been initiated."
 msgstr "ODT kitap aktarımı başlatıldı."
+
+msgid "ODT related settings"
+msgstr "ODT ile ilgili ayarlar"
+
+msgid "ODT Template"
+msgstr "ODT Şablonu"
+
+msgid ""
+"One or more encrypted chapters could not be decrypted. See the error "
+"notifications for details."
+msgstr ""
+"Bir veya daha fazla şifrelenmiş bölümün şifresi çözülemedi. Ayrıntılar için "
+"hata bildirimlerine bakın."
+
+msgid "Open document"
+msgstr "Belgeyi aç"
+
+msgid "Paper size"
+msgstr "Kâğıt boyutu"
+
+msgid "Perform sanity check"
+msgstr "Kontrol yap"
+
+msgid "Perform sanity check on book"
+msgstr "Kitap üzerinde kontrol yap"
+
+msgid "Pick document files and add them as chapters"
+msgstr "Belge dosyalarını seçin ve bunları bölüm olarak ekleyin"
 
 msgid "Preparing BITS book..."
 msgstr "BITS kitabı hazırlanıyor..."
@@ -134,8 +381,95 @@ msgstr "LaTeX kitabı hazırlanıyor..."
 msgid "Preparing ODT book..."
 msgstr "ODT kitabı hazırlanıyor..."
 
+msgid "Print related settings"
+msgstr "Yazdırma ile ilgili ayarlar"
+
+msgid "Print/PDF"
+msgstr "Yazdır/PDF"
+
+msgid "Publication date"
+msgstr "Yayınlanma tarihi"
+
+msgid "Publisher"
+msgstr "Yayımcı"
+
+msgid "Quarto (12 × 9 inch)"
+msgstr "Quarto (12 × 9 inç)"
+
+msgid "Remove cover image"
+msgstr "Kapak görselini kaldır"
+
+msgid "Remove DOCX template file"
+msgstr "DOCX şablon dosyasını kaldır"
+
+msgid "Remove Image"
+msgstr "Görseli Kaldır"
+
+msgid "Remove ODT template file"
+msgstr "ODT şablon dosyasını kaldır"
+
+msgid "Sanity check"
+msgstr "Kontrol"
+
+msgid "Save"
+msgstr "Kaydet\""
+
+msgid "Select a cover image"
+msgstr "Bir kapak görseli seçin"
+
+msgid "Select an DOCX template file"
+msgstr "Bir DOCX şablon dosyası seçin"
+
+msgid "Select an ODT template file"
+msgstr "Bir ODT şablon dosyası seçin"
+
+msgid "Select citation style for the book"
+msgstr "Kitap için alıntı stili seçin"
+
+msgid "Select DOCX template file"
+msgstr "DOCX şablon dosyasını seçin"
+
+msgid "Select Image"
+msgstr "Görsel Seç"
+
+msgid "Select language"
+msgstr "Dil seçin"
+
+msgid "Select ODT template file"
+msgstr "ODT şablon dosyasını seçin"
+
+msgid "Select paper size for the book"
+msgstr "Kitap için kâğıt boyutu seçin"
+
+msgid "Select stylesheet for the book"
+msgstr "Kitap için stil sayfası seçin"
+
+msgid "Series position"
+msgstr "Seri konumu"
+
+msgid "Series title"
+msgstr "Seri başlığı"
+
+msgid "Sort"
+msgstr "Sırala"
+
+msgid "Submit"
+msgstr "Gönder"
+
+msgid "Subtitle"
+msgstr "Alt başlık"
+
 msgid "successfully imported."
 msgstr "başarıyla içe aktarıldı."
+
+msgid "The book contains chapters."
+msgstr "Kitap bölümler içeriyor."
+
+msgid "The book contains no chapters."
+msgstr "Kitap hiç bölüm içermiyor."
+
+msgid "The book could not be saved"
+msgstr "Kitap kaydedilemedi"
 
 msgid "The document may have been re-encrypted with a different password."
 msgstr "Belge farklı bir parolayla yeniden şifrelenmiş olabilir."
@@ -149,5 +483,39 @@ msgstr "Anahtar sizinle paylaşılmamış olabilir."
 msgid "The uploaded file does not appear to be a Fidusbook file."
 msgstr "Yüklenen dosya bir Fidusbook dosyası gibi görünmüyor."
 
+msgid "There are no unresolved comments."
+msgstr "Çözülmemiş yorum yok."
+
+msgid "There are no unresolved tracked changes."
+msgstr "Çözülmemiş izlenen değişiklik yok."
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"export or run a sanity check on this book."
+msgstr ""
+"Bu kitap şifrelenmiş bölümler içeriyor. Bu kitabı dışa aktarmak veya kontrol"
+" yapmak için kişisel bir parola gerekli."
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"perform a sanity check. Please set up or unlock your personal passphrase in "
+"your profile settings."
+msgstr ""
+"Bu kitap şifrelenmiş bölümler içermektedir. Akıl sağlığı kontrolünü "
+"gerçekleştirmek için kişisel bir parola gerekir. Lütfen profil ayarlarınızda"
+" kişisel parolanızı oluşturun veya kilidini açın."
+
+msgid "Title"
+msgstr "Başlık"
+
+msgid "Unresolved comments"
+msgstr "Çözülmemiş yorumlar"
+
+msgid "Unresolved tracked changes"
+msgstr "Çözülmemiş izlenen değişiklikler"
+
 msgid "Untitled"
 msgstr "İsimsiz"
+
+msgid "Version"
+msgstr "Sürüm"

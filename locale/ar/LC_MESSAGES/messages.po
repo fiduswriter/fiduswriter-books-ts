@@ -16,6 +16,21 @@ msgstr ""
 "مطلوب عبارة مرور شخصية للعمل مع الكتب التي تحتوي على فصول مشفرة. يرجى إعداد "
 "أو إلغاء قفل عبارة المرور الشخصية في إعدادات ملفك الشخصي."
 
+msgid "A4"
+msgstr "A4"
+
+msgid "A5"
+msgstr "A5"
+
+msgid "Add chapters from files"
+msgstr "إضافة فصول من الملفات"
+
+msgid "All cross references have working targets."
+msgstr "جميع المراجع التبادلية لها أهداف عمل."
+
+msgid "All internal links have working targets."
+msgstr "جميع الروابط الداخلية لها أهداف عمل."
+
 msgid "Assembling BITS book..."
 msgstr "كتاب تجميع BITS..."
 
@@ -25,20 +40,68 @@ msgstr "تجميع كتاب Epub..."
 msgid "Assembling HTML book..."
 msgstr "جارٍ تجميع كتاب HTML..."
 
+msgid "Author"
+msgstr "مؤلف"
+
+msgid "Basic book information"
+msgstr "معلومات الكتاب الأساسية"
+
+msgid "Basic info"
+msgstr "معلومات أساسية"
+
+msgid "Bibliography"
+msgstr "قائمة المراجع"
+
+msgid "Bibliography related settings"
+msgstr "إعدادات متعلقة بقائمة المراجع"
+
 msgid "BITS book export complete."
 msgstr "اكتمل تصدير كتاب BITS."
 
 msgid "BITS book export has been initiated."
 msgstr "تم بدء تصدير كتب BITS."
 
+msgid "Book"
+msgstr "كتاب"
+
 msgid "Book cannot be exported due to lack of chapters."
 msgstr "لا يمكن تصدير الكتاب لعدم وجود فصول."
+
+msgid "Book chapters"
+msgstr "فصول الكتاب"
+
+msgid "Book export failed."
+msgstr "فشل تصدير الكتاب."
+
+msgid "Book part"
+msgstr "جزء الكتاب"
+
+msgid "Book part title"
+msgstr "عنوان جزء الكتاب"
+
+msgid "Book style"
+msgstr "نمط الكتاب"
 
 msgid "Cannot produce book as you lack access rights to its chapters."
 msgstr "لا يمكن إنتاج كتاب لأنك لا تملك حقوق الوصول إلى فصوله."
 
+msgid "Chapter"
+msgstr "فصل"
+
 msgid "Chapter data loaded."
 msgstr "تم تحميل بيانات الفصل."
+
+msgid "Chapters"
+msgstr "فصول"
+
+msgid "Citation style"
+msgstr "أسلوب الاقتباس"
+
+msgid "Comma separated keywords"
+msgstr "كلمات مفتاحية مفصولة بفواصل"
+
+msgid "Copyright notice"
+msgstr "إشعار حقوق النشر"
 
 msgid "Could not decrypt chapter:"
 msgstr "لا يمكن فك تشفير الفصل:"
@@ -46,17 +109,131 @@ msgstr "لا يمكن فك تشفير الفصل:"
 msgid "Could not import chapter "
 msgstr "تعذر استيراد الفصل "
 
+msgid "Could not load"
+msgstr "لا يمكن التحميل"
+
+msgid "Cover image"
+msgstr "صورة الغلاف"
+
+msgid "Create Book"
+msgstr "إنشاء كتاب"
+
+msgid "Cross references without targets"
+msgstr "مراجع متقاطعة بدون أهداف"
+
+msgid "Description"
+msgstr "وصف"
+
+msgid "Documents assigned as chapters"
+msgstr "المستندات المعينة كفصول"
+
+msgid "DOCX"
+msgstr "دوكإكس"
+
 msgid "DOCX book export complete."
 msgstr "اكتمل تصدير كتاب DOCX."
 
 msgid "DOCX book export has been initiated."
 msgstr "تم بدء تصدير كتاب DOCX."
 
+msgid "DOCX related settings"
+msgstr "الإعدادات ذات الصلة بـ DOCX"
+
+msgid "DOCX Template"
+msgstr "قالب دوكإكس"
+
+msgid "E.g.: 2024"
+msgstr "على سبيل المثال: 2024"
+
+msgid "E.g.: 2024 or January 2024"
+msgstr "على سبيل المثال: 2024 أو يناير 2024"
+
+msgid "Each chapter has a title."
+msgstr "كل فصل له عنوان."
+
+msgid "Edit Book"
+msgstr "تعديل الكتاب"
+
+msgid "Edit Chapter"
+msgstr "تعديل الفصل"
+
+msgid "Encrypted document"
+msgstr "وثيقة مشفرة"
+
+msgid "Epub"
+msgstr "Epub"
+
 msgid "Epub book export complete."
 msgstr "اكتمل تصدير كتاب Epub."
 
 msgid "Epub book export has been initiated."
 msgstr "تم بدء تصدير كتب Epub."
+
+msgid "Epub related settings"
+msgstr "إعدادات متعلقة بـ Epub"
+
+msgid "Export"
+msgstr "تصدير"
+
+msgid "Export as BITS"
+msgstr "تصدير كـ BITS"
+
+msgid "Export as DOCX"
+msgstr "تصدير بصيغة DOCX"
+
+msgid "Export as Epub"
+msgstr "تصدير بصيغة Epub"
+
+msgid "Export as Fidusbook"
+msgstr "تصدير كـ Fidusbook"
+
+msgid "Export as HTML"
+msgstr "تصدير بصيغة HTML"
+
+msgid "Export as LaTeX"
+msgstr "تصدير بصيغة LaTeX"
+
+msgid "Export as ODT"
+msgstr "تصدير كـ ODT"
+
+msgid "Export as Unified HTML"
+msgstr "تصدير بتنسيق HTML موحد"
+
+msgid "Export book as a .fidusbook file (for moving to another server)."
+msgstr "تصدير الكتاب كملف .fidusbook (للنقل إلى خادم آخر)."
+
+msgid "Export book as Book Interchange Tag Set."
+msgstr "تصدير الكتاب كمجموعة علامات تبادل الكتب."
+
+msgid "Export book as DOCX."
+msgstr "تصدير الكتاب بصيغة DOCX."
+
+msgid "Export book as Epub."
+msgstr "تصدير الكتاب بصيغة Epub."
+
+msgid "Export book as HTML."
+msgstr "تصدير الكتاب بصيغة HTML."
+
+msgid "Export book as LaTeX."
+msgstr "تصدير الكتاب بصيغة LaTeX."
+
+msgid "Export book as ODT."
+msgstr "تصدير الكتاب بتنسيق ODT."
+
+msgid "Export book as Single-file HTML."
+msgstr "تصدير الكتاب كملف HTML واحد."
+
+msgid "Export book to the print dialog."
+msgstr "تصدير الكتاب إلى مربع حوار الطباعة."
+
+msgid "Export complete."
+msgstr "اكتمل التصدير."
+
+msgid "Export to Print/PDF"
+msgstr "تصدير للطباعة/PDF"
+
+msgid "Exporting"
+msgstr "تصدير"
 
 msgid "Exporting book chapters..."
 msgstr "تصدير فصول الكتاب..."
@@ -94,11 +271,31 @@ msgstr "الانتهاء من كتاب LaTeX..."
 msgid "Finalizing ODT book..."
 msgstr "وضع اللمسات النهائية على كتاب ODT..."
 
+msgid "Folio (15 x 12 inch)"
+msgstr "Folio (15 × 12 بوصة)"
+
 msgid "HTML book export complete."
 msgstr "اكتمل تصدير كتاب HTML."
 
 msgid "HTML book export has been initiated."
 msgstr "تم بدء تصدير كتب HTML."
+
+msgid ""
+"If this chapter starts a part of the book, specify the title of that part "
+"here"
+msgstr "إذا كان هذا الفصل يبدأ جزءًا من الكتاب، فحدد عنوان ذلك الجزء هنا"
+
+msgid "Internal links without target"
+msgstr "روابط داخلية بدون هدف"
+
+msgid "ISBN"
+msgstr "رقم ISBN"
+
+msgid "Keywords"
+msgstr "كلمات مفتاحية"
+
+msgid "Language"
+msgstr "لغة"
 
 msgid "LaTeX book export complete."
 msgstr "اكتمل تصدير كتاب LaTeX."
@@ -109,14 +306,60 @@ msgstr "تم بدء تصدير كتب LaTeX."
 msgid "Loading chapter data..."
 msgstr "جارٍ تحميل بيانات الفصل..."
 
+msgid "My documents"
+msgstr "مستنداتي"
+
+msgid "No access"
+msgstr "لا يوجد وصول"
+
+msgid "No chapter title"
+msgstr "لا يوجد عنوان الفصل"
+
 msgid "No encryption key found for chapter:"
 msgstr "لم يتم العثور على مفتاح تشفير للفصل:"
+
+msgid "No issues were found:"
+msgstr "لم يتم العثور على مشاكل:"
+
+msgid "Octavo (9 x 6 inch)"
+msgstr "Octavo (9 × 6 بوصة)"
+
+msgid "ODT"
+msgstr "ODT"
 
 msgid "ODT book export complete."
 msgstr "اكتمل تصدير كتاب ODT."
 
 msgid "ODT book export has been initiated."
 msgstr "تم بدء تصدير كتاب ODT."
+
+msgid "ODT related settings"
+msgstr "الإعدادات المتعلقة بـ ODT"
+
+msgid "ODT Template"
+msgstr "قالب ODT"
+
+msgid ""
+"One or more encrypted chapters could not be decrypted. See the error "
+"notifications for details."
+msgstr ""
+"لا يمكن فك تشفير فصل واحد أو أكثر من الفصول المشفرة. راجع إشعارات الخطأ "
+"للحصول على التفاصيل."
+
+msgid "Open document"
+msgstr "افتح المستند"
+
+msgid "Paper size"
+msgstr "حجم الورق"
+
+msgid "Perform sanity check"
+msgstr "إجراء فحص التعقل"
+
+msgid "Perform sanity check on book"
+msgstr "إجراء التحقق من صحة الكتاب"
+
+msgid "Pick document files and add them as chapters"
+msgstr "اختر ملفات المستندات وأضفها كفصول"
 
 msgid "Preparing BITS book..."
 msgstr "تحضير كتاب BITS..."
@@ -133,8 +376,95 @@ msgstr "تحضير كتاب LaTeX..."
 msgid "Preparing ODT book..."
 msgstr "تحضير كتاب ODT..."
 
+msgid "Print related settings"
+msgstr "إعدادات متعلقة بالطباعة"
+
+msgid "Print/PDF"
+msgstr "طباعة/PDF"
+
+msgid "Publication date"
+msgstr "تاريخ النشر"
+
+msgid "Publisher"
+msgstr "ناشر"
+
+msgid "Quarto (12 × 9 inch)"
+msgstr "Quarto (12 × 9 بوصة)"
+
+msgid "Remove cover image"
+msgstr "إزالة صورة الغلاف"
+
+msgid "Remove DOCX template file"
+msgstr "إزالة ملف قالب DOCX"
+
+msgid "Remove Image"
+msgstr "إزالة الصورة"
+
+msgid "Remove ODT template file"
+msgstr "إزالة ملف قالب ODT"
+
+msgid "Sanity check"
+msgstr "التحقق من الصحة"
+
+msgid "Save"
+msgstr "حفظ\""
+
+msgid "Select a cover image"
+msgstr "اختر صورة غلاف"
+
+msgid "Select an DOCX template file"
+msgstr "حدد ملف قالب DOCX"
+
+msgid "Select an ODT template file"
+msgstr "حدد ملف قالب ODT"
+
+msgid "Select citation style for the book"
+msgstr "اختر أسلوب الاقتباس للكتاب"
+
+msgid "Select DOCX template file"
+msgstr "حدد ملف قالب DOCX"
+
+msgid "Select Image"
+msgstr "اختر صورة"
+
+msgid "Select language"
+msgstr "اختر اللغة"
+
+msgid "Select ODT template file"
+msgstr "حدد ملف قالب ODT"
+
+msgid "Select paper size for the book"
+msgstr "اختر حجم الورق للكتاب"
+
+msgid "Select stylesheet for the book"
+msgstr "اختر ورقة الأنماط للكتاب"
+
+msgid "Series position"
+msgstr "موقف السلسلة"
+
+msgid "Series title"
+msgstr "عنوان السلسلة"
+
+msgid "Sort"
+msgstr "ترتيب"
+
+msgid "Submit"
+msgstr "إرسال"
+
+msgid "Subtitle"
+msgstr "عنوان فرعي"
+
 msgid "successfully imported."
 msgstr "تم استيرادها بنجاح."
+
+msgid "The book contains chapters."
+msgstr "يحتوي الكتاب على فصول."
+
+msgid "The book contains no chapters."
+msgstr "الكتاب لا يحتوي على فصول."
+
+msgid "The book could not be saved"
+msgstr "تعذر حفظ الكتاب"
 
 msgid "The document may have been re-encrypted with a different password."
 msgstr "ربما تمت إعادة تشفير المستند بكلمة مرور مختلفة."
@@ -148,5 +478,38 @@ msgstr "ربما لم تتم مشاركة المفتاح معك."
 msgid "The uploaded file does not appear to be a Fidusbook file."
 msgstr "لا يبدو أن الملف الذي تم تحميله هو ملف Fidusbook."
 
+msgid "There are no unresolved comments."
+msgstr "لا توجد تعليقات لم يتم حلها."
+
+msgid "There are no unresolved tracked changes."
+msgstr "لا توجد أية تغييرات متعقبة لم يتم حلها."
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"export or run a sanity check on this book."
+msgstr ""
+"يحتوي هذا الكتاب على فصول مشفرة. مطلوب عبارة مرور شخصية لتصدير أو إجراء فحص "
+"سلامة هذا الكتاب."
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"perform a sanity check. Please set up or unlock your personal passphrase in "
+"your profile settings."
+msgstr ""
+"يحتوي هذا الكتاب على فصول مشفرة. مطلوب عبارة مرور شخصية لإجراء فحص السلامة. "
+"يرجى إعداد أو إلغاء قفل عبارة المرور الشخصية في إعدادات ملفك الشخصي."
+
+msgid "Title"
+msgstr "عنوان"
+
+msgid "Unresolved comments"
+msgstr "تعليقات غير محلولة"
+
+msgid "Unresolved tracked changes"
+msgstr "تغييرات متتبعة غير محلولة"
+
 msgid "Untitled"
 msgstr "بدون عنوان"
+
+msgid "Version"
+msgstr "إصدار"

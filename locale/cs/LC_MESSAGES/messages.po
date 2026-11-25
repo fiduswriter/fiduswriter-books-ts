@@ -17,6 +17,21 @@ msgstr ""
 "osobní přístupová fráze. Nastavte nebo odemkněte svou osobní přístupovou "
 "frázi v nastavení svého profilu."
 
+msgid "A4"
+msgstr "A4"
+
+msgid "A5"
+msgstr "A5"
+
+msgid "Add chapters from files"
+msgstr "Přidejte kapitoly ze souborů"
+
+msgid "All cross references have working targets."
+msgstr "Všechny křížové odkazy mají pracovní cíle."
+
+msgid "All internal links have working targets."
+msgstr "Všechny interní odkazy mají pracovní cíle."
+
 msgid "Assembling BITS book..."
 msgstr "Sestavení knihy BITS..."
 
@@ -26,21 +41,69 @@ msgstr "Skládání knihy Epub..."
 msgid "Assembling HTML book..."
 msgstr "Skládání HTML knihy..."
 
+msgid "Author"
+msgstr "Autor"
+
+msgid "Basic book information"
+msgstr "Základní informace o knize"
+
+msgid "Basic info"
+msgstr "Základní informace"
+
+msgid "Bibliography"
+msgstr "Bibliografie"
+
+msgid "Bibliography related settings"
+msgstr "Nastavení související s bibliografií"
+
 msgid "BITS book export complete."
 msgstr "Export knihy BITS dokončen."
 
 msgid "BITS book export has been initiated."
 msgstr "Export knihy BITS byl zahájen."
 
+msgid "Book"
+msgstr "Rezervovat"
+
 msgid "Book cannot be exported due to lack of chapters."
 msgstr "Knihu nelze exportovat z důvodu nedostatku kapitol."
+
+msgid "Book chapters"
+msgstr "Kapitoly knihy"
+
+msgid "Book export failed."
+msgstr "Export knihy se nezdařil."
+
+msgid "Book part"
+msgstr "Část knihy"
+
+msgid "Book part title"
+msgstr "Název části knihy"
+
+msgid "Book style"
+msgstr "Styl knihy"
 
 msgid "Cannot produce book as you lack access rights to its chapters."
 msgstr ""
 "Knihu nelze vytvořit, protože nemáte přístupová práva k jejím kapitolám."
 
+msgid "Chapter"
+msgstr "Kapitola"
+
 msgid "Chapter data loaded."
 msgstr "Data kapitoly načtena."
+
+msgid "Chapters"
+msgstr "Kapitoly"
+
+msgid "Citation style"
+msgstr "Citační styl"
+
+msgid "Comma separated keywords"
+msgstr "Klíčová slova oddělená čárkami"
+
+msgid "Copyright notice"
+msgstr "Informace o autorských právech"
 
 msgid "Could not decrypt chapter:"
 msgstr "Nelze dešifrovat kapitolu:"
@@ -48,17 +111,131 @@ msgstr "Nelze dešifrovat kapitolu:"
 msgid "Could not import chapter "
 msgstr "Kapitola se nepodařilo importovat "
 
+msgid "Could not load"
+msgstr "Nelze načíst"
+
+msgid "Cover image"
+msgstr "Obrázek obálky"
+
+msgid "Create Book"
+msgstr "Vytvořit knihu"
+
+msgid "Cross references without targets"
+msgstr "Křížové odkazy bez cílů"
+
+msgid "Description"
+msgstr "Popis"
+
+msgid "Documents assigned as chapters"
+msgstr "Dokumenty přiřazené jako kapitoly"
+
+msgid "DOCX"
+msgstr "DOCX"
+
 msgid "DOCX book export complete."
 msgstr "Export knihy DOCX dokončen."
 
 msgid "DOCX book export has been initiated."
 msgstr "Export knihy DOCX byl zahájen."
 
+msgid "DOCX related settings"
+msgstr "Nastavení související s DOCX"
+
+msgid "DOCX Template"
+msgstr "Šablona DOCX"
+
+msgid "E.g.: 2024"
+msgstr "Např.: 2024"
+
+msgid "E.g.: 2024 or January 2024"
+msgstr "Např.: 2024 nebo leden 2024"
+
+msgid "Each chapter has a title."
+msgstr "Každá kapitola má název."
+
+msgid "Edit Book"
+msgstr "Upravit knihu"
+
+msgid "Edit Chapter"
+msgstr "Upravit kapitolu"
+
+msgid "Encrypted document"
+msgstr "Šifrovaný dokument"
+
+msgid "Epub"
+msgstr "Epub"
+
 msgid "Epub book export complete."
 msgstr "Export knihy Epub byl dokončen."
 
 msgid "Epub book export has been initiated."
 msgstr "Export knihy Epub byl zahájen."
+
+msgid "Epub related settings"
+msgstr "Nastavení související s Epub"
+
+msgid "Export"
+msgstr "Vývozní"
+
+msgid "Export as BITS"
+msgstr "Exportovat jako BITS"
+
+msgid "Export as DOCX"
+msgstr "Exportovat jako DOCX"
+
+msgid "Export as Epub"
+msgstr "Exportovat jako Epub"
+
+msgid "Export as Fidusbook"
+msgstr "Exportovat jako Fidusbook"
+
+msgid "Export as HTML"
+msgstr "Exportovat jako HTML"
+
+msgid "Export as LaTeX"
+msgstr "Exportovat jako LaTeX"
+
+msgid "Export as ODT"
+msgstr "Exportovat jako ODT"
+
+msgid "Export as Unified HTML"
+msgstr "Exportovat jako Unified HTML"
+
+msgid "Export book as a .fidusbook file (for moving to another server)."
+msgstr "Exportujte knihu jako soubor .fidusbook (pro přesun na jiný server)."
+
+msgid "Export book as Book Interchange Tag Set."
+msgstr "Exportujte knihu jako sadu značek pro výměnu knih."
+
+msgid "Export book as DOCX."
+msgstr "Exportovat knihu jako DOCX."
+
+msgid "Export book as Epub."
+msgstr "Exportovat knihu jako Epub."
+
+msgid "Export book as HTML."
+msgstr "Exportovat knihu jako HTML."
+
+msgid "Export book as LaTeX."
+msgstr "Exportovat knihu jako LaTeX."
+
+msgid "Export book as ODT."
+msgstr "Exportovat knihu jako ODT."
+
+msgid "Export book as Single-file HTML."
+msgstr "Exportujte knihu jako jeden soubor HTML."
+
+msgid "Export book to the print dialog."
+msgstr "Exportovat knihu do tiskového dialogu."
+
+msgid "Export complete."
+msgstr "Export dokončen."
+
+msgid "Export to Print/PDF"
+msgstr "Exportovat pro tisk/PDF"
+
+msgid "Exporting"
+msgstr "Export"
 
 msgid "Exporting book chapters..."
 msgstr "Export kapitol knihy..."
@@ -96,11 +273,31 @@ msgstr "Dokončování knihy LaTeX..."
 msgid "Finalizing ODT book..."
 msgstr "Dokončování knihy ODT..."
 
+msgid "Folio (15 x 12 inch)"
+msgstr "Folio (15 x 12 palců)"
+
 msgid "HTML book export complete."
 msgstr "Export knihy HTML dokončen."
 
 msgid "HTML book export has been initiated."
 msgstr "Export knihy HTML byl zahájen."
+
+msgid ""
+"If this chapter starts a part of the book, specify the title of that part "
+"here"
+msgstr "Pokud tato kapitola začíná část knihy, zadejte zde název této části"
+
+msgid "Internal links without target"
+msgstr "Interní odkazy bez cíle"
+
+msgid "ISBN"
+msgstr "ISBN"
+
+msgid "Keywords"
+msgstr "Klíčová slova"
+
+msgid "Language"
+msgstr "Jazyk"
 
 msgid "LaTeX book export complete."
 msgstr "Export knihy LaTeX dokončen."
@@ -111,14 +308,60 @@ msgstr "Export knihy LaTeX byl zahájen."
 msgid "Loading chapter data..."
 msgstr "Načítání dat kapitoly..."
 
+msgid "My documents"
+msgstr "Moje dokumenty"
+
+msgid "No access"
+msgstr "Žádný přístup"
+
+msgid "No chapter title"
+msgstr "Žádný název kapitoly"
+
 msgid "No encryption key found for chapter:"
 msgstr "Pro kapitolu nebyl nalezen žádný šifrovací klíč:"
+
+msgid "No issues were found:"
+msgstr "Nebyly nalezeny žádné problémy:"
+
+msgid "Octavo (9 x 6 inch)"
+msgstr "Octavo (9 x 6 palců)"
+
+msgid "ODT"
+msgstr "ODT"
 
 msgid "ODT book export complete."
 msgstr "Export knihy ODT dokončen."
 
 msgid "ODT book export has been initiated."
 msgstr "Export knihy ODT byl zahájen."
+
+msgid "ODT related settings"
+msgstr "Nastavení související s ODT"
+
+msgid "ODT Template"
+msgstr "ODT šablona"
+
+msgid ""
+"One or more encrypted chapters could not be decrypted. See the error "
+"notifications for details."
+msgstr ""
+"Jednu nebo více zašifrovaných kapitol nebylo možné dešifrovat. Podrobnosti "
+"naleznete v upozorněních na chyby."
+
+msgid "Open document"
+msgstr "Otevřete dokument"
+
+msgid "Paper size"
+msgstr "Velikost papíru"
+
+msgid "Perform sanity check"
+msgstr "Proveďte kontrolu zdravého rozumu"
+
+msgid "Perform sanity check on book"
+msgstr "Provést kontrolu správnosti knihy"
+
+msgid "Pick document files and add them as chapters"
+msgstr "Vyberte soubory dokumentů a přidejte je jako kapitoly"
 
 msgid "Preparing BITS book..."
 msgstr "Příprava knihy BITS..."
@@ -135,8 +378,95 @@ msgstr "Příprava knihy LaTeX..."
 msgid "Preparing ODT book..."
 msgstr "Příprava knihy ODT..."
 
+msgid "Print related settings"
+msgstr "Nastavení související s tiskem"
+
+msgid "Print/PDF"
+msgstr "Tisk/PDF"
+
+msgid "Publication date"
+msgstr "Datum zveřejnění"
+
+msgid "Publisher"
+msgstr "Vydavatel"
+
+msgid "Quarto (12 × 9 inch)"
+msgstr "Quarto (12 × 9 palců)"
+
+msgid "Remove cover image"
+msgstr "Odebrat obrázek obálky"
+
+msgid "Remove DOCX template file"
+msgstr "Odstraňte soubor šablony DOCX"
+
+msgid "Remove Image"
+msgstr "Odebrat obrázek"
+
+msgid "Remove ODT template file"
+msgstr "Odstraňte soubor šablony ODT"
+
+msgid "Sanity check"
+msgstr "Kontrola správnosti"
+
+msgid "Save"
+msgstr "Uložit\""
+
+msgid "Select a cover image"
+msgstr "Vyberte obrázek obálky"
+
+msgid "Select an DOCX template file"
+msgstr "Vyberte soubor šablony DOCX"
+
+msgid "Select an ODT template file"
+msgstr "Vyberte soubor šablony ODT"
+
+msgid "Select citation style for the book"
+msgstr "Vyberte citační styl pro knihu"
+
+msgid "Select DOCX template file"
+msgstr "Vyberte soubor šablony DOCX"
+
+msgid "Select Image"
+msgstr "Vybrat obrázek"
+
+msgid "Select language"
+msgstr "Vyberte jazyk"
+
+msgid "Select ODT template file"
+msgstr "Vyberte soubor šablony ODT"
+
+msgid "Select paper size for the book"
+msgstr "Vyberte velikost papíru pro knihu"
+
+msgid "Select stylesheet for the book"
+msgstr "Vyberte styl pro knihu"
+
+msgid "Series position"
+msgstr "Pozice série"
+
+msgid "Series title"
+msgstr "Název seriálu"
+
+msgid "Sort"
+msgstr "Seřadit"
+
+msgid "Submit"
+msgstr "Odeslat"
+
+msgid "Subtitle"
+msgstr "Podtitul"
+
 msgid "successfully imported."
 msgstr "úspěšně importováno."
+
+msgid "The book contains chapters."
+msgstr "Kniha obsahuje kapitoly."
+
+msgid "The book contains no chapters."
+msgstr "Kniha neobsahuje žádné kapitoly."
+
+msgid "The book could not be saved"
+msgstr "Knihu nelze uložit"
 
 msgid "The document may have been re-encrypted with a different password."
 msgstr "Dokument mohl být znovu zašifrován pomocí jiného hesla."
@@ -150,5 +480,39 @@ msgstr "Klíč s vámi možná nebyl sdílen."
 msgid "The uploaded file does not appear to be a Fidusbook file."
 msgstr "Zdá se, že nahraný soubor není souborem Fidusbook."
 
+msgid "There are no unresolved comments."
+msgstr "Nejsou zde žádné nevyřešené komentáře."
+
+msgid "There are no unresolved tracked changes."
+msgstr "Neexistují žádné nevyřešené sledované změny."
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"export or run a sanity check on this book."
+msgstr ""
+"Tato kniha obsahuje zašifrované kapitoly. Chcete-li exportovat nebo spustit "
+"kontrolu této knihy, je vyžadována osobní přístupová fráze."
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"perform a sanity check. Please set up or unlock your personal passphrase in "
+"your profile settings."
+msgstr ""
+"Tato kniha obsahuje zašifrované kapitoly. K provedení kontroly příčetnosti "
+"je vyžadována osobní přístupová fráze. Nastavte nebo odemkněte svou osobní "
+"přístupovou frázi v nastavení svého profilu."
+
+msgid "Title"
+msgstr "Název"
+
+msgid "Unresolved comments"
+msgstr "Nevyřešené komentáře"
+
+msgid "Unresolved tracked changes"
+msgstr "Nevyřešené sledované změny"
+
 msgid "Untitled"
 msgstr "Bez názvu"
+
+msgid "Version"
+msgstr "Verze"

@@ -14,6 +14,21 @@ msgid ""
 "settings."
 msgstr "需要个人密码才能使用包含加密章节的书籍。请在您的个人资料设置中设置或解锁您的个人密码。"
 
+msgid "A4"
+msgstr "A4"
+
+msgid "A5"
+msgstr "A5"
+
+msgid "Add chapters from files"
+msgstr "从文件添加章节"
+
+msgid "All cross references have working targets."
+msgstr "所有交叉引用都有工作目标。"
+
+msgid "All internal links have working targets."
+msgstr "所有内部链接都有工作目标。"
+
 msgid "Assembling BITS book..."
 msgstr "组装 BITS 书..."
 
@@ -23,20 +38,68 @@ msgstr "正在组装 Epub 书..."
 msgid "Assembling HTML book..."
 msgstr "正在组装 HTML 书..."
 
+msgid "Author"
+msgstr "作者"
+
+msgid "Basic book information"
+msgstr "基本书籍信息"
+
+msgid "Basic info"
+msgstr "基本信息"
+
+msgid "Bibliography"
+msgstr "参考文献"
+
+msgid "Bibliography related settings"
+msgstr "参考文献相关设置"
+
 msgid "BITS book export complete."
 msgstr "BITS 图书导出完成。"
 
 msgid "BITS book export has been initiated."
 msgstr "BITS图书出口已启动。"
 
+msgid "Book"
+msgstr "书"
+
 msgid "Book cannot be exported due to lack of chapters."
 msgstr "由于缺少章节，书籍无法导出。"
+
+msgid "Book chapters"
+msgstr "书籍章节"
+
+msgid "Book export failed."
+msgstr "图书导出失败。"
+
+msgid "Book part"
+msgstr "书籍分部"
+
+msgid "Book part title"
+msgstr "分部标题"
+
+msgid "Book style"
+msgstr "书籍样式"
 
 msgid "Cannot produce book as you lack access rights to its chapters."
 msgstr "无法制作书籍，因为您缺乏对其章节的访问权限。"
 
+msgid "Chapter"
+msgstr "章"
+
 msgid "Chapter data loaded."
 msgstr "章节数据已加载。"
+
+msgid "Chapters"
+msgstr "章节"
+
+msgid "Citation style"
+msgstr "引文格式"
+
+msgid "Comma separated keywords"
+msgstr "逗号分隔的关键词"
+
+msgid "Copyright notice"
+msgstr "版权声明"
 
 msgid "Could not decrypt chapter:"
 msgstr "无法解密章节："
@@ -44,17 +107,131 @@ msgstr "无法解密章节："
 msgid "Could not import chapter "
 msgstr "无法导入章节 "
 
+msgid "Could not load"
+msgstr "无法加载"
+
+msgid "Cover image"
+msgstr "封面图片"
+
+msgid "Create Book"
+msgstr "创建书籍"
+
+msgid "Cross references without targets"
+msgstr "无目标的交叉引用"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "Documents assigned as chapters"
+msgstr "指定为章节的文档"
+
+msgid "DOCX"
+msgstr "DOCX"
+
 msgid "DOCX book export complete."
 msgstr "DOCX 图书导出完成。"
 
 msgid "DOCX book export has been initiated."
 msgstr "DOCX图书导出已启动。"
 
+msgid "DOCX related settings"
+msgstr "DOCX相关设置"
+
+msgid "DOCX Template"
+msgstr "DOCX 模板"
+
+msgid "E.g.: 2024"
+msgstr "例如：2024"
+
+msgid "E.g.: 2024 or January 2024"
+msgstr "例如：2024 年或 2024 年 1 月"
+
+msgid "Each chapter has a title."
+msgstr "每章都有一个标题。"
+
+msgid "Edit Book"
+msgstr "编辑书籍"
+
+msgid "Edit Chapter"
+msgstr "编辑章节"
+
+msgid "Encrypted document"
+msgstr "加密文件"
+
+msgid "Epub"
+msgstr "Epub"
+
 msgid "Epub book export complete."
 msgstr "Epub图书导出完成。"
 
 msgid "Epub book export has been initiated."
 msgstr "Epub图书出口已启动。"
+
+msgid "Epub related settings"
+msgstr "Epub相关设置"
+
+msgid "Export"
+msgstr "导出"
+
+msgid "Export as BITS"
+msgstr "导出为 BITS"
+
+msgid "Export as DOCX"
+msgstr "导出为 DOCX"
+
+msgid "Export as Epub"
+msgstr "导出为 Epub"
+
+msgid "Export as Fidusbook"
+msgstr "导出为 Fidusbook"
+
+msgid "Export as HTML"
+msgstr "导出为 HTML"
+
+msgid "Export as LaTeX"
+msgstr "导出为 LaTeX"
+
+msgid "Export as ODT"
+msgstr "导出为 ODT"
+
+msgid "Export as Unified HTML"
+msgstr "导出为统一 HTML"
+
+msgid "Export book as a .fidusbook file (for moving to another server)."
+msgstr "将书籍导出为 .fidusbook 文件（用于移动到另一台服务器）。"
+
+msgid "Export book as Book Interchange Tag Set."
+msgstr "将书籍导出为书籍交换标签集。"
+
+msgid "Export book as DOCX."
+msgstr "将图书导出为 DOCX。"
+
+msgid "Export book as Epub."
+msgstr "将书籍导出为 Epub。"
+
+msgid "Export book as HTML."
+msgstr "将图书导出为 HTML。"
+
+msgid "Export book as LaTeX."
+msgstr "将书籍导出为 LaTeX。"
+
+msgid "Export book as ODT."
+msgstr "将图书导出为 ODT。"
+
+msgid "Export book as Single-file HTML."
+msgstr "将图书导出为单文件 HTML。"
+
+msgid "Export book to the print dialog."
+msgstr "将书籍导出到打印对话框。"
+
+msgid "Export complete."
+msgstr "导出完成。"
+
+msgid "Export to Print/PDF"
+msgstr "导出为打印/PDF"
+
+msgid "Exporting"
+msgstr "出口"
 
 msgid "Exporting book chapters..."
 msgstr "正在导出书籍章节..."
@@ -92,11 +269,31 @@ msgstr "正在完成 LaTeX 书..."
 msgid "Finalizing ODT book..."
 msgstr "正在完成 ODT 书籍..."
 
+msgid "Folio (15 x 12 inch)"
+msgstr "对开本（15×12英寸）"
+
 msgid "HTML book export complete."
 msgstr "HTML 图书导出完成。"
 
 msgid "HTML book export has been initiated."
 msgstr "HTML 图书导出已启动。"
+
+msgid ""
+"If this chapter starts a part of the book, specify the title of that part "
+"here"
+msgstr "如果此章节开始书籍的一个分部，请在此处指定该分部的标题"
+
+msgid "Internal links without target"
+msgstr "无目标的内部链接"
+
+msgid "ISBN"
+msgstr "国际标准书号"
+
+msgid "Keywords"
+msgstr "关键词"
+
+msgid "Language"
+msgstr "语言"
 
 msgid "LaTeX book export complete."
 msgstr "LaTeX 书籍导出完成。"
@@ -107,14 +304,58 @@ msgstr "LaTeX 图书出口已启动。"
 msgid "Loading chapter data..."
 msgstr "正在加载章节数据..."
 
+msgid "My documents"
+msgstr "我的文档"
+
+msgid "No access"
+msgstr "无法访问"
+
+msgid "No chapter title"
+msgstr "无章节标题"
+
 msgid "No encryption key found for chapter:"
 msgstr "找不到章节的加密密钥："
+
+msgid "No issues were found:"
+msgstr "没有发现问题："
+
+msgid "Octavo (9 x 6 inch)"
+msgstr "八开本（9×6英寸）"
+
+msgid "ODT"
+msgstr "ODT"
 
 msgid "ODT book export complete."
 msgstr "ODT图书导出完成。"
 
 msgid "ODT book export has been initiated."
 msgstr "ODT图书出口已启动。"
+
+msgid "ODT related settings"
+msgstr "ODT相关设置"
+
+msgid "ODT Template"
+msgstr "ODT模板"
+
+msgid ""
+"One or more encrypted chapters could not be decrypted. See the error "
+"notifications for details."
+msgstr "无法解密一个或多个加密章节。有关详细信息，请参阅错误通知。"
+
+msgid "Open document"
+msgstr "打开文档"
+
+msgid "Paper size"
+msgstr "纸张大小"
+
+msgid "Perform sanity check"
+msgstr "执行健全性检查"
+
+msgid "Perform sanity check on book"
+msgstr "对书籍执行完整性检查"
+
+msgid "Pick document files and add them as chapters"
+msgstr "选择文档文件并将其添加为章节"
 
 msgid "Preparing BITS book..."
 msgstr "正在准备 BITS 书..."
@@ -131,8 +372,95 @@ msgstr "正在准备 LaTeX 书..."
 msgid "Preparing ODT book..."
 msgstr "正在准备 ODT 书..."
 
+msgid "Print related settings"
+msgstr "打印相关设置"
+
+msgid "Print/PDF"
+msgstr "打印/PDF"
+
+msgid "Publication date"
+msgstr "出版日期"
+
+msgid "Publisher"
+msgstr "出版社"
+
+msgid "Quarto (12 × 9 inch)"
+msgstr "四开本（12×9英寸）"
+
+msgid "Remove cover image"
+msgstr "移除封面图片"
+
+msgid "Remove DOCX template file"
+msgstr "删除 DOCX 模板文件"
+
+msgid "Remove Image"
+msgstr "移除图片"
+
+msgid "Remove ODT template file"
+msgstr "删除 ODT 模板文件"
+
+msgid "Sanity check"
+msgstr "完整性检查"
+
+msgid "Save"
+msgstr "保存\""
+
+msgid "Select a cover image"
+msgstr "选择封面图片"
+
+msgid "Select an DOCX template file"
+msgstr "选择 DOCX 模板文件"
+
+msgid "Select an ODT template file"
+msgstr "选择 ODT 模板文件"
+
+msgid "Select citation style for the book"
+msgstr "为书籍选择引文格式"
+
+msgid "Select DOCX template file"
+msgstr "选择 DOCX 模板文件"
+
+msgid "Select Image"
+msgstr "选择图片"
+
+msgid "Select language"
+msgstr "选择语言"
+
+msgid "Select ODT template file"
+msgstr "选择 ODT 模板文件"
+
+msgid "Select paper size for the book"
+msgstr "为书籍选择纸张大小"
+
+msgid "Select stylesheet for the book"
+msgstr "为书籍选择样式表"
+
+msgid "Series position"
+msgstr "系列位置"
+
+msgid "Series title"
+msgstr "系列标题"
+
+msgid "Sort"
+msgstr "排序"
+
+msgid "Submit"
+msgstr "提交"
+
+msgid "Subtitle"
+msgstr "副标题"
+
 msgid "successfully imported."
 msgstr "成功导入。"
+
+msgid "The book contains chapters."
+msgstr "本书包含章节。"
+
+msgid "The book contains no chapters."
+msgstr "本书不包含任何章节。"
+
+msgid "The book could not be saved"
+msgstr "书籍无法保存"
 
 msgid "The document may have been re-encrypted with a different password."
 msgstr "该文档可能已使用不同的密码重新加密。"
@@ -146,5 +474,34 @@ msgstr "密钥可能尚未与您共享。"
 msgid "The uploaded file does not appear to be a Fidusbook file."
 msgstr "上传的文件似乎不是 Fidusbook 文件。"
 
+msgid "There are no unresolved comments."
+msgstr "没有未解决的评论。"
+
+msgid "There are no unresolved tracked changes."
+msgstr "没有未解决的跟踪更改。"
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"export or run a sanity check on this book."
+msgstr "本书包含加密章节。导出本书或对其进行健全性检查需要个人密码。"
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"perform a sanity check. Please set up or unlock your personal passphrase in "
+"your profile settings."
+msgstr "本书包含加密章节。需要个人密码来执行健全性检查。请在您的个人资料设置中设置或解锁您的个人密码。"
+
+msgid "Title"
+msgstr "标题"
+
+msgid "Unresolved comments"
+msgstr "未解决的评论"
+
+msgid "Unresolved tracked changes"
+msgstr "未解决的跟踪更改"
+
 msgid "Untitled"
 msgstr "无题"
+
+msgid "Version"
+msgstr "版本"

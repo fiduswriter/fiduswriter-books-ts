@@ -17,6 +17,21 @@ msgstr ""
 "persoonlijke wachtwoordzin vereist. Stel uw persoonlijke wachtwoordzin in of"
 " ontgrendel deze in uw profielinstellingen."
 
+msgid "A4"
+msgstr "A4"
+
+msgid "A5"
+msgstr "A5"
+
+msgid "Add chapters from files"
+msgstr "Voeg hoofdstukken uit bestanden toe"
+
+msgid "All cross references have working targets."
+msgstr "Alle kruisverwijzingen hebben werkende doelen."
+
+msgid "All internal links have working targets."
+msgstr "Alle interne koppelingen hebben werkende doelen."
+
 msgid "Assembling BITS book..."
 msgstr "BITS-boek samenstellen..."
 
@@ -26,22 +41,70 @@ msgstr "Epub-boek samenstellen..."
 msgid "Assembling HTML book..."
 msgstr "HTML-boek samenstellen..."
 
+msgid "Author"
+msgstr "Auteur"
+
+msgid "Basic book information"
+msgstr "Algemene boekinformatie"
+
+msgid "Basic info"
+msgstr "Basisgegevens"
+
+msgid "Bibliography"
+msgstr "Bibliografie"
+
+msgid "Bibliography related settings"
+msgstr "Bibliografie gerelateerde instellingen"
+
 msgid "BITS book export complete."
 msgstr "BITS-boekexport voltooid."
 
 msgid "BITS book export has been initiated."
 msgstr "BITS-boekexport is gestart."
 
+msgid "Book"
+msgstr "Boek"
+
 msgid "Book cannot be exported due to lack of chapters."
 msgstr "Boek kan niet worden geëxporteerd vanwege gebrek aan hoofdstukken."
+
+msgid "Book chapters"
+msgstr "Boekhoofdstukken"
+
+msgid "Book export failed."
+msgstr "Het exporteren van boeken is mislukt."
+
+msgid "Book part"
+msgstr "Boekdeel"
+
+msgid "Book part title"
+msgstr "Titel boekdeel"
+
+msgid "Book style"
+msgstr "Boekstijl"
 
 msgid "Cannot produce book as you lack access rights to its chapters."
 msgstr ""
 "Kan geen boek produceren omdat u geen toegangsrechten heeft tot de "
 "hoofdstukken ervan."
 
+msgid "Chapter"
+msgstr "Hoofdstuk"
+
 msgid "Chapter data loaded."
 msgstr "Hoofdstukgegevens geladen."
+
+msgid "Chapters"
+msgstr "Hoofdstukken"
+
+msgid "Citation style"
+msgstr "Citatiestijl"
+
+msgid "Comma separated keywords"
+msgstr "Komma gescheiden trefwoorden"
+
+msgid "Copyright notice"
+msgstr "Auteursrechtmelding"
 
 msgid "Could not decrypt chapter:"
 msgstr "Kan hoofdstuk niet decoderen:"
@@ -49,17 +112,133 @@ msgstr "Kan hoofdstuk niet decoderen:"
 msgid "Could not import chapter "
 msgstr "Kan hoofdstuk niet importeren "
 
+msgid "Could not load"
+msgstr "Kan niet laden"
+
+msgid "Cover image"
+msgstr "Omslagafbeelding"
+
+msgid "Create Book"
+msgstr "Boek aanmaken"
+
+msgid "Cross references without targets"
+msgstr "Kruisverwijzingen zonder doelen"
+
+msgid "Description"
+msgstr "Beschrijving"
+
+msgid "Documents assigned as chapters"
+msgstr "Documenten toegewezen als hoofdstukken"
+
+msgid "DOCX"
+msgstr "DOCX"
+
 msgid "DOCX book export complete."
 msgstr "DOCX-boekexport voltooid."
 
 msgid "DOCX book export has been initiated."
 msgstr "DOCX-boekexport is gestart."
 
+msgid "DOCX related settings"
+msgstr "DOCX-gerelateerde instellingen"
+
+msgid "DOCX Template"
+msgstr "DOCX-sjabloon"
+
+msgid "E.g.: 2024"
+msgstr "Bijvoorbeeld: 2024"
+
+msgid "E.g.: 2024 or January 2024"
+msgstr "Bijvoorbeeld: 2024 of januari 2024"
+
+msgid "Each chapter has a title."
+msgstr "Elk hoofdstuk heeft een titel."
+
+msgid "Edit Book"
+msgstr "Boek bewerken"
+
+msgid "Edit Chapter"
+msgstr "Hoofdstuk bewerken"
+
+msgid "Encrypted document"
+msgstr "Gecodeerd document"
+
+msgid "Epub"
+msgstr "Epub"
+
 msgid "Epub book export complete."
 msgstr "Epub-boekexport voltooid."
 
 msgid "Epub book export has been initiated."
 msgstr "Het exporteren van Epub-boeken is gestart."
+
+msgid "Epub related settings"
+msgstr "Epub-gerelateerde instellingen"
+
+msgid "Export"
+msgstr "Exporteren"
+
+msgid "Export as BITS"
+msgstr "Exporteren als BITS"
+
+msgid "Export as DOCX"
+msgstr "Exporteren als DOCX"
+
+msgid "Export as Epub"
+msgstr "Exporteren als Epub"
+
+msgid "Export as Fidusbook"
+msgstr "Exporteren als Fidusbook"
+
+msgid "Export as HTML"
+msgstr "Exporteren als HTML"
+
+msgid "Export as LaTeX"
+msgstr "Exporteren als LaTeX"
+
+msgid "Export as ODT"
+msgstr "Exporteren als ODT"
+
+msgid "Export as Unified HTML"
+msgstr "Exporteren als Unified HTML"
+
+msgid "Export book as a .fidusbook file (for moving to another server)."
+msgstr ""
+"Boek exporteren als .fidusbook-bestand (voor verplaatsing naar een andere "
+"server)."
+
+msgid "Export book as Book Interchange Tag Set."
+msgstr "Boek exporteren als Book Interchange Tag Set."
+
+msgid "Export book as DOCX."
+msgstr "Boek exporteren als DOCX."
+
+msgid "Export book as Epub."
+msgstr "Boek exporteren als Epub."
+
+msgid "Export book as HTML."
+msgstr "Boek exporteren als HTML."
+
+msgid "Export book as LaTeX."
+msgstr "Boek exporteren als LaTeX."
+
+msgid "Export book as ODT."
+msgstr "Boek exporteren als ODT."
+
+msgid "Export book as Single-file HTML."
+msgstr "Boek exporteren als HTML in één bestand."
+
+msgid "Export book to the print dialog."
+msgstr "Boek exporteren naar het afdrukdialoogvenster."
+
+msgid "Export complete."
+msgstr "Exporteren voltooid."
+
+msgid "Export to Print/PDF"
+msgstr "Exporteren naar afdruk/PDF"
+
+msgid "Exporting"
+msgstr "Exporteren"
 
 msgid "Exporting book chapters..."
 msgstr "Boekhoofdstukken exporteren..."
@@ -97,11 +276,33 @@ msgstr "LaTeX-boek voltooien..."
 msgid "Finalizing ODT book..."
 msgstr "ODT-boek afronden..."
 
+msgid "Folio (15 x 12 inch)"
+msgstr "Folio (15 x 12 inch)"
+
 msgid "HTML book export complete."
 msgstr "Exporteren van HTML-boek voltooid."
 
 msgid "HTML book export has been initiated."
 msgstr "HTML-boekexport is gestart."
+
+msgid ""
+"If this chapter starts a part of the book, specify the title of that part "
+"here"
+msgstr ""
+"Als dit hoofdstuk een deel van het boek begint, specificeer dan hier de "
+"titel van dat deel"
+
+msgid "Internal links without target"
+msgstr "Interne koppelingen zonder doel"
+
+msgid "ISBN"
+msgstr "ISBN-nummer"
+
+msgid "Keywords"
+msgstr "Trefwoorden"
+
+msgid "Language"
+msgstr "Taal"
 
 msgid "LaTeX book export complete."
 msgstr "LaTeX-boekexport voltooid."
@@ -112,14 +313,60 @@ msgstr "Het exporteren van LaTeX-boeken is gestart."
 msgid "Loading chapter data..."
 msgstr "Hoofdstukgegevens laden..."
 
+msgid "My documents"
+msgstr "Mijn documenten"
+
+msgid "No access"
+msgstr "Geen toegang"
+
+msgid "No chapter title"
+msgstr "Geen hoofdstuktitel"
+
 msgid "No encryption key found for chapter:"
 msgstr "Geen encryptiesleutel gevonden voor hoofdstuk:"
+
+msgid "No issues were found:"
+msgstr "Er zijn geen problemen gevonden:"
+
+msgid "Octavo (9 x 6 inch)"
+msgstr "Octavo (9 x 6 inch)"
+
+msgid "ODT"
+msgstr "ODT"
 
 msgid "ODT book export complete."
 msgstr "ODT-boekexport voltooid."
 
 msgid "ODT book export has been initiated."
 msgstr "ODT-boekexport is gestart."
+
+msgid "ODT related settings"
+msgstr "ODT-gerelateerde instellingen"
+
+msgid "ODT Template"
+msgstr "ODT-sjabloon"
+
+msgid ""
+"One or more encrypted chapters could not be decrypted. See the error "
+"notifications for details."
+msgstr ""
+"Een of meer gecodeerde hoofdstukken konden niet worden gedecodeerd. Zie de "
+"foutmeldingen voor details."
+
+msgid "Open document"
+msgstr "Document openen"
+
+msgid "Paper size"
+msgstr "Papierformaat"
+
+msgid "Perform sanity check"
+msgstr "Validatie uitvoeren"
+
+msgid "Perform sanity check on book"
+msgstr "Voer validatie uit op boek"
+
+msgid "Pick document files and add them as chapters"
+msgstr "Kies documentbestanden en voeg ze toe als hoofdstukken"
 
 msgid "Preparing BITS book..."
 msgstr "BITS-boek voorbereiden..."
@@ -136,8 +383,95 @@ msgstr "LaTeX-boek voorbereiden..."
 msgid "Preparing ODT book..."
 msgstr "ODT-boek voorbereiden..."
 
+msgid "Print related settings"
+msgstr "Afdruk gerelateerde instellingen"
+
+msgid "Print/PDF"
+msgstr "Afdruk/PDF"
+
+msgid "Publication date"
+msgstr "Publicatiedatum"
+
+msgid "Publisher"
+msgstr "Uitgever"
+
+msgid "Quarto (12 × 9 inch)"
+msgstr "Kwarto (12 × 9 inch)"
+
+msgid "Remove cover image"
+msgstr "Omslagafbeelding verwijderen"
+
+msgid "Remove DOCX template file"
+msgstr "Verwijder het DOCX-sjabloonbestand"
+
+msgid "Remove Image"
+msgstr "Afbeelding verwijderen"
+
+msgid "Remove ODT template file"
+msgstr "ODT-sjabloonbestand verwijderen"
+
+msgid "Sanity check"
+msgstr "Validatie"
+
+msgid "Save"
+msgstr "Opslaan\""
+
+msgid "Select a cover image"
+msgstr "Selecteer een omslagafbeelding"
+
+msgid "Select an DOCX template file"
+msgstr "Selecteer een DOCX-sjabloonbestand"
+
+msgid "Select an ODT template file"
+msgstr "Selecteer een ODT-sjabloonbestand"
+
+msgid "Select citation style for the book"
+msgstr "Selecteer citatiestijl voor het boek"
+
+msgid "Select DOCX template file"
+msgstr "Selecteer DOCX-sjabloonbestand"
+
+msgid "Select Image"
+msgstr "Afbeelding selecteren"
+
+msgid "Select language"
+msgstr "Selecteer taal"
+
+msgid "Select ODT template file"
+msgstr "Selecteer ODT-sjabloonbestand"
+
+msgid "Select paper size for the book"
+msgstr "Selecteer papierformaat voor het boek"
+
+msgid "Select stylesheet for the book"
+msgstr "Selecteer stylesheet voor het boek"
+
+msgid "Series position"
+msgstr "Serie positie"
+
+msgid "Series title"
+msgstr "Serie titel"
+
+msgid "Sort"
+msgstr "Sorteren"
+
+msgid "Submit"
+msgstr "Verzenden"
+
+msgid "Subtitle"
+msgstr "Ondertitel"
+
 msgid "successfully imported."
 msgstr "succesvol geïmporteerd."
+
+msgid "The book contains chapters."
+msgstr "Het boek bevat hoofdstukken."
+
+msgid "The book contains no chapters."
+msgstr "Het boek bevat geen hoofdstukken."
+
+msgid "The book could not be saved"
+msgstr "Het boek kon niet worden opgeslagen"
 
 msgid "The document may have been re-encrypted with a different password."
 msgstr "Het document is mogelijk opnieuw gecodeerd met een ander wachtwoord."
@@ -151,5 +485,40 @@ msgstr "De sleutel is mogelijk niet met u gedeeld."
 msgid "The uploaded file does not appear to be a Fidusbook file."
 msgstr "Het geüploade bestand lijkt geen Fidusbook-bestand te zijn."
 
+msgid "There are no unresolved comments."
+msgstr "Er zijn geen onopgeloste opmerkingen."
+
+msgid "There are no unresolved tracked changes."
+msgstr "Er zijn geen onopgeloste bijgehouden wijzigingen."
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"export or run a sanity check on this book."
+msgstr ""
+"Dit boek bevat versleutelde hoofdstukken. Er is een persoonlijke "
+"wachtwoordzin vereist om dit boek te exporteren of een validatie uit te "
+"voeren."
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"perform a sanity check. Please set up or unlock your personal passphrase in "
+"your profile settings."
+msgstr ""
+"Dit boek bevat gecodeerde hoofdstukken. Voor het uitvoeren van een "
+"gezondheidscheck is een persoonlijke wachtwoordzin vereist. Stel uw "
+"persoonlijke wachtwoordzin in of ontgrendel deze in uw profielinstellingen."
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "Unresolved comments"
+msgstr "Onopgeloste opmerkingen"
+
+msgid "Unresolved tracked changes"
+msgstr "Onopgeloste bijgehouden wijzigingen"
+
 msgid "Untitled"
 msgstr "Zonder titel"
+
+msgid "Version"
+msgstr "Versie"

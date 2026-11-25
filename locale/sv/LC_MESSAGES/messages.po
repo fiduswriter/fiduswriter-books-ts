@@ -17,6 +17,21 @@ msgstr ""
 "krypterade kapitel. Vänligen ställ in eller lås upp din personliga lösenfras"
 " i dina profilinställningar."
 
+msgid "A4"
+msgstr "A4"
+
+msgid "A5"
+msgstr "A5"
+
+msgid "Add chapters from files"
+msgstr "Lägg till kapitel från filer"
+
+msgid "All cross references have working targets."
+msgstr "Alla korsreferenser har fungerande mål."
+
+msgid "All internal links have working targets."
+msgstr "Alla interna länkar har fungerande mål."
+
 msgid "Assembling BITS book..."
 msgstr "Monterar BITS-bok..."
 
@@ -26,22 +41,70 @@ msgstr "Montering av Epub-bok..."
 msgid "Assembling HTML book..."
 msgstr "Sammanställer HTML-bok..."
 
+msgid "Author"
+msgstr "Författare"
+
+msgid "Basic book information"
+msgstr "Grundläggande bokinformation"
+
+msgid "Basic info"
+msgstr "Grundinfo"
+
+msgid "Bibliography"
+msgstr "Bibliografi"
+
+msgid "Bibliography related settings"
+msgstr "Bibliografirelaterade inställningar"
+
 msgid "BITS book export complete."
 msgstr "BITS-bokexporten är klar."
 
 msgid "BITS book export has been initiated."
 msgstr "BITS-bokexport har initierats."
 
+msgid "Book"
+msgstr "Boka"
+
 msgid "Book cannot be exported due to lack of chapters."
 msgstr "Boken kan inte exporteras på grund av brist på kapitel."
+
+msgid "Book chapters"
+msgstr "Bokkapitel"
+
+msgid "Book export failed."
+msgstr "Bokexport misslyckades."
+
+msgid "Book part"
+msgstr "Bokdel"
+
+msgid "Book part title"
+msgstr "Bokdeltitel"
+
+msgid "Book style"
+msgstr "Bokstil"
 
 msgid "Cannot produce book as you lack access rights to its chapters."
 msgstr ""
 "Kan inte producera bok eftersom du saknar åtkomsträttigheter till dess "
 "kapitel."
 
+msgid "Chapter"
+msgstr "Kapitel"
+
 msgid "Chapter data loaded."
 msgstr "Kapiteldata har laddats."
+
+msgid "Chapters"
+msgstr "Kapitel"
+
+msgid "Citation style"
+msgstr "Citationstil"
+
+msgid "Comma separated keywords"
+msgstr "Kommaseparerade nyckelord"
+
+msgid "Copyright notice"
+msgstr "Upphovsrättsmeddelande"
 
 msgid "Could not decrypt chapter:"
 msgstr "Kunde inte dekryptera kapitel:"
@@ -49,17 +112,132 @@ msgstr "Kunde inte dekryptera kapitel:"
 msgid "Could not import chapter "
 msgstr "Det gick inte att importera kapitel "
 
+msgid "Could not load"
+msgstr "Kunde inte ladda"
+
+msgid "Cover image"
+msgstr "Omslagsbild"
+
+msgid "Create Book"
+msgstr "Skapa bok"
+
+msgid "Cross references without targets"
+msgstr "Korsreferenser utan mål"
+
+msgid "Description"
+msgstr "Beskrivning"
+
+msgid "Documents assigned as chapters"
+msgstr "Dokument tilldelade som kapitel"
+
+msgid "DOCX"
+msgstr "DOCX"
+
 msgid "DOCX book export complete."
 msgstr "DOCX-bokexport klar."
 
 msgid "DOCX book export has been initiated."
 msgstr "DOCX-bokexport har initierats."
 
+msgid "DOCX related settings"
+msgstr "DOCX-relaterade inställningar"
+
+msgid "DOCX Template"
+msgstr "DOCX-mall"
+
+msgid "E.g.: 2024"
+msgstr "T.ex.: 2024"
+
+msgid "E.g.: 2024 or January 2024"
+msgstr "Till exempel: 2024 eller januari 2024"
+
+msgid "Each chapter has a title."
+msgstr "Varje kapitel har en titel."
+
+msgid "Edit Book"
+msgstr "Redigera bok"
+
+msgid "Edit Chapter"
+msgstr "Redigera kapitel"
+
+msgid "Encrypted document"
+msgstr "Krypterat dokument"
+
+msgid "Epub"
+msgstr "Epub"
+
 msgid "Epub book export complete."
 msgstr "Epub-bokexport klar."
 
 msgid "Epub book export has been initiated."
 msgstr "Epub-bokexport har påbörjats."
+
+msgid "Epub related settings"
+msgstr "Epub-relaterade inställningar"
+
+msgid "Export"
+msgstr "Exportera"
+
+msgid "Export as BITS"
+msgstr "Exportera som BITS"
+
+msgid "Export as DOCX"
+msgstr "Exportera som DOCX"
+
+msgid "Export as Epub"
+msgstr "Exportera som Epub"
+
+msgid "Export as Fidusbook"
+msgstr "Exportera som Fidusbook"
+
+msgid "Export as HTML"
+msgstr "Exportera som HTML"
+
+msgid "Export as LaTeX"
+msgstr "Exportera som LaTeX"
+
+msgid "Export as ODT"
+msgstr "Exportera som ODT"
+
+msgid "Export as Unified HTML"
+msgstr "Exportera som enhetlig HTML"
+
+msgid "Export book as a .fidusbook file (for moving to another server)."
+msgstr ""
+"Exportera bok som en .fidusbook-fil (för att flytta till en annan server)."
+
+msgid "Export book as Book Interchange Tag Set."
+msgstr "Exportera bok som Book Interchange Tag Set."
+
+msgid "Export book as DOCX."
+msgstr "Exportera bok som DOCX."
+
+msgid "Export book as Epub."
+msgstr "Exportera bok som Epub."
+
+msgid "Export book as HTML."
+msgstr "Exportera bok som HTML."
+
+msgid "Export book as LaTeX."
+msgstr "Exportera bok som LaTeX."
+
+msgid "Export book as ODT."
+msgstr "Exportera bok som ODT."
+
+msgid "Export book as Single-file HTML."
+msgstr "Exportera bok som enkelfils-HTML."
+
+msgid "Export book to the print dialog."
+msgstr "Exportera bok till utskriftsdialogen."
+
+msgid "Export complete."
+msgstr "Exporten klar."
+
+msgid "Export to Print/PDF"
+msgstr "Exportera till utskrift/PDF"
+
+msgid "Exporting"
+msgstr "Exporterar"
 
 msgid "Exporting book chapters..."
 msgstr "Exporterar bokkapitel..."
@@ -97,11 +275,32 @@ msgstr "Slutför LaTeX-bok..."
 msgid "Finalizing ODT book..."
 msgstr "Slutför ODT-bok..."
 
+msgid "Folio (15 x 12 inch)"
+msgstr "Folio (15 × 12 tum)"
+
 msgid "HTML book export complete."
 msgstr "HTML-bokexport klar."
 
 msgid "HTML book export has been initiated."
 msgstr "HTML-bokexport har initierats."
+
+msgid ""
+"If this chapter starts a part of the book, specify the title of that part "
+"here"
+msgstr ""
+"Om detta kapitel inleder en del av boken, ange titeln på den delen här"
+
+msgid "Internal links without target"
+msgstr "Interna länkar utan mål"
+
+msgid "ISBN"
+msgstr "ISBN"
+
+msgid "Keywords"
+msgstr "Nyckelord"
+
+msgid "Language"
+msgstr "Språk"
 
 msgid "LaTeX book export complete."
 msgstr "LaTeX bokexport slutförd."
@@ -112,14 +311,60 @@ msgstr "LaTeX-bokexport har påbörjats."
 msgid "Loading chapter data..."
 msgstr "Laddar kapiteldata..."
 
+msgid "My documents"
+msgstr "Mina dokument"
+
+msgid "No access"
+msgstr "Ingen åtkomst"
+
+msgid "No chapter title"
+msgstr "Ingen kapiteltitel"
+
 msgid "No encryption key found for chapter:"
 msgstr "Ingen krypteringsnyckel hittades för kapitel:"
+
+msgid "No issues were found:"
+msgstr "Inga problem hittades:"
+
+msgid "Octavo (9 x 6 inch)"
+msgstr "Oktav (9 × 6 tum)"
+
+msgid "ODT"
+msgstr "ODT"
 
 msgid "ODT book export complete."
 msgstr "ODT-bokexport slutförd."
 
 msgid "ODT book export has been initiated."
 msgstr "ODT-bokexport har påbörjats."
+
+msgid "ODT related settings"
+msgstr "ODT-relaterade inställningar"
+
+msgid "ODT Template"
+msgstr "ODT-mall"
+
+msgid ""
+"One or more encrypted chapters could not be decrypted. See the error "
+"notifications for details."
+msgstr ""
+"Ett eller flera krypterade kapitel kunde inte dekrypteras. Se "
+"felmeddelandena för detaljer."
+
+msgid "Open document"
+msgstr "Öppna dokumentet"
+
+msgid "Paper size"
+msgstr "Pappersstorlek"
+
+msgid "Perform sanity check"
+msgstr "Utför kvalitetskontroll"
+
+msgid "Perform sanity check on book"
+msgstr "Utför kvalitetskontroll på boken"
+
+msgid "Pick document files and add them as chapters"
+msgstr "Välj dokumentfiler och lägg till dem som kapitel"
 
 msgid "Preparing BITS book..."
 msgstr "Förbereder BITS-bok..."
@@ -136,8 +381,95 @@ msgstr "Förbereder LaTeX-bok..."
 msgid "Preparing ODT book..."
 msgstr "Förbereder ODT-bok..."
 
+msgid "Print related settings"
+msgstr "Utskriftsrelaterade inställningar"
+
+msgid "Print/PDF"
+msgstr "Utskrift/PDF"
+
+msgid "Publication date"
+msgstr "Publiceringsdatum"
+
+msgid "Publisher"
+msgstr "Utgivare"
+
+msgid "Quarto (12 × 9 inch)"
+msgstr "Kvart (12 × 9 tum)"
+
+msgid "Remove cover image"
+msgstr "Ta bort omslagsbild"
+
+msgid "Remove DOCX template file"
+msgstr "Ta bort DOCX mallfil"
+
+msgid "Remove Image"
+msgstr "Ta bort bild"
+
+msgid "Remove ODT template file"
+msgstr "Ta bort ODT-mallfil"
+
+msgid "Sanity check"
+msgstr "Kvalitetskontroll"
+
+msgid "Save"
+msgstr "Spara\""
+
+msgid "Select a cover image"
+msgstr "Välj en omslagsbild"
+
+msgid "Select an DOCX template file"
+msgstr "Välj en DOCX-mallfil"
+
+msgid "Select an ODT template file"
+msgstr "Välj en ODT-mallfil"
+
+msgid "Select citation style for the book"
+msgstr "Välj citationstil för boken"
+
+msgid "Select DOCX template file"
+msgstr "Välj DOCX-mallfil"
+
+msgid "Select Image"
+msgstr "Välj bild"
+
+msgid "Select language"
+msgstr "Välj språk"
+
+msgid "Select ODT template file"
+msgstr "Välj ODT-mallfil"
+
+msgid "Select paper size for the book"
+msgstr "Välj pappersstorlek för boken"
+
+msgid "Select stylesheet for the book"
+msgstr "Välj stilmall för boken"
+
+msgid "Series position"
+msgstr "Serieposition"
+
+msgid "Series title"
+msgstr "Serietitel"
+
+msgid "Sort"
+msgstr "Sortera"
+
+msgid "Submit"
+msgstr "Skicka"
+
+msgid "Subtitle"
+msgstr "Undertitel"
+
 msgid "successfully imported."
 msgstr "framgångsrikt importerat."
+
+msgid "The book contains chapters."
+msgstr "Boken innehåller kapitel."
+
+msgid "The book contains no chapters."
+msgstr "Boken innehåller inga kapitel."
+
+msgid "The book could not be saved"
+msgstr "Boken kunde inte sparas"
 
 msgid "The document may have been re-encrypted with a different password."
 msgstr "Dokumentet kan ha krypterats om med ett annat lösenord."
@@ -151,5 +483,39 @@ msgstr "Nyckeln kanske inte har delats med dig."
 msgid "The uploaded file does not appear to be a Fidusbook file."
 msgstr "Den uppladdade filen verkar inte vara en Fidusbook-fil."
 
+msgid "There are no unresolved comments."
+msgstr "Det finns inga oupplösta kommentarer."
+
+msgid "There are no unresolved tracked changes."
+msgstr "Det finns inga oupplösta spårade ändringar."
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"export or run a sanity check on this book."
+msgstr ""
+"Den här boken innehåller krypterade kapitel. En personlig lösenfras krävs "
+"för att exportera eller utföra en kvalitetskontroll på den här boken."
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"perform a sanity check. Please set up or unlock your personal passphrase in "
+"your profile settings."
+msgstr ""
+"Den här boken innehåller krypterade kapitel. En personlig lösenfras krävs "
+"för att utföra en hälsokontroll. Vänligen ställ in eller lås upp din "
+"personliga lösenfras i dina profilinställningar."
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "Unresolved comments"
+msgstr "Oupplösta kommentarer"
+
+msgid "Unresolved tracked changes"
+msgstr "Oupplösta spårade ändringar"
+
 msgid "Untitled"
 msgstr "Namnlös"
+
+msgid "Version"
+msgstr "Version"

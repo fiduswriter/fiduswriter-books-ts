@@ -17,6 +17,21 @@ msgstr ""
 "capítulos criptografados. Configure ou desbloqueie sua senha pessoal nas "
 "configurações do seu perfil."
 
+msgid "A4"
+msgstr "A4"
+
+msgid "A5"
+msgstr "A5"
+
+msgid "Add chapters from files"
+msgstr "Adicione capítulos de arquivos"
+
+msgid "All cross references have working targets."
+msgstr "Todas as referências cruzadas funcionam corretamente."
+
+msgid "All internal links have working targets."
+msgstr "Todos os links internos funcionam corretamente"
+
 msgid "Assembling BITS book..."
 msgstr "Montando livro BITS..."
 
@@ -26,22 +41,70 @@ msgstr "Montando livro Epub..."
 msgid "Assembling HTML book..."
 msgstr "Montando livro HTML..."
 
+msgid "Author"
+msgstr "Autor"
+
+msgid "Basic book information"
+msgstr "Informações básicas do livro"
+
+msgid "Basic info"
+msgstr "Informação básica"
+
+msgid "Bibliography"
+msgstr "Bibliografia"
+
+msgid "Bibliography related settings"
+msgstr "Configurações relacionadas à bibliografia"
+
 msgid "BITS book export complete."
 msgstr "Exportação do livro BITS concluída."
 
 msgid "BITS book export has been initiated."
 msgstr "A exportação do livro BITS foi iniciada."
 
+msgid "Book"
+msgstr "Livro"
+
 msgid "Book cannot be exported due to lack of chapters."
 msgstr "O livro não pode ser exportado por falta de capítulos."
+
+msgid "Book chapters"
+msgstr "Capítulos de livros"
+
+msgid "Book export failed."
+msgstr "Falha na exportação do livro."
+
+msgid "Book part"
+msgstr "Parte do livro"
+
+msgid "Book part title"
+msgstr "Título da parte do livro"
+
+msgid "Book style"
+msgstr "Estilo do livro"
 
 msgid "Cannot produce book as you lack access rights to its chapters."
 msgstr ""
 "Não é possível produzir o livro porque não possui direitos de acesso aos "
 "seus capítulos."
 
+msgid "Chapter"
+msgstr "Capítulo"
+
 msgid "Chapter data loaded."
 msgstr "Dados do capítulo carregados."
+
+msgid "Chapters"
+msgstr "Capítulos"
+
+msgid "Citation style"
+msgstr "Estilo de citação"
+
+msgid "Comma separated keywords"
+msgstr "Palavras chaves separadas por vírgula"
+
+msgid "Copyright notice"
+msgstr "Nota de direitos autorais"
 
 msgid "Could not decrypt chapter:"
 msgstr "Não foi possível descriptografar o capítulo:"
@@ -49,17 +112,132 @@ msgstr "Não foi possível descriptografar o capítulo:"
 msgid "Could not import chapter "
 msgstr "Não foi possível importar o capítulo "
 
+msgid "Could not load"
+msgstr "Não foi possível carregar"
+
+msgid "Cover image"
+msgstr "Imagem de capa"
+
+msgid "Create Book"
+msgstr "Criar livro"
+
+msgid "Cross references without targets"
+msgstr "Referências cruzadas destino"
+
+msgid "Description"
+msgstr "Descrição"
+
+msgid "Documents assigned as chapters"
+msgstr "Documentos atribuídos como capítulos"
+
+msgid "DOCX"
+msgstr "DOCX"
+
 msgid "DOCX book export complete."
 msgstr "Exportação do livro DOCX concluída."
 
 msgid "DOCX book export has been initiated."
 msgstr "A exportação do livro DOCX foi iniciada."
 
+msgid "DOCX related settings"
+msgstr "Configurações relacionadas a DOCX"
+
+msgid "DOCX Template"
+msgstr "Modelo DOCX"
+
+msgid "E.g.: 2024"
+msgstr "Ex.: 2024"
+
+msgid "E.g.: 2024 or January 2024"
+msgstr "Ex.: 2024 ou janeiro de 2024"
+
+msgid "Each chapter has a title."
+msgstr "Cada capítulo tem um título."
+
+msgid "Edit Book"
+msgstr "Editar livro"
+
+msgid "Edit Chapter"
+msgstr "Editar capítulo"
+
+msgid "Encrypted document"
+msgstr "Documento criptografado"
+
+msgid "Epub"
+msgstr "Epub"
+
 msgid "Epub book export complete."
 msgstr "Exportação de livro Epub concluída."
 
 msgid "Epub book export has been initiated."
 msgstr "A exportação de livros Epub foi iniciada."
+
+msgid "Epub related settings"
+msgstr "Configurações relacionadas ao Epub"
+
+msgid "Export"
+msgstr "Exportar"
+
+msgid "Export as BITS"
+msgstr "Exportar como BITS"
+
+msgid "Export as DOCX"
+msgstr "Exportar como DOCX"
+
+msgid "Export as Epub"
+msgstr "Exportar como Epub"
+
+msgid "Export as Fidusbook"
+msgstr "Exportar como Fidusbook"
+
+msgid "Export as HTML"
+msgstr "Exportar como HTML"
+
+msgid "Export as LaTeX"
+msgstr "Exportar como LaTeX"
+
+msgid "Export as ODT"
+msgstr "Exportar como ODT"
+
+msgid "Export as Unified HTML"
+msgstr "Exportar como HTML unificado"
+
+msgid "Export book as a .fidusbook file (for moving to another server)."
+msgstr ""
+"Exportar livro como arquivo .fidusbook (para mover para outro servidor)."
+
+msgid "Export book as Book Interchange Tag Set."
+msgstr "Exportar livro como Book Interchange Tag Set."
+
+msgid "Export book as DOCX."
+msgstr "Exportar livro como DOCX."
+
+msgid "Export book as Epub."
+msgstr "Exportar livro como Epub."
+
+msgid "Export book as HTML."
+msgstr "Exporte o livro como HTML."
+
+msgid "Export book as LaTeX."
+msgstr "Exportar livro como LaTeX."
+
+msgid "Export book as ODT."
+msgstr "Exportar livro como ODT."
+
+msgid "Export book as Single-file HTML."
+msgstr "Exportar livro como HTML de arquivo único."
+
+msgid "Export book to the print dialog."
+msgstr "Exporte o livro para a caixa de diálogo de impressão."
+
+msgid "Export complete."
+msgstr "Exportação concluída."
+
+msgid "Export to Print/PDF"
+msgstr "Exportar para imprimir / PDF"
+
+msgid "Exporting"
+msgstr "Exportador"
 
 msgid "Exporting book chapters..."
 msgstr "Exportando capítulos de livros..."
@@ -97,11 +275,33 @@ msgstr "Finalizando o livro LaTeX..."
 msgid "Finalizing ODT book..."
 msgstr "Finalizando o livro ODT..."
 
+msgid "Folio (15 x 12 inch)"
+msgstr "Fólio (15 x 12 polegadas)"
+
 msgid "HTML book export complete."
 msgstr "Exportação do livro HTML concluída."
 
 msgid "HTML book export has been initiated."
 msgstr "A exportação do livro HTML foi iniciada."
+
+msgid ""
+"If this chapter starts a part of the book, specify the title of that part "
+"here"
+msgstr ""
+"Se este capítulo iniciar uma parte do livro, especifique o título dessa "
+"parte aqui"
+
+msgid "Internal links without target"
+msgstr "Links internos sem destino"
+
+msgid "ISBN"
+msgstr "ISBN"
+
+msgid "Keywords"
+msgstr "Palavras chaves"
+
+msgid "Language"
+msgstr "Língua"
 
 msgid "LaTeX book export complete."
 msgstr "Exportação do livro LaTeX concluída."
@@ -112,14 +312,60 @@ msgstr "A exportação de livros LaTeX foi iniciada."
 msgid "Loading chapter data..."
 msgstr "Carregando dados do capítulo..."
 
+msgid "My documents"
+msgstr "Meus documentos"
+
+msgid "No access"
+msgstr "Sem acesso"
+
+msgid "No chapter title"
+msgstr "Sem título de capítulo"
+
 msgid "No encryption key found for chapter:"
 msgstr "Nenhuma chave de criptografia encontrada para o capítulo:"
+
+msgid "No issues were found:"
+msgstr "Nenhum problema foi encontrado:"
+
+msgid "Octavo (9 x 6 inch)"
+msgstr "Octavo (9 x 6 polegadas)"
+
+msgid "ODT"
+msgstr "ODT"
 
 msgid "ODT book export complete."
 msgstr "Exportação do livro ODT concluída."
 
 msgid "ODT book export has been initiated."
 msgstr "A exportação do livro ODT foi iniciada."
+
+msgid "ODT related settings"
+msgstr "Configurações relacionadas a ODT"
+
+msgid "ODT Template"
+msgstr "Modelo ODT"
+
+msgid ""
+"One or more encrypted chapters could not be decrypted. See the error "
+"notifications for details."
+msgstr ""
+"Um ou mais capítulos criptografados não puderam ser descriptografados. "
+"Consulte as notificações de erro para obter detalhes."
+
+msgid "Open document"
+msgstr "Abrir documento"
+
+msgid "Paper size"
+msgstr "Tamanho do papel"
+
+msgid "Perform sanity check"
+msgstr "Executar verificação técnica"
+
+msgid "Perform sanity check on book"
+msgstr "Executar verificação técnica no livro"
+
+msgid "Pick document files and add them as chapters"
+msgstr "Escolha arquivos de documentos e adicione-os como capítulos"
 
 msgid "Preparing BITS book..."
 msgstr "Preparando livro BITS..."
@@ -136,8 +382,95 @@ msgstr "Preparando livro LaTeX..."
 msgid "Preparing ODT book..."
 msgstr "Preparando livro ODT..."
 
+msgid "Print related settings"
+msgstr "Configurações relacionadas à impressão"
+
+msgid "Print/PDF"
+msgstr "Impressão/PDF"
+
+msgid "Publication date"
+msgstr "Data de publicação"
+
+msgid "Publisher"
+msgstr "Editor"
+
+msgid "Quarto (12 × 9 inch)"
+msgstr "Quarto (12 × 9 polegadas)"
+
+msgid "Remove cover image"
+msgstr "Remover imagem da capa"
+
+msgid "Remove DOCX template file"
+msgstr "Remover arquivo de modelo DOCX"
+
+msgid "Remove Image"
+msgstr "Remover imagem"
+
+msgid "Remove ODT template file"
+msgstr "Remover arquivo de modelo ODT"
+
+msgid "Sanity check"
+msgstr "Verificação técnica"
+
+msgid "Save"
+msgstr "Salvar\""
+
+msgid "Select a cover image"
+msgstr "Selecione uma imagem de capa"
+
+msgid "Select an DOCX template file"
+msgstr "Selecione um arquivo de modelo DOCX"
+
+msgid "Select an ODT template file"
+msgstr "Selecione um arquivo de modelo ODT"
+
+msgid "Select citation style for the book"
+msgstr "Selecione o estilo de citação para o livro"
+
+msgid "Select DOCX template file"
+msgstr "Selecione o arquivo de modelo DOCX"
+
+msgid "Select Image"
+msgstr "Selecione a imagem"
+
+msgid "Select language"
+msgstr "Selecione o idioma"
+
+msgid "Select ODT template file"
+msgstr "Selecione o arquivo de modelo ODT"
+
+msgid "Select paper size for the book"
+msgstr "Selecione o tamanho do papel para o livro"
+
+msgid "Select stylesheet for the book"
+msgstr "Selecionar folha de estilo para o livro"
+
+msgid "Series position"
+msgstr "Posição na série"
+
+msgid "Series title"
+msgstr "Título da série"
+
+msgid "Sort"
+msgstr "Ordenar"
+
+msgid "Submit"
+msgstr "Enviar"
+
+msgid "Subtitle"
+msgstr "Subtítulo"
+
 msgid "successfully imported."
 msgstr "importado com sucesso."
+
+msgid "The book contains chapters."
+msgstr "O livro contém capítulos."
+
+msgid "The book contains no chapters."
+msgstr "O livro não contém capítulos."
+
+msgid "The book could not be saved"
+msgstr "Não foi possível salvar o livro"
 
 msgid "The document may have been re-encrypted with a different password."
 msgstr ""
@@ -152,5 +485,40 @@ msgstr "A chave pode não ter sido compartilhada com você."
 msgid "The uploaded file does not appear to be a Fidusbook file."
 msgstr "O arquivo enviado não parece ser um arquivo Fidusbook."
 
+msgid "There are no unresolved comments."
+msgstr "Não há comentários não resolvidos."
+
+msgid "There are no unresolved tracked changes."
+msgstr "Não há alterações rastreadas não resolvidas."
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"export or run a sanity check on this book."
+msgstr ""
+"Este livro contém capítulos criptografados. É necessária uma frase secreta "
+"pessoal para exportar ou executar uma verificação de integridade neste "
+"livro."
+
+msgid ""
+"This book contains encrypted chapters. A personal passphrase is required to "
+"perform a sanity check. Please set up or unlock your personal passphrase in "
+"your profile settings."
+msgstr ""
+"Este livro contém capítulos criptografados. Uma senha pessoal é necessária "
+"para realizar uma verificação de integridade. Configure ou desbloqueie sua "
+"senha pessoal nas configurações do seu perfil."
+
+msgid "Title"
+msgstr "Título"
+
+msgid "Unresolved comments"
+msgstr "Comentários não resolvidos"
+
+msgid "Unresolved tracked changes"
+msgstr "Alterações rastreadas não resolvidas"
+
 msgid "Untitled"
 msgstr "Sem título"
+
+msgid "Version"
+msgstr "Versão"
