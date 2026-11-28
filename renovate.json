@@ -3,7 +3,9 @@
     "extends": ["config:recommended"],
     "baseBranchPatterns": ["main"],
     "timezone": "Europe/Berlin",
-    "dependencyDashboard": true,
+    "dependencyDashboard": {
+        "enabled": true
+    },
     "enabledManagers": [
         "npm",
         "pip_requirements",
